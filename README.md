@@ -93,4 +93,4 @@ drops rater-level columns, and creates a standardized `score` column only when
 `domain1_score` is present. Splits without labels remain unlabeled.
 
 Processed outputs are written under `results/`, which is ignored by git except
-for placeholder files.
+for placeholder files currently.
