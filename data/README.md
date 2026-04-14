@@ -22,5 +22,9 @@ explicitly decides to track a small, safe derivative file.
 ## Expected Usage
 
 Do not move, rename, or delete the raw dataset files during baseline setup.
-Future scripts or notebooks should read from the local `data/asap-aes/`
-directory and write generated outputs to `results/`.
+Scripts or notebooks should read from the local `data/asap-aes/` directory
+through the reusable loader in `src.data_loading`.
+
+Generated preprocessing outputs should be written to `results/processed/`, not
+back into `data/`. The `results/` directory is ignored by git so local
+experiment outputs do not become part of the repository by accident.
