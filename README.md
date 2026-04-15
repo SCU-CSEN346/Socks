@@ -94,3 +94,7 @@ drops rater-level columns, and creates a standardized `score` column only when
 
 Processed outputs are written under `results/`, which is ignored by git except
 for placeholder files currently.
+
+## Contributions
+
+Helen Wang - Wrote the related works section of the report, added modified scripts for signal clustering (signal_pred and matrix) as well as dividing dataset data into subsections to follow project structure.
