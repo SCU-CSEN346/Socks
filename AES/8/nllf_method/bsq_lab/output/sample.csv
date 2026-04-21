@@ -1,0 +1,38 @@
+source,llm
+question,"1. Does the essay tell a true story? 2. Does the essay include laughter as an element? 3. Does the essay have a clear beginning, middle, and end? 4. Does the essay use descriptive language? 5. Does the essay have proper grammar and spelling?"
+rubric_1_elements_0,Does the essay hold the reader's attention throughout?
+rubric_1_elements_1,Does the essay maintain a clear focus throughout?
+rubric_1_elements_2,Does the essay present clear and understandable main ideas?
+rubric_1_elements_3,Does the essay present overly broad or simplistic main ideas?
+rubric_1_elements_4,Does the essay clearly present main ideas and purpose?
+rubric_1_elements_5,Does the essay lack a central idea or purpose?
+rubric_2_elements_0,Does the essay have a clear and logical structure?
+rubric_2_elements_1,Does the essay have a clear and logical structure?
+rubric_2_elements_2,Does the essay have a clear and coherent organization?
+rubric_2_elements_3,Does the essay have a consistent and well-developed structure?
+rubric_2_elements_4,Does the essay have a clear organizational structure?
+rubric_2_elements_5,Does the essay have a clear and logical structure?
+rubric_3_elements_0,"Does the essay use a voice suitable for the topic, purpose, and audience?"
+rubric_3_elements_1,"Does the essay use a voice suitable for the topic, purpose, and audience?"
+rubric_3_elements_2,Does the essay show a clear and consistent voice throughout?
+rubric_3_elements_3,Does the essay maintain a consistent and appropriate voice throughout?
+rubric_3_elements_4,Does the essay show involvement or commitment?
+rubric_3_elements_5,Does the essay show a lack of engagement?
+rubric_4_elements_0,Does the essay use a rich and varied vocabulary?
+rubric_4_elements_1,Does the essay use a wide range of words effectively?
+rubric_4_elements_2,Does the essay use a variety of appropriate words?
+rubric_4_elements_3,Does the essay use a limited range of words?
+rubric_4_elements_4,Does the essay use language in a monotonous or incorrect way?
+rubric_4_elements_5,Does the essay use a very limited vocabulary or have many word misuse?
+rubric_5_elements_0,Does the essay have a consistent and varied sentence structure?
+rubric_5_elements_1,Does the essay have a smooth flow and varied sentence structure?
+rubric_5_elements_2,Does the essay have fluid connections between phrases or sentences?
+rubric_5_elements_3,Does the essay have awkward constructions that disrupt the flow?
+rubric_5_elements_4,Does the essay have awkward constructions that disrupt reading flow?
+rubric_5_elements_5,"Does the essay have sentences that are incomplete, rambling, or awkward?"
+rubric_6_elements_0,"Does the essay have fewer than 3 errors in punctuation, spelling, capitalization, grammar, and usage?"
+rubric_6_elements_1,"Does the essay have few and minor errors in punctuation, spelling, capitalization, grammar, and usage?"
+rubric_6_elements_2,Does the essay have significant errors that occur frequently?
+rubric_6_elements_3,Does the essay have errors that make it hard to read?
+rubric_6_elements_4,"Does the essay have frequent, significant errors that impede readability?"
+rubric_6_elements_5,Does the essay have numerous errors that distract the reader?

@@ -1,0 +1,12 @@
+{
+    "question": {
+        "rol": "You are a teacher who assigns grades (between 0 and 60) to essays from students ranging in grade levels from Grade 7 to Grade 10. \nYou will help me break down the 'assign grade to student essay' task. To do this I will give you the assigment. Then I will ask you to decompose the scoring task into five simple binary questions, understood?",
+        "check": "Understood.\nGive me the question between <Q></Q>. Based on it, I will give you a list of 5 attributes that are very general (i.e., independent of the given example), easily verifiable, brief (no more than 10 words), and in binary question format with a yes/no answer.",
+        "instance": "Question: <Q> [[P]] </Q>\nList only the 5 questions. Start each question with 'Does the essay:'"
+    },
+    "elements": {
+        "rol": "You are a teacher who assigns grades (between 0 and 60) to essays from students ranging in grade levels from Grade 7 to Grade 10. \nYou will help me break down the 'assign grade to student essay' task. To do this I will give you an item in the form of a question for grading the essay. Then I will ask you to decompose the scoring task into simple binary questions, understood?",
+        "check": "Understood.\nGive me the question between <Q></Q>. Based on it, I will give you a new question with the same attribute, very general (i.e. independent of the given example), easily verifiable, short (no more than 10 words) and in binary question format with yes/no answer.",
+        "instance": "Question: <Q [[P]] </Q>\nDeliver one and only one question. Start the question with 'Does the essay:'"
+    }
+}

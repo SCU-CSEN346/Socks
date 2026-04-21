@@ -1,0 +1,16 @@
+{
+    "SEED": 2023,
+    "FRAC_TRAIN": 1,
+    "FRAC_VAL": 0.0035,
+    "LM": "dccuchile/bert-base-spanish-wwm-cased",
+    "MAX_ITER": 19200,
+    "BATCH_SIZE": 64,
+    "SAMPLING_SIZE": 25,
+    "LR": 2e-5,
+    "MAXLEN_Q": 70,
+    "MAXLEN_A": 50,
+    "HF_TOKEN": "hf_token_placeholder",
+    "USERNAME": "user_placeholder",
+    "DATA_FRAC_TRAIN": 0.025,
+    "DATA_FRAC_VAL": 0.05
+}

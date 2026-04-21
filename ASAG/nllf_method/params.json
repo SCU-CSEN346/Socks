@@ -1,0 +1,23 @@
+{
+    "SEED": 2023,
+    "NLLFG_NAME": "bert_mixtral_juke_unasag",
+    "BATCH_SIZE": 64,
+    "MAXLEN_Q": 70,
+    "MAXLEN_A": 50,
+    "MAXLEN_B": 20,
+    "FRAC": 0.1,
+    "NUM_CLUSTERS": 20,
+    "MAX_LEN": 15,
+    "MIN_CLUSTER_SIZE": 1,
+    "FRAC_TRAIN": 0.9,
+    "NUM_EX": 20,
+    "LLM": "mistralai/Mixtral-8x7B-Instruct-v0.1",
+    "PRED_BATCH_SIZE": 256,
+    "LM": "dccuchile/bert-base-spanish-wwm-cased",
+    "LR": 2e-5,
+    "EPOCHS": 2,
+    "HF_TOKEN": "hf_token_placeholder",
+    "USERNAME": "user_placeholder",
+    "S_MAX": 7,
+    "S_MIN": 1
+}

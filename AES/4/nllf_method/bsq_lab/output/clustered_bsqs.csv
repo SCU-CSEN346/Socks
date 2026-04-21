@@ -1,0 +1,70 @@
+bsq,cluster,is_centroid
+Does the essay provide a clear explanation of the author's conclusion?,1,False
+Does the essay include details from the story?,0,False
+Does the essay use examples to support its ideas?,10,False
+Does the essay maintain a logical flow of thought?,3,True
+Does the essay demonstrate an understanding of the story?,4,False
+Does the essay identify key themes or ideas from the text?,0,False
+Does the essay analyze relationships between different parts of the text?,2,True
+Does the essay provide evidence from the text to support its points?,10,False
+Does the essay acknowledge and address contradictions or complexities in the text?,11,True
+Does the essay show a nuanced understanding of the text's deeper meanings?,4,False
+Does the essay answer the question asked?,8,False
+Does the essay cover all parts of the question?,8,True
+Does the essay stay focused on the topic?,9,True
+Does the essay provide relevant information?,0,False
+Does the essay meet the requirements specified in the question?,8,False
+Does the essay use explicit information from the text?,0,True
+Does the essay use implicit information from the text?,0,False
+Does the essay accurately interpret the text's information?,0,False
+Does the essay integrate information from the text effectively?,0,False
+Does the essay avoid misrepresenting the text's information?,0,False
+Does the essay go beyond the basic information?,0,False
+Does the essay provide new insights?,1,False
+Does the essay connect ideas effectively?,0,False
+Does the essay show deep understanding?,4,False
+Does the essay use evidence to support ideas?,10,True
+Does the essay show a basic understanding of the text?,4,False
+Does the essay provide literal interpretations of the text?,1,False
+Does the essay avoid deeper analysis or critical thinking?,6,True
+Does the essay include direct quotes or paraphrases from the text?,0,False
+Does the essay lack original insights or personal connections?,7,True
+Does the essay address the main question?,8,False
+Does the essay cover all parts of the question?,8,False
+Does the essay provide relevant information?,0,False
+Does the essay stay focused on the topic?,9,False
+Does the essay develop each part sufficiently?,5,True
+Does the essay reference the text?,0,False
+Does the essay use specific details from the text?,0,False
+Does the essay show understanding of the text's main idea?,4,True
+Does the essay connect ideas from the text?,0,False
+Does the essay use implied information from the text?,0,False
+Does the essay present a clear conclusion or assertion?,1,False
+Does the essay provide supporting evidence?,10,False
+Does the essay connect evidence to the conclusion?,10,False
+Does the essay analyze the evidence?,10,False
+Does the essay address the text(s) effectively?,0,False
+Does the essay mention key details from the text?,0,False
+Does the essay demonstrate a basic understanding of the main idea?,4,False
+Does the essay reference specific events or characters from the text?,0,False
+Does the essay show awareness of the text's purpose or message?,4,False
+Does the essay provide a simple analysis or interpretation of the text?,1,False
+Does the essay demonstrate understanding of the main idea?,4,False
+Does the essay provide evidence of interpretation?,1,True
+Does the essay show connection to personal experience or knowledge?,7,False
+Does the essay include relevant details from the text?,0,False
+Does the essay reflect thoughtful engagement with the text?,3,False
+Does the essay misinterpret the main idea of the text?,4,False
+Does the essay misquote or misrepresent the text?,0,False
+Does the essay answer the wrong question?,8,False
+Does the essay show a lack of understanding of key details?,4,False
+Does the essay contain factual inaccuracies from the text?,0,False
+Does the essay provide sufficient information to understand the text?,0,False
+Does the essay include explanations that support the understanding of the text?,4,False
+Does the essay address the question posed?,8,False
+Does the essay lack necessary details to support its points?,10,False
+Does the essay demonstrate a clear connection between the text and the question?,2,False
+Does the essay address the given topic?,9,False
+Does the essay contain any relevant information?,0,False
+Does the essay contain any correct information?,0,False
+Does the essay contain any incorrect information?,0,False

@@ -1,0 +1,18 @@
+source,llm
+question,1. Does the essay address the topic of patience? 2. Does the essay include a clear story or narrative? 3. Does the essay demonstrate understanding of the concept of patience? 4. Does the essay provide specific examples or details? 5. Does the essay have a clear structure and organization?
+rubric_1_elements_0,Does the essay maintain a clear focus on the topic throughout?
+rubric_1_elements_1,Does the essay maintain a clear focus on the topic throughout?
+rubric_1_elements_2,Does the essay have a clear focus on the topic?
+rubric_1_elements_3,Does the essay lack focus on the assigned task?
+rubric_2_elements_0,Does the essay present ideas or events in a clear and logical order?
+rubric_2_elements_1,Does the essay present ideas or events in a logical order?
+rubric_2_elements_2,Does the essay have clear and logical connections between ideas and/or events?
+rubric_2_elements_3,Does the essay have a clear structure?
+rubric_3_elements_0,Does the essay use a variety of sentence structures?
+rubric_3_elements_1,Does the essay use appropriate and varied vocabulary?
+rubric_3_elements_2,Does the essay use a variety of words and sentence structures?
+rubric_3_elements_3,Does the essay use language effectively for the writer's purpose and audience?
+rubric_4_elements_0,Does the essay have consistent and appropriate use of Standard English conventions for the grade level?
+rubric_4_elements_1,Does the essay have correct grammar for the grade level?
+rubric_4_elements_2,"Does the essay contain frequent errors in grammar, usage, spelling, capitalization, or punctuation for the grade level?"
+rubric_4_elements_3,"Does the essay contain frequent errors in grammar, usage, spelling, capitalization, or punctuation?"

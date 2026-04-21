@@ -1,0 +1,21 @@
+{
+    "SEED": 2024,
+    "FRAC_TRAIN": 0.8,
+    "FRAC_VAL": 1,
+    "LM": "bert-base-cased",
+    "BATCH_SIZE": 32,
+    "SAMPLING_SIZE": 25,
+    "LR_AES": 5e-5,
+    "LR_ETA": 5e-2,
+    "DECAY": 5e-4,
+    "MAXLEN_Q": 40,
+    "MAXLEN_A": 480,
+    "MODEL_NAME": "bert_ulra_bce_paper_lf_signal_aes_1",
+    "HF_TOKEN": "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",
+    "USERNAME": "shravanSCU",
+    "DATA_FRAC_TRAIN": 0.5,
+    "ESSAY_SET": 1,
+    "NUM_EPOCHS": 5,
+    "S_MAX": 12,
+    "S_MIN": 2
+}

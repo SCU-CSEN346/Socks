@@ -1,0 +1,18 @@
+{
+    "SEED": 2024,
+    "FRAC_TRAIN": 0.1,
+    "FRAC_VAL": 0.1,
+    "LM": "bert-base-cased",
+    "BATCH_SIZE": 64,
+    "SAMPLING_SIZE": 25,
+    "LR_AES": 5e-5,
+    "LR_ETA": 5e-2,
+    "DECAY": 5e-4,
+    "MAXLEN_Q": 70,
+    "MAXLEN_A": 50,
+    "MODEL_NAME": "bert_ulra_bce_paper_lf_signal_asag",
+    "HF_TOKEN": "hf_token_placeholder",
+    "USERNAME": "user_placeholder",
+    "DATA_FRAC_TRAIN": 0.5,
+    "NUM_EPOCHS": 30
+}

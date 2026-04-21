@@ -1,0 +1,9 @@
+*.xlsx
+*.pt
+*.npy
+*.torch
+*.pyc
+*.swp
+*.tsv
+.cache/
+.ipynb_checkpoints/

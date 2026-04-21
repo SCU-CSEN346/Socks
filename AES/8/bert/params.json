@@ -1,0 +1,16 @@
+{
+    "ESSAY_SET": 8,
+    "S_MAX": 60,
+    "S_MIN": 0,
+    "SEED": 2024,
+    "LM": "bert-base-cased",
+    "BATCH_SIZE": 64,
+    "LR": 2e-5,
+    "EPOCHS": 5,
+    "HF_TOKEN": "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",
+    "USERNAME": "shravanSCU",
+    "FRAC_TRAIN": 0.8,
+    "MAXLEN_Q": 40,
+    "MAXLEN_A": 480,
+    "TARGET": "score"
+}

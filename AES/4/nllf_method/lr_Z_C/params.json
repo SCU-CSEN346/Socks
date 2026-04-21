@@ -1,0 +1,8 @@
+{
+    "SEED": 2024,
+    "RANDOM_SEED": 54,
+    "S_MAX": 3,
+    "S_MIN": 0,
+    "CV": 10,
+    "ESSAY_SET": 4
+}

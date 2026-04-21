@@ -1,0 +1,50 @@
+bsq,cluster,is_centroid
+Does the essay have a clear introduction that presents the topic and the writer's position?,2,True
+Does the essay provide at least three supporting arguments or examples?,7,True
+Does the essay use proper grammar and punctuation throughout?,4,False
+Does the essay have a clear conclusion that summarizes the main points and restates the position?,2,False
+Does the essay use formal and appropriate language for a newspaper audience?,9,True
+Does the essay use correct grammar?,1,False
+Does the essay use correct punctuation?,1,False
+Does the essay use correct spelling?,1,False
+Does the essay use varied sentence structure?,6,True
+Does the essay use appropriate vocabulary?,1,False
+Does the essay use capitalization correctly?,1,False
+Does the essay use punctuation correctly?,1,True
+Does the essay have any spelling errors?,0,False
+Does the essay have no grammar errors?,0,False
+Does the essay use paragraphs effectively?,1,False
+Does the essay avoid run-on sentences?,3,False
+Does the essay: Use correct spelling throughout?,1,False
+Does the essay: Demonstrate proper punctuation usage?,4,False
+Does the essay: Show correct grammar in sentences?,11,True
+Does the essay: Maintain consistent verb tense?,5,True
+Does the essay: Use appropriate word choice and vocabulary?,1,False
+Does the essay use capital letters correctly?,1,False
+Does the essay use punctuation correctly?,1,False
+Does the essay have any spelling errors?,0,False
+Does the essay have any grammatical errors?,0,False
+Does the essay have clear and distinct paragraphs?,10,False
+Does the essay have run-on sentences or fragments?,3,False
+Does the essay have minimal spelling errors?,0,False
+Does the essay use correct grammar?,1,False
+Does the essay have proper punctuation?,4,True
+Does the essay use appropriate vocabulary?,1,False
+Does the essay have clear and varied sentence structure?,6,False
+Does the essay use capital letters correctly?,1,False
+Does the essay use punctuation correctly?,1,False
+Does the essay have any spelling errors?,0,False
+Does the essay have correct grammar and Standard English usage?,8,True
+Does the essay have clear paragraph breaks?,10,True
+Does the essay contain run-on sentences or sentence fragments?,3,True
+Does the essay have frequent spelling errors?,0,True
+Does the essay have frequent grammar errors?,0,False
+Does the essay have frequent punctuation errors?,0,False
+Does the essay have frequent capitalization errors?,0,False
+Does the essay have frequent sentence structure errors?,0,False
+Does the essay use capital letters correctly at the beginning of sentences?,1,False
+Does the essay have correct punctuation?,4,False
+Does the essay contain no more than 2 spelling errors?,0,False
+Does the essay contain frequent grammatical errors?,0,False
+Does the essay have clear paragraph breaks?,10,False
+Does the essay contain many run-on sentences or fragments?,3,False
