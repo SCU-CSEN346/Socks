@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import json
 from scipy import stats
+from pathlib import Path
 
 def get_z_values(S0, sim, max_iter=100, eps=1e-5):
     S = S0
@@ -33,6 +34,10 @@ def get_z_values(S0, sim, max_iter=100, eps=1e-5):
                 break
     return Z
 
+input_dir = Path("../data/aes")
+output_dir = Path("../data/aes_signal")
+output_dir.mkdir(parents=True, exist_ok=True)
+
 for ESSAY_SET in range(1, 9):
     print(f"Processing essay set {ESSAY_SET}...")
 
@@ -41,7 +46,7 @@ for ESSAY_SET in range(1, 9):
 
     indexs = df.index.to_numpy()
 
-    sim = np.load(f"../data/sim_matrix_{ESSAY_SET}.npy", allow_pickle=True)
+    sim = np.load(f"../data/sim_matrix_{ESSAY_SET}_aes.npy", allow_pickle=True)
 
     y_guess = df["essay"].apply(
         lambda x: len(str(x)) if str(x) != "nan" else 0
@@ -72,5 +77,9 @@ for ESSAY_SET in range(1, 9):
 
     z_values = z_sign * z_values_p
 
+    subfolder = Path("data/signal_clustering")
+    subfolder.mkdir(parents=True, exist_ok=True)
+    print("Directory data/signal_clustering created successfully!")
+
     df_test["pred"] = z_values
-    df_test.to_csv(f"../data/train_{ESSAY_SET}.csv", index=False)
+    df_test.to_csv(f"../data/signal_clustering/train_{ESSAY_SET}_ws.csv", index=False)

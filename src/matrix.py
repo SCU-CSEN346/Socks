@@ -7,6 +7,9 @@ import json
 import pandas as pd 
 import numpy as np
 
+output_dir = Path("../data/aes_signal")
+output_dir.mkdir(parents=True, exist_ok=True)
+
 for ESSAY_SET in range(1, 9):
     print(f"Processing essay set {ESSAY_SET}...")
 
@@ -30,6 +33,5 @@ for ESSAY_SET in range(1, 9):
     jaccard_distance = cdist(bool_bow.toarray(), bool_bow.toarray(), metric="jaccard")
     jaccard_sim = 1 - jaccard_distance
 
-    np.save(f"../data/sim_matrix_{ESSAY_SET}.npy", jaccard_sim)
-
+    np.save(output_dir / f"sim_matrix_{ESSAY_SET}_aes.npy", jaccard_sim)
     print(f"Saved sim_matrix_{ESSAY_SET}.npy")
