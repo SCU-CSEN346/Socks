@@ -26,6 +26,7 @@ results/*
 
 # Raw local datasets and archives
 data/asap-aes/
+data/asap-sas/
 *.zip
 *.tar
 *.tar.gz

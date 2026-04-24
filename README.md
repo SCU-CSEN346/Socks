@@ -15,9 +15,14 @@ source code, notebooks, and generated results are kept separate.
 
 ## Status
 
-Baseline setup is in progress. A minimal ASAP-AES loading and preprocessing
-pipeline is available, but the training, evaluation, and reporting pipeline has
-not been implemented yet.
+The repository now has:
+
+- ASAP-AES data loading and preprocessing utilities
+- Teammate helper scripts for AES / ASAP-SAS signal clustering
+- One canonical ASAP-SAS ASAG baseline path under `src/`
+
+The immediate milestone focus is a clean baseline-first setup, not a full
+reproduction of the original paper.
 
 ## Project Layout
 
@@ -38,13 +43,14 @@ Install the baseline dependency:
 python3 -m pip install -r requirements.txt
 ```
 
-The raw dataset should remain extracted at:
+The raw datasets should remain extracted at:
 
 ```text
 data/asap-aes/
+data/asap-sas/
 ```
 
-That directory is ignored by git.
+Those directories are ignored by git.
 
 ## Loading Data
 
@@ -100,3 +106,92 @@ for placeholder files currently.
 Helen Wang - Wrote the related works section of the report, added modified scripts for signal clustering (signal_pred and matrix) as well as dividing dataset data into subsections to follow project structure, added the contributions section to README, added read data script to divide SAS dataset into subsections, wrote dataset section of report.
 
 Harshvardhan Garude - Set up baseline project structure, added scripts for loading ASAP-AES dataset splits (data_loading) and preprocessing data (preprocess_asap) with essay-set filtering and text cleaning, and updated README and data documentation for reproducibility.
+
+## ASAP-SAS ASAG Baseline
+
+ASAP-SAS is the project's replacement dataset for the ASAG portion of the
+original paper.
+
+The canonical ASAG baseline command is:
+
+```bash
+python3 -m src.run_asag_baseline
+```
+
+This executes:
+
+```text
+raw ASAP-SAS files
+-> canonical preprocessing under results/processed/asap-sas/
+-> train-only signal-clustering weak labels
+-> lightweight interpretable text features
+-> one positive linear regression model per question_id
+-> evaluation on val and public_test
+```
+
+The canonical ASAP-SAS preprocessing command is:
+
+```bash
+python3 -m src.preprocess_asap_sas
+```
+
+The canonical train-only weak-label command is:
+
+```bash
+python3 -m src.asag_weak_labels
+```
+
+Expected ASAG outputs:
+
+```text
+results/processed/asap-sas/train.csv
+results/processed/asap-sas/val.csv
+results/processed/asap-sas/public_test.csv
+results/processed/asap-sas/private_test.csv
+results/processed/asap-sas/score_ranges.csv
+results/weak_labels/asap-sas/train_signal_clustering.csv
+results/weak_labels/asap-sas/train_signal_clustering_diagnostics.csv
+results/features/asap-sas/train_features.csv
+results/features/asap-sas/val_features.csv
+results/features/asap-sas/public_test_features.csv
+results/features/asap-sas/private_test_features.csv
+results/predictions/asap-sas/val_predictions.csv
+results/predictions/asap-sas/public_test_predictions.csv
+results/predictions/asap-sas/private_test_predictions.csv
+results/metrics/asap-sas/metrics.csv
+results/metrics/asap-sas/metrics.json
+results/metrics/asap-sas/summary_table.txt
+results/models/asap-sas/positive_linear_coefficients.csv
+```
+
+Current feature set:
+
+- `character_count`
+- `word_count`
+- `sentence_count`
+- `average_word_length`
+- `average_sentence_length`
+- `unique_word_count`
+- `type_token_ratio`
+- `long_word_count`
+- `digit_count`
+- `punctuation_count`
+- `uppercase_count`
+- `stopword_ratio`
+- `short_answer_bin`
+- `medium_answer_bin`
+- `long_answer_bin`
+
+## Helper Scripts
+
+The following files are preserved as teammate helper / exploratory scripts and
+are not the canonical baseline entry point:
+
+- `notebooks/read_data_sas.py`
+- `notebooks/matrix_sas.py`
+- `notebooks/pred_sas.py`
+- `src/matrix.py`
+- `src/signal_pred.py`
+
+The canonical ASAG baseline path is the `src.asag_*` modules plus
+`src.run_asag_baseline`.
