@@ -13,17 +13,6 @@ This repository is being organized around a small, reviewable baseline. The
 raw ASAP-AES dataset is expected to live locally under `data/asap-aes/`, while
 source code, notebooks, and generated results are kept separate.
 
-## Status
-
-The repository now has:
-
-- ASAP-AES data loading and preprocessing utilities
-- Teammate helper scripts for AES / ASAP-SAS signal clustering
-- One canonical ASAP-SAS ASAG baseline path under `src/`
-
-The immediate milestone focus is a clean baseline-first setup, not a full
-reproduction of the original paper.
-
 ## Project Layout
 
 ```text
@@ -181,17 +170,3 @@ Current feature set:
 - `short_answer_bin`
 - `medium_answer_bin`
 - `long_answer_bin`
-
-## Helper Scripts
-
-The following files are preserved as teammate helper / exploratory scripts and
-are not the canonical baseline entry point:
-
-- `notebooks/read_data_sas.py`
-- `notebooks/matrix_sas.py`
-- `notebooks/pred_sas.py`
-- `src/matrix.py`
-- `src/signal_pred.py`
-
-The canonical ASAG baseline path is the `src.asag_*` modules plus
-`src.run_asag_baseline`.
