@@ -56,12 +56,37 @@ test_set_1 = load_asap_split("test", essay_set=1)
 
 Valid split names are `train`, `valid`, and `test`.
 
-## ASAP-AES Canonical Baseline
+## ASAP-AES Review Workflow
 
 ASAP-AES is the canonical AES dataset for the paper-style weakly supervised,
 white-box baseline in this repository.
 
-The canonical AES baseline command is:
+For team review and paper-writing, the current AES workflow is first exposed in
+the notebook:
+
+```bash
+jupyter notebook notebooks/aes_baseline.ipynb
+```
+
+The notebook walks through:
+
+```text
+load ASAP-AES
+-> create internal train/val/test split per essay_set
+-> generate train-only signal-clustering weak labels
+-> extract interpretable features
+-> train one positive linear regression model per essay_set
+-> evaluate with QWK / MAE / Pearson
+-> save outputs under results/
+```
+
+The existing `src/` runner is still available as a scripted reference and
+candidate canonical path while the team decides what should ultimately live in
+`src/`.
+
+## ASAP-AES Scripted Runner
+
+The current scripted AES runner is:
 
 ```bash
 python3 -m src.run_aes_baseline
@@ -112,7 +137,7 @@ Current AES feature set:
 - `digit_count`
 - `paragraph_count`
 
-This baseline intentionally focuses on the simplest paper-aligned path:
+This AES baseline intentionally focuses on the simplest paper-aligned path:
 signal-clustering weak labels plus interpretable features plus positive linear
 regression. The canonical runner reuses the preserved teammate AES helper logic
 from `src/matrix.py` and `src/signal_pred.py` for similarity construction and
@@ -236,8 +261,13 @@ Current feature set:
 
 ## Helper / Legacy Scripts
 
-The canonical runnable baselines live under `src.run_aes_baseline` and
-`src.run_asag_baseline`.
+The current runnable ASAG baseline lives under `src.run_asag_baseline`.
+
+For AES, the team-friendly review path is the notebook plus the preserved
+scripted runner:
+
+- `notebooks/aes_baseline.ipynb`
+- `src/run_aes_baseline.py`
 
 The following files are preserved as teammate helper or exploratory scripts and
 are not the main end-to-end entry points:
