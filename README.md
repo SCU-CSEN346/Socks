@@ -114,7 +114,9 @@ Current AES feature set:
 
 This baseline intentionally focuses on the simplest paper-aligned path:
 signal-clustering weak labels plus interpretable features plus positive linear
-regression. It does not implement NLLF, BSQ, or LLM weak labels.
+regression. The canonical runner reuses the preserved teammate AES helper logic
+from `src/matrix.py` and `src/signal_pred.py` for similarity construction and
+weak-signal propagation. It does not implement NLLF, BSQ, or LLM weak labels.
 
 ## ASAP-AES Low-Level Preprocessing
 

@@ -8,8 +8,6 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
-from scipy.spatial.distance import cdist
-from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 from sklearn.pipeline import make_pipeline
@@ -22,7 +20,9 @@ from .aes_features import (
     write_feature_splits,
 )
 from .data_loading import DEFAULT_DATA_DIR, PROJECT_ROOT, load_asap_split
+from .matrix import build_similarity_for_essay_set
 from .preprocess_asap import preprocess_dataframe
+from .signal_pred import generate_length_based_weak_signal
 
 
 DEFAULT_PROCESSED_DIR = PROJECT_ROOT / "results" / "processed" / "asap-aes"
@@ -262,18 +262,15 @@ def generate_weak_labels(
     diagnostic_rows = []
 
     for essay_set, group in train_df.groupby("essay_set", sort=True):
-        texts = group["essay"].fillna("").astype(str)
-        y_guess = texts.map(lambda text: len(text)).to_numpy(dtype=float)
-
-        sim, vocabulary_size = build_jaccard_similarity(texts, min_df=min_df)
-        z_values = get_z_values(y_guess, sim, max_iter=max_iter, eps=eps)
-
-        corr = pearson_corr(y_guess, z_values)
-        z_sign = np.sign(corr) if not np.isnan(corr) else 1.0
-        if z_sign == 0:
-            z_sign = 1.0
-        z_values = z_sign * z_values
+        similarity, vocabulary_size = build_similarity_for_essay_set(group, min_df=min_df)
+        z_values, corr = generate_length_based_weak_signal(
+            group,
+            sim=similarity,
+            max_iter=max_iter,
+            eps=eps,
+        )
         weak_label_normalized = minmax_scale(z_values)
+        y_guess = group["essay"].fillna("").astype(str).map(len).to_numpy(dtype=float)
 
         weak_rows.append(
             pd.DataFrame(
@@ -300,52 +297,6 @@ def generate_weak_labels(
     weak_labels = pd.concat(weak_rows, ignore_index=True).sort_values(["essay_set", "essay_id"]).reset_index(drop=True)
     diagnostics = pd.DataFrame(diagnostic_rows).sort_values("essay_set").reset_index(drop=True)
     return weak_labels, diagnostics
-
-
-def build_jaccard_similarity(texts: pd.Series, min_df: int) -> tuple[np.ndarray, int]:
-    corpus = texts.fillna("").astype(str).map(lambda essay: f"Essay: {essay}")
-    vectorizer = CountVectorizer(lowercase=True, binary=True, analyzer="word", min_df=min_df)
-    bow = vectorizer.fit_transform(corpus)
-    bool_bow = (bow.toarray() > 0).astype(np.uint8)
-    jaccard_distance = cdist(bool_bow, bool_bow, metric="jaccard")
-    sim = 1.0 - np.nan_to_num(jaccard_distance, nan=1.0)
-    return sim, len(vectorizer.vocabulary_)
-
-
-def get_z_values(S0: np.ndarray, sim: np.ndarray, max_iter: int = 100, eps: float = 1e-5) -> np.ndarray:
-    signal = np.asarray(S0, dtype=float)
-    signal_std = signal.std()
-    if signal_std == 0:
-        signal_std = 1.0
-
-    z_values = np.array(
-        [
-            (signal[index] - np.concatenate([signal[:index], signal[index + 1 :]]).mean()) / signal_std
-            for index in range(signal.shape[0])
-        ],
-        dtype=float,
-    )
-
-    for _ in range(max_iter):
-        propagated = sim @ z_values
-        propagated_std = propagated.std()
-        if propagated_std == 0:
-            break
-
-        updated = np.array(
-            [
-                (propagated[index] - np.concatenate([propagated[:index], propagated[index + 1 :]]).mean())
-                / propagated_std
-                for index in range(propagated.shape[0])
-            ],
-            dtype=float,
-        )
-
-        corr = pearson_corr(z_values, updated)
-        z_values = updated
-        if not np.isnan(corr) and abs(corr) > 1 - eps:
-            break
-    return z_values
 
 
 def write_weak_label_outputs(
