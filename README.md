@@ -24,6 +24,14 @@ source code, notebooks, and generated results are kept separate.
 └── requirements.txt
 ```
 
+## Datasets
+
+The ASAP-AES dataset we used was the same dataset used in the original paper for the AES tasks while the ASAP-SAS dataset we used was to substitute the original dataset used for the SAS tasks. 
+
+The ASAP-AES dataset we used can be downloaded from: https://www.kaggle.com/competitions/asap-aes/overview
+
+The ASAP-SAS dataset we used can be downloaded from: https://www.kaggle.com/competitions/asap-sas/overview 
+
 ## Setup
 
 Install the baseline dependency:
@@ -92,7 +100,7 @@ for placeholder files currently.
 
 ## Contributions
 
-Helen Wang - Wrote the related works section of the report, added modified scripts for signal clustering (signal_pred and matrix) as well as dividing dataset data into subsections to follow project structure, added the contributions section to README, added read data script to divide SAS dataset into subsections, wrote dataset section of report.
+Helen Wang - Wrote the related works section of the report, added modified scripts for signal clustering (signal_pred and matrix) as well as dividing dataset data into subsections to follow project structure, added the contributions section to README, added read data script to divide SAS dataset into subsections, wrote dataset section of report, updated weak signal code to improve scores, updated README to include dataset section and links.
 
 Harshvardhan Garude - Set up baseline project structure, added scripts for loading ASAP-AES dataset splits (data_loading) and preprocessing data (preprocess_asap) with essay-set filtering and text cleaning, and updated README and data documentation for reproducibility.
 
