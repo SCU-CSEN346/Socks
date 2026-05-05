@@ -16,6 +16,7 @@ from scipy.spatial.distance import cdist
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
+from scipy.stats import norm, rankdata
 
 from .data_loading import PROJECT_ROOT
 
@@ -109,95 +110,64 @@ def weak_labels_for_question(
 ) -> tuple[pd.DataFrame, dict[str, object]]:
     group = group.sort_values("sample_id").reset_index(drop=True)
     texts = group["student_answer"].fillna("").astype(str)
-    # y_guess = texts.map(lambda text: len(str(text)) if str(text) != "nan" else 0).to_numpy(dtype=float)
-    X = TfidfVectorizer(ngram_range=(1,2)).fit_transform(texts)
-    y_guess = cosine_similarity(X, X).mean(axis=1)
+    
+    length_signal = zscore(np.log1p(texts.map(len).to_numpy()))
 
-    fallback = ""
-    if len(group) < 2:
-        z_values = np.zeros(len(group), dtype=float)
-        corr = np.nan
-        vocabulary_size = 0
-        fallback = "single_row"
-    else:
-        try:
-            emb = MODEL.encode(texts, show_progress_bar=False)
-            sim = cosine_similarity(emb)
-            np.fill_diagonal(sim, 0.0)
-            z_values = get_z_values(y_guess, sim, max_iter=max_iter, eps=eps)
-            corr = stats.pearsonr(y_guess, z_values)[0]
-            z_sign = np.sign(corr) if not np.isnan(corr) else 1.0
-            z_values = z_sign * z_values
-        except ValueError:
-            z_values = zscore(np.log1p(y_guess))
-            corr = np.nan
-            vocabulary_size = 0
-            fallback = "length_only"
+    if len(group) < 3:
+        labels = _create_label_df(group, question_id, length_signal, length_signal, 1.0)
+        diagnostics = _generate_diag(question_id, group, labels, 1.0, "insufficient_samples")
+        return labels, diagnostics
 
-    weak_label_normalized = minmax_scale(z_values)
-    labels = pd.DataFrame(
-        {
-            "sample_id": group["sample_id"].astype(int),
-            "question_id": int(question_id),
-            "weak_label_raw": z_values,
-            "weak_label_normalized": weak_label_normalized,
-            "method": METHOD_NAME,
-            "initial_length_signal": zscore(np.log1p(y_guess)),
-            "answer_char_count": y_guess.astype(int),
-            "fallback": fallback,
-        }
-    )
-    diagnostics = {
-        "question_id": int(question_id),
-        "rows": int(len(group)),
-        "weak_mean": float(weak_label_normalized.mean()),
-        "weak_std": float(weak_label_normalized.std(ddof=0)),
-        "pearson_with_length": float(corr) if not np.isnan(corr) else np.nan,
-        "vocabulary_size": int(vocabulary_size),
-        "fallback": fallback,
-    }
+    try:
+        emb = MODEL.encode(texts.tolist(), show_progress_bar=False)
+        sim = cosine_similarity(emb)
+        np.fill_diagonal(sim, 0.0)
+
+        top_k_sims = np.sort(sim, axis=1)[:, -5:].mean(axis=1)
+        density_signal = zscore(top_k_sims)
+        
+        y_guess = (0.75 * length_signal) + (0.25 * density_signal)
+        z_values = get_z_values(y_guess, sim, max_iter=5, eps=eps)
+        
+        corr = stats.pearsonr(length_signal, z_values)[0]
+        if not np.isnan(corr) and corr < 0:
+            z_values = -z_values
+            corr = -corr
+
+        fallback_msg = ""
+
+    except Exception as e:
+        z_values = length_signal
+        corr = 1.0
+        fallback_msg = f"error_fallback: {str(e)}"
+
+    labels = _create_label_df(group, question_id, z_values, length_signal, corr)
+    diagnostics = _generate_diag(question_id, group, labels, corr, fallback_msg)
+    
     return labels, diagnostics
 
 
-def build_jaccard_similarity(texts: pd.Series, min_df: int) -> tuple[np.ndarray, int]:
-    vectorizer = CountVectorizer(lowercase=True, binary=True, min_df=min_df)
-    bow = vectorizer.fit_transform(texts)
-    if bow.shape[1] == 0:
-        raise ValueError("Empty vocabulary for this question.")
-    bool_bow = bow.toarray().astype(np.uint8)
-    jaccard_distance = cdist(bool_bow, bool_bow, metric="jaccard")
-    return 1.0 - jaccard_distance, len(vectorizer.vocabulary_)
+def get_z_values(S0: np.ndarray, sim: np.ndarray, max_iter: int = 5, eps: float = 1e-5) -> np.ndarray:
+    k = min(5, len(S0) - 1)
+    mask = np.zeros_like(sim, dtype=bool)
+    for i in range(len(sim)):
+        idx = np.argpartition(sim[i], -k)[-k:]
+        mask[i, idx] = True
+    
+    W_raw = np.where(mask, sim, 0)
+    row_sums = W_raw.sum(axis=1, keepdims=True)
+    W = np.divide(W_raw, row_sums, out=np.zeros_like(W_raw), where=row_sums != 0)
 
-
-def get_z_values(S0: np.ndarray, sim: np.ndarray, max_iter: int = 100, eps: float = 1e-5) -> np.ndarray:
-    S = S0.astype(float)
-    S_std = float(S.std()) if float(S.std()) != 0 else 1.0
-    Z = np.array(
-        [
-            (S[k] - np.concatenate([S[:k], S[k + 1 :]]).mean()) / S_std
-            for k in range(S.shape[0])
-        ]
-    )
-
+    z = S0.copy()
     for _ in range(max_iter):
-        S = sim @ Z
-        S_std = float(S.std())
-        if S_std == 0:
+        prev_z = z.copy()
+        z = zscore((W @ z) + S0)
+        
+        if np.linalg.norm(z - prev_z) < eps:
             break
-
-        Z1 = np.array(
-            [
-                (S[k] - np.concatenate([S[:k], S[k + 1 :]]).mean()) / S_std
-                for k in range(S.shape[0])
-            ]
-        )
-
-        corr = abs(stats.pearsonr(Z, Z1)[0])
-        Z = Z1
-        if corr > 1.0 - eps:
-            break
-    return Z
-
+    z = zscore(z) 
+    z = 0.8 * z 
+    return z
 
 def zscore(values: np.ndarray) -> np.ndarray:
     values = np.asarray(values, dtype=float)
@@ -215,6 +185,32 @@ def minmax_scale(values: np.ndarray) -> np.ndarray:
         return np.full_like(values, 0.5, dtype=float)
     return (values - low) / (high - low)
 
+def _create_label_df(group, qid, z_vals, len_sig, corr) -> pd.DataFrame:
+    ranks = rankdata(z_vals)
+    weak_label_normalized = (ranks - 0.5) / len(ranks)
+    
+    return pd.DataFrame({
+        "sample_id": group["sample_id"].astype(int),
+        "question_id": int(qid),
+        "weak_label_raw": z_vals,
+        "weak_label_normalized": weak_label_normalized,
+        "method": METHOD_NAME,
+        "initial_length_signal": len_sig,
+        "answer_char_count": group["student_answer"].fillna("").str.len(),
+        "pearson_with_length": float(corr),
+    })
+
+
+def _generate_diag(qid, group, labels, corr, fallback) -> dict:
+    return {
+        "question_id": int(qid),
+        "rows": int(len(group)),
+        "weak_mean": float(labels["weak_label_normalized"].mean()),
+        "weak_std": float(labels["weak_label_normalized"].std(ddof=0)),
+        "pearson_with_length": float(corr) if not np.isnan(corr) else 0.0,
+        "vocabulary_size": 0,
+        "fallback": fallback,
+    }
 
 if __name__ == "__main__":
     main()
