@@ -13,7 +13,9 @@ import numpy as np
 import pandas as pd
 from scipy import stats
 from scipy.spatial.distance import cdist
-from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
+from sentence_transformers import SentenceTransformer
+from sklearn.metrics.pairwise import cosine_similarity
 
 from .data_loading import PROJECT_ROOT
 
@@ -22,6 +24,7 @@ DEFAULT_INPUT_PATH = PROJECT_ROOT / "results" / "processed" / "asap-sas" / "trai
 DEFAULT_OUTPUT_DIR = PROJECT_ROOT / "results" / "weak_labels" / "asap-sas"
 METHOD_NAME = "signal_clustering_jaccard_length"
 
+MODEL = SentenceTransformer("all-MiniLM-L6-v2")
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
@@ -106,7 +109,9 @@ def weak_labels_for_question(
 ) -> tuple[pd.DataFrame, dict[str, object]]:
     group = group.sort_values("sample_id").reset_index(drop=True)
     texts = group["student_answer"].fillna("").astype(str)
-    y_guess = texts.map(lambda text: len(str(text)) if str(text) != "nan" else 0).to_numpy(dtype=float)
+    # y_guess = texts.map(lambda text: len(str(text)) if str(text) != "nan" else 0).to_numpy(dtype=float)
+    X = TfidfVectorizer(ngram_range=(1,2)).fit_transform(texts)
+    y_guess = cosine_similarity(X, X).mean(axis=1)
 
     fallback = ""
     if len(group) < 2:
@@ -116,7 +121,8 @@ def weak_labels_for_question(
         fallback = "single_row"
     else:
         try:
-            sim, vocabulary_size = build_jaccard_similarity(texts, min_df=min_df)
+            emb = MODEL.encode(texts, show_progress_bar=False)
+            sim = cosine_similarity(emb)
             np.fill_diagonal(sim, 0.0)
             z_values = get_z_values(y_guess, sim, max_iter=max_iter, eps=eps)
             corr = stats.pearsonr(y_guess, z_values)[0]
