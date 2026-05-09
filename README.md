@@ -11,7 +11,8 @@ automated essay scoring.
 
 This repository is being organized around a small, reviewable baseline. The
 raw ASAP-AES dataset is expected to live locally under `data/asap-aes/`, while
-source code, notebooks, and generated results are kept separate.
+raw ASAP-SAS dataset is expected to live locally under `data/asap-sas/`.
+Source code, notebooks, and generated results are kept separate.
 
 ## Project Layout
 
@@ -63,7 +64,69 @@ test_set_1 = load_asap_split("test", essay_set=1)
 
 Valid split names are `train`, `valid`, and `test`.
 
-## Preprocessing
+## ASAP-AES Canonical Baseline
+
+ASAP-AES is the canonical AES dataset for the paper-style weakly supervised,
+white-box baseline in this repository.
+
+The canonical AES baseline command is:
+
+```bash
+python3 -m src.run_aes_baseline
+```
+
+This executes:
+
+```text
+raw ASAP-AES training_set_rel3.tsv
+-> preprocessing and reproducible internal train/val/test split per essay_set
+-> train-only signal-clustering weak labels
+-> lightweight interpretable expert features
+-> one positive linear regression model per essay_set
+-> evaluation on internal val and test with QWK / MAE / Pearson
+```
+
+Expected AES outputs:
+
+```text
+results/processed/asap-aes/train.csv
+results/processed/asap-aes/val.csv
+results/processed/asap-aes/test.csv
+results/processed/asap-aes/split_summary.csv
+results/weak_labels/asap-aes/train_weak_labels.csv
+results/weak_labels/asap-aes/train_weak_label_diagnostics.csv
+results/features/asap-aes/train_features.csv
+results/features/asap-aes/val_features.csv
+results/features/asap-aes/test_features.csv
+results/predictions/asap-aes/val_predictions.csv
+results/predictions/asap-aes/test_predictions.csv
+results/predictions/asap-aes/val_test_predictions.csv
+results/metrics/asap-aes/metrics.csv
+results/metrics/asap-aes/metrics.json
+results/metrics/asap-aes/summary_table.txt
+results/models/asap-aes/positive_linear_coefficients.csv
+```
+
+Current AES feature set:
+
+- `word_count`
+- `character_count`
+- `sentence_count`
+- `average_word_length`
+- `unique_word_count`
+- `type_token_ratio`
+- `long_word_count`
+- `punctuation_count`
+- `digit_count`
+- `paragraph_count`
+
+This baseline intentionally focuses on the simplest paper-aligned path:
+signal-clustering weak labels plus interpretable features plus positive linear
+regression. The canonical runner reuses the preserved teammate AES helper logic
+from `src/matrix.py` and `src/signal_pred.py` for similarity construction and
+weak-signal propagation. It does not implement NLLF, BSQ, or LLM weak labels.
+
+## ASAP-AES Low-Level Preprocessing
 
 Run the preprocessing CLI from the repository root. To prepare one essay set
 from the training split:
@@ -178,3 +241,17 @@ Current feature set:
 - `short_answer_bin`
 - `medium_answer_bin`
 - `long_answer_bin`
+
+## Helper / Legacy Scripts
+
+The canonical runnable baselines live under `src.run_aes_baseline` and
+`src.run_asag_baseline`.
+
+The following files are preserved as teammate helper or exploratory scripts and
+are not the main end-to-end entry points:
+
+- `src/matrix.py`
+- `src/signal_pred.py`
+- `notebooks/read_data_sas.py`
+- `notebooks/matrix_sas.py`
+- `notebooks/pred_sas.py`

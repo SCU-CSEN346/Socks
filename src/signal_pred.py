@@ -1,17 +1,30 @@
-import pandas as pd
-import numpy as np
-import json
-from scipy import stats
+"""AES weak-signal helpers preserved from teammate signal clustering."""
+
+from __future__ import annotations
+
 from pathlib import Path
 
+import numpy as np
+import pandas as pd
+from scipy import stats
+
+
+DEFAULT_INPUT_DIR = Path("../data")
+DEFAULT_SIGNAL_DIR = Path("../data/signal_clustering")
+
+
 def get_z_values(S0, sim, max_iter=100, eps=1e-5):
-    S = S0
+    S = np.asarray(S0, dtype=float)
     S_std = S.std()
     if S_std == 0:
         S_std = 1
 
-    Z = np.array([(S[k] - np.concatenate([S[:k], S[k+1:]]).mean()) / S_std
-            for k in range(S.shape[0])])
+    Z = np.array(
+        [
+            (S[k] - np.concatenate([S[:k], S[k + 1 :]]).mean()) / S_std
+            for k in range(S.shape[0])
+        ]
+    )
 
     corr = 0
     corr_per_iter = [corr]
@@ -21,11 +34,15 @@ def get_z_values(S0, sim, max_iter=100, eps=1e-5):
 
         if S.std() == 0:
             break
-        
+
         else:
-            Z1 = np.array([(S[k] - np.concatenate([S[:k], S[k+1:]]).mean()) / S.std()
-                for k in range(S.shape[0])])
-                
+            Z1 = np.array(
+                [
+                    (S[k] - np.concatenate([S[:k], S[k + 1 :]]).mean()) / S.std()
+                    for k in range(S.shape[0])
+                ]
+            )
+
             corr = abs(stats.pearsonr(Z, Z1)[0])
             corr_per_iter.append(corr)
             Z = Z1
@@ -34,52 +51,58 @@ def get_z_values(S0, sim, max_iter=100, eps=1e-5):
                 break
     return Z
 
-input_dir = Path("../data/aes")
-output_dir = Path("../data/aes_signal")
-output_dir.mkdir(parents=True, exist_ok=True)
 
-for ESSAY_SET in range(1, 9):
-    print(f"Processing essay set {ESSAY_SET}...")
+def generate_length_based_weak_signal(
+    essay_df: pd.DataFrame,
+    sim: np.ndarray,
+    max_iter: int = 500,
+    eps: float = 1e-6,
+) -> tuple[np.ndarray, float]:
+    if "essay" not in essay_df.columns:
+        raise ValueError("Expected an essay column to generate the AES weak signal.")
 
-    df = pd.read_csv(f"../data/essay_set_{ESSAY_SET}.csv", index_col=0)
-    df = df[df["split"] == "train"].reset_index(drop=True)
-
-    indexs = df.index.to_numpy()
-
-    sim = np.load(f"../data/sim_matrix_{ESSAY_SET}_aes.npy", allow_pickle=True)
-
-    y_guess = df["essay"].apply(
+    y_guess = essay_df["essay"].apply(
         lambda x: len(str(x)) if str(x) != "nan" else 0
-    ).to_numpy()
+    ).to_numpy(dtype=float)
 
-    N = sim.shape[0]
-    support_indexs = np.arange(N)
+    sim_local = np.asarray(sim, dtype=float).copy()
+    np.fill_diagonal(sim_local, 0)
 
-    df_test = df[["essay_id"]].copy()
-
-    partition_p = support_indexs
-
-    sim_p = sim[np.ix_(partition_p, partition_p)]
-    np.fill_diagonal(sim_p, 0)
-
-    y_guess_p = y_guess[partition_p]
-
-    z_values_p = get_z_values(
-        S0=y_guess_p,
-        sim=sim_p,
-        max_iter=500,
-        eps=1e-6
+    z_values = get_z_values(
+        S0=y_guess,
+        sim=sim_local,
+        max_iter=max_iter,
+        eps=eps,
     )
 
-    corr = stats.pearsonr(y_guess_p, z_values_p)[0]
+    corr = stats.pearsonr(y_guess, z_values)[0]
     z_sign = np.sign(corr)
-    z_sign = z_sign if not np.isnan(z_sign) else 1
+    z_sign = z_sign if not np.isnan(z_sign) and z_sign != 0 else 1
+    return z_sign * z_values, corr
 
-    z_values = z_sign * z_values_p
 
-    subfolder = Path("data/signal_clustering")
-    subfolder.mkdir(parents=True, exist_ok=True)
-    print("Directory data/signal_clustering created successfully!")
+def main() -> None:
+    output_dir = DEFAULT_SIGNAL_DIR
+    output_dir.mkdir(parents=True, exist_ok=True)
 
-    df_test["pred"] = z_values
-    df_test.to_csv(f"../data/signal_clustering/train_{ESSAY_SET}_ws.csv", index=False)
+    for essay_set in range(1, 9):
+        print(f"Processing essay set {essay_set}...")
+
+        df = pd.read_csv(DEFAULT_INPUT_DIR / f"essay_set_{essay_set}.csv", index_col=0)
+        df = df[df["split"] == "train"].reset_index(drop=True)
+
+        sim = np.load(DEFAULT_INPUT_DIR / f"sim_matrix_{essay_set}_aes.npy", allow_pickle=True)
+        z_values, _ = generate_length_based_weak_signal(
+            df,
+            sim=sim,
+            max_iter=500,
+            eps=1e-6,
+        )
+
+        df_test = df[["essay_id"]].copy()
+        df_test["pred"] = z_values
+        df_test.to_csv(output_dir / f"train_{essay_set}_ws.csv", index=False)
+
+
+if __name__ == "__main__":
+    main()
