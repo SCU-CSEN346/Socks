@@ -51,7 +51,6 @@ def get_z_values(S0, sim, max_iter=100, eps=1e-5):
                 break
     return Z
 
-
 def generate_length_based_weak_signal(
     essay_df: pd.DataFrame,
     sim: np.ndarray,
@@ -60,10 +59,23 @@ def generate_length_based_weak_signal(
 ) -> tuple[np.ndarray, float]:
     if "essay" not in essay_df.columns:
         raise ValueError("Expected an essay column to generate the AES weak signal.")
+    
+    def get_hybrid_raw_signal(text):
+        text_str = str(text).lower()
+        if text_str == "nan" or not text_str.strip():
+            return 0.0
+        words = text_str.split()
+        num_words = len(words)
+        
+        lexical_diversity = len(set(words)) / num_words if num_words > 0 else 0
+        return num_words * lexical_diversity 
 
-    y_guess = essay_df["essay"].apply(
-        lambda x: len(str(x)) if str(x) != "nan" else 0
-    ).to_numpy(dtype=float)
+    y_guess = essay_df["essay"].apply(get_hybrid_raw_signal).to_numpy(dtype=float)
+
+
+    # y_guess = essay_df["essay"].apply(
+    #     lambda x: len(str(x)) if str(x) != "nan" else 0
+    # ).to_numpy(dtype=float)
 
     sim_local = np.asarray(sim, dtype=float).copy()
     np.fill_diagonal(sim_local, 0)
