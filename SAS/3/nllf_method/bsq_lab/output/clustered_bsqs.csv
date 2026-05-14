@@ -1,0 +1,43 @@
+bsq,cluster,is_centroid
+Does the answer mention that pandas and koalas are both mammals?,3,False
+Does the answer mention that pandas and koalas are both native to their respective countries?,3,False
+Does the answer mention that pandas and koalas have similar diets?,3,True
+Does the answer mention that pandas and koalas have different physical characteristics from pythons?,3,False
+Does the answer provide specific information from the article to support the comparison?,2,False
+Does the answer explore or develop ideas from the text?,8,True
+Does the answer show strong conceptual understanding?,1,False
+Does the answer include specific relevant information from the text?,9,False
+Does the answer extend ideas with inferences or connections?,10,True
+Does the answer demonstrate extensive or insightful inferences and connections?,10,False
+Does the answer mention pandas?,5,False
+Does the answer mention koalas?,5,False
+Does the answer state that pandas have a restricted diet?,3,False
+Does the answer state that koalas have a restricted diet?,3,False
+Does the answer specify the primary food source for both animals?,7,True
+Does the answer mention that pythons are generalists?,0,False
+Does the answer state that pythons can eat a wide variety of prey?,0,False
+Does the answer mention that pythons can adapt to different environments?,0,True
+Does the answer provide specific examples of prey or environments?,2,False
+Does the answer demonstrate understanding of the concept of generalists?,1,False
+Does the answer mention specific details from the article?,4,False
+Does the answer provide evidence from the article?,4,True
+Does the answer use examples from the article?,4,False
+Does the answer reference specific data or quotes from the article?,4,False
+Does the answer connect to the article's content?,4,False
+Does the answer include relevant information from the text?,9,True
+Does the answer explore or develop ideas presented in the text?,8,False
+Does the answer extend ideas beyond the text?,8,False
+Does the answer demonstrate a fundamental understanding of the text?,1,False
+Does the answer lack depth in its extension of ideas?,11,True
+Does the answer provide a comparison?,2,False
+Does the answer address the main aspects of the topic?,1,False
+Does the answer go beyond simple similarities or differences?,6,True
+Does the answer demonstrate a deep understanding of the topic?,1,False
+Does the answer provide evidence or examples to support the comparison?,2,True
+Does the answer include relevant information?,9,False
+Does the answer mention a contrast?,5,True
+Does the answer develop the contrast?,5,False
+Does the answer fully develop the contrast?,5,False
+Does the answer provide some relevant information?,9,False
+Does the answer explore or develop ideas from the text?,8,False
+Does the answer demonstrate understanding of the text?,1,True

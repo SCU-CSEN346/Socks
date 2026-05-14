@@ -1,0 +1,181 @@
+,Id,EssaySet,Score1,Score2,EssayText,split,llm
+897,10981,5,3,3,"Four major steps involved in protein synthesis are as follows, mRNA enters a ribosome. Then, tRNA delivers amino acids to the ribosome. The mRNA codon matches with the tRNA anti-codon. Also, the amino acids are joined by a condensation reaction. This process is repeated until a stop code is reached.",test,The answer provided is mostly
+904,12147,5,0,0,"The first step of protein synthesis is when mRNA is sent to a new DNA strand.  The mRNA is then attached to the DNA strand.  The tRNA is then sent to the strand and the genetic sequences are transferred.  You then have a new strand of DNA, that is a replicate of the old strand.",test,The answer provided contains several
+906,11716,5,0,0,"anaphase,metaphase,prophase,interphase",test,The answer provided lists stages
+916,11352,5,0,0,AnaphaseMetaphaseProphaseInterphase,test,The answer provided is incorrect
+922,11692,5,0,0,1.     mRNA transcripts tRNA2.     tRNA goes to the ribosome3.     tRNA transcripts and the amino acids are made when the             base pairs join4.     The left over bases are removed from the cell by the                    lysosome.,test,The answer provided has some
+929,12185,5,1,1,1 anticodon goup matching a codon group attaches 2 the anticodon takes in the information for its purpose3 the anticodon forms the protein5 the protein is made into a chain,test,The answer provided is incomplete
+951,12669,5,0,0,"The mRNA unzips and the base pairs are switched. T then turns to A, G turns to C, C turns to G and A turns to U",test,The answer provided is incorrect
+956,11312,5,0,0,Transfusiondefusion,test,"The answer provided (""Trans"
+965,12565,5,2,2,"1. The mRNA goes into the cytoplasm and finds a ribosmome .2. The mRNA has the code and the tRNA gets this code, and finds the amino acid that matches this code. 3. The rRNA acts as a holding device while this is going on. 4. The tRNA brings back the amino acid to the ribosome where the protein is made because amino acids are the monomer of proteins.",test,The answer provides a reasonable
+970,11369,5,0,0,RNA stand for ribo nucleicacid.DNA stand for dioxiribo nucleicacid.,test,The answer provided does not
+975,12538,5,0,0,tRNAgRNA,test,The answer provided is incomplete
+979,12592,5,0,0,Well the messenger RNA or mRNA leaves the nucleus to make protein synthesis. They have to diffuse out of the nucleus. Then the transfer RNA or tRNA will take the RNA to make the protein synthesis. Once there the RNA is turned to DNA.,test,The answer contains several inaccur
+985,12658,5,0,0,"the four major steps involed in protein synthesis are carbohydrates, amino acids, fat, sugar",test,The answer provided is incorrect
+990,12620,5,0,0,"mutation, homeostasis, cell division, and cell mutation",test,The answer provided does not
+1008,11992,5,3,3,"The mRNA enters the ribosome. It then begins translation when the anticodons from the tRNA match up with the codons on the mRNA. The starting codon is always Met. As the tRNA attaches to the mRNA, the amino acids above them form peptide bonds. Finally, the last step is the stop codon on the mRNA. This signals the end of protein synthesis.",test,The answer provided covers the
+1011,12446,5,0,0,"First, mRNA leaves the nucleus. After that, the mRNA develops into a sequence, by which we call a codon, after the codon is made the sequence is made into amino acids. After the amino acids are made, proteins are made.",test,The answer provided is somewhat
+1013,12011,5,0,0,"Telophase, Anaphase, Prophase, Metaphase.",test,The answer provided is incorrect
+1020,12711,5,0,0,"Four major steps involved in protein synthesis are messaging RNA, ribosomal RNA, transfering RNA, and protein production.mRNA attaches to a section of a chromosome, and then it copies the amino acid code that makes up the chromosome. Next, the mRNA messages the rRNA to copy this section of the chromosome into an anticodon which is an exact reflection of the original code. The rRNA has the tRNA transfer this code into a set code for a new protein. Finally, protein production occurs where the protein is synthesized to match the original code for the DNA.",test,The answer provided contains several
+1033,11772,5,0,0,tRNA transfers the data to the cytoplasmrRNA-makes the proteins,test,The answer provided is incomplete
+1035,12097,5,0,0,Goes through the cell membrane. through the cell wall. enters the endoplasma. Then enters the nuclei.,test,The answer provided is incorrect
+1039,11544,5,0,0,The mRNA must leave the nucleus and travel through the cytoplasm. The mRNA must then converge with the different protein bases. The proteins mix in the the mRNA to create a strand. The protein synthesis is made when the strand reaches the normal DNA.,test,The answer provided contains several
+1042,12603,5,0,0,1-the mRNA gets other amino acides to combine with the RNA2-?3-?4-?,test,The answer provided is incomplete
+1043,11590,5,0,0,The information on the mRNA is copied.,test,The answer provided is incomplete
+1044,12508,5,0,0,The mRNA leaves the nucleus then it goes to the DNA and transmitts a message and then it will read it and do what it tell it to do.,test,The answer provided is incomplete
+1050,12038,5,0,0,mRNA changes to amino acids the amino acids sends themselves to tRNa,test,The answer provided is incomplete
+1052,12410,5,0,0,"After mRNA the protine begeins ti divide then it follows the DNA blueprint to construct a new protien, then the prosses repetes it self.",test,The answer provided is incomplete
+1059,11847,5,0,0,mRNA gRNA rRNA tRNA,test,The answer provided lists four
+1067,12426,5,0,0,the four  majior parts are Mrna because sends a message to the Dna then there's Rrna which takes the message back to the dna  then there's,test,The answer provided is incomplete
+1069,12406,5,0,0,The mRNA finds a DNA strand.It attaches to the strand.It begins to copy the protiens.It takes the copies back to the cell.,test,The answer provided is incorrect
+1077,11351,5,0,0,"Interphase, telophase, anaphase, and prophase.",test,The answer provided is incorrect
+1078,12334,5,0,0,anaphase telephase prophase metaphase,test,The answer provided does not
+1081,12138,5,1,1,1. The mRNA goes through the cells and meets the tRNA.2. The tRNA matches up its nucleotides with those of the mRNA.3. The tRNA gives the mRNA an amino acid sequence.4. Steps 2 and 3 are repeated until the tRNA reaches a stop codon at the end of the mRNA sequence.,test,The answer provided is partially
+1091,11995,5,0,0,interphaseprophasemetaphaseanaphase,test,The answer provided is completely
+1093,12475,5,0,0,tRNA    rRNAgRNAmRNA,test,The answer provided is incomplete
+1103,12500,5,3,3,"After mRNA leaves the nucleus, it goes out into the cytoplasm on a ribosome. The ribosome attaches and reads until it sees the codon AUG. Once it sees this codon, it starts pairing the bases with complementary anticodons on the tRNA. The tRNA brings amino acids that link together to form a protein. This process terminates at a stop codon.",test,The answer provided covers the
+1110,11007,5,0,0,"After the mRNA leaves the nucleus it takes the sequence to the cytoplasm. Then the rRNA transports it to to the tRNA.  Then the tRNA takes it to the opposite sequence of DNA, where the process is completed.",test,The answer provided contains several
+1120,12537,5,0,0,'Helping maintain synthesis'Making sure proteins are are leaving the nucleus at a resonable time.'Clearing any unnescary findings before the process.'Notififying the nucleus.,test,The answer provided is unclear
+1129,12304,5,0,0,"The protein obsorb energy from the sun, It produces sugars, proteins are made, energy is stored.",test,The answer provided is incorrect
+1130,12650,5,1,1,"After the mRNA leaves the nucleus, it goes to the ribosomes to leave the cell. Once the ribosomes leave the cell through the cell membrane that is dissappearing, it goes and attaches itself to the codon strand. Once at the strand, it copies the data that will then be sent to get the anticodon strand to match up and make a protein.",test,The answer provided contains several
+1131,11169,5,0,0,"When mRNA leaves the nucleus then mRNA will go to a different cell to do reproduction .  Also when it leaves it will go to other cells to do cellular activities, it will go to a different section of the cell and produce enzymes and it will also go to another section of the cell to produce proteins.",test,The answer provided is incorrect
+1141,12482,5,0,0,glyklous,test,Score: 0
+1144,12715,5,0,0,Th protein starts in your cells then entering your bloodstream.,test,Score: 0
+1150,11422,5,0,0,The mRNA delivers a code to the mitochondria. Then it translates the code into amino acids. The amino acids are then put into specific codes based on what the mRNA said.,test,The answer provided is incomplete
+1160,11133,5,0,0,mRNA gets a message and leaves the nucleusstarts to travel up to the braingets to the brain tells it the messagethe brain starts to do what the mRNA told it to do,test,The answer provided is highly
+1166,11477,5,0,0,water air sunlight soil photosynthesis,test,The answer provided is completely
+1171,11761,5,0,0,The tRNA Comes in and copies itselfThen the mRNA sends protiens to all the tRNAThen the mRNA comes back Then it adds another mRNA,test,Score: 0
+1186,12602,5,0,0,"It just multiplies, and then that means there is more and new dna.",test,The answer provided is completely
+1201,12499,5,0,0,mRNA GIVES IT TO RNA.  RNA MAKES THE PROTEINS.,test,The answer provided is incomplete
+1212,11665,5,0,0,tRNA.,test,The answer provided is incomplete
+1213,12221,5,1,1,Transcription- the mRNA changes form.Duplication- the RNA strand is duplicated and then forms new segments of RNA which code for DNA.Translation- the mRNA meets up at the ribosome and tRNA are produced.,test,The answer provided is incomplete
+1219,11183,5,0,0,"translation, transcription, Cellular respiration",test,The answer provided is incorrect
+1224,11062,5,0,0,InterphaseAnaphaseMetaphaseProphase,test,The answer provided is incorrect
+1225,12758,5,0,0,the code has to change.,test,The answer provided is incomplete
+1227,12378,5,1,1,the mRNA leaves the nucleus and gets read and then tranlslated itno rRNA and hen it goes back itno the nucleaus,test,The answer provided is incomplete
+1234,11987,5,0,0,carries instructions from the nucleus for the amino acid sequence of a protein,test,The answer provided only describes
+1243,11988,5,0,0,mRNA gives a message to tRNA that has what amino acids the DNA strand has. The tRNA brings the RNA to the DNA sequence and the RNA lines up with the amino acids. These make up proteins.,test,The answer provided is incomplete
+1246,11742,5,0,0,1. The mRNA takes the coded DNA to tRNA2. The tRNA takes the coded DNA and translates it to amino acids.3. The rRNA copies the amino acids4. They are placed as traits.,test,The answer provided is incorrect
+1250,11001,5,1,1,"There four major steps of protien synthesis. The first is the mRNA going to the rRNA. Then the rRNA takes the information from the mRNA to the tRNA. Next the tRNA will take the information it has and translate it. Lastly, the tRNA will take the information and make a protein.",test,The answer contains several inaccur
+1259,11923,5,0,0,1. mRNA leaves the nucleus2. Two nuclei come together3. Then they go apart4. Finally they become more powerful,test,The answer provided is incorrect
+1260,11346,5,0,0,From mRNa it travels to tRNA which carries them to the amino acids and then to the ribosomes which make proteins.,test,The answer provided is incomplete
+1265,12382,5,0,0,distributionreproduction messaging,test,The answer provided is completely
+1268,12652,5,0,0,Beginning with mRNA Then becoming tRNAThen codingFinally the cell knows what to code for the proteins,test,The answer provided is incomplete
+1273,11408,5,0,0,"mRNA leaves the nucleus, it then has to reproduce, it splits to make a copy, and then the mRNA has to synthesis further to make protein synthesis complete.",test,The answer provided is incomplete
+1278,12090,5,0,0,mRNA is the messenger rna. it sends information to the cells. tRNA is the transfer rna. it transfers cells. rRNA is the messenger rna. gRNA,test,The answer provided is incorrect
+1283,11517,5,0,0,translation transcription conversion,test,The answer provided is incomplete
+1290,12401,5,0,0,the bosy have to boned together ti make sure that it kill off the bad things,test,Score: 0
+1292,12714,5,0,0,"then you go to pRNA, then you go to oRNA, then you enter tRNA, then gRNA, then you stop.",test,Score: 0
+1299,12076,5,0,0,"Prophase, metaphase, interphase, anaphase",test,The answer provided is incorrect
+1303,11213,5,0,0,"Once mRNA leaves the nucleus, they send the sequence to move on to the mitochondria where translation takes place. The translation will take the mRNA and change into tRNA. For example, if you have UAU GCU then the new strand in tRNA would be AUA CGA. After this, then the strands will form the amino acids. Then, you got the amino acids needed for energy and protein synthesis.",test,The answer provided contains several
+1304,11827,5,1,1,"During protein synthesis, mRNA leaves the nucleus.  The tRNA takes the anti-codon and matches it with the corresponding codon on the mRNA molecule.  It attaches on the ribosome.    This then makes the amino acid polypeptide chain.  Once those steps are complete, you have the protein that the mRNA was coded for.",test,The answer provided lists and
+1310,12466,5,0,0,1: mRNA leaves2: oxygen enters3: water enters4: protein is synthesised,test,The answer provided is incorrect
+1320,11979,5,0,0,Once mRNA has left the nucleus it is transferd to tRNA in the cytoplasm and then the tRNA takes the information to the amino acid. This information tells the amino acids what to produce and then the proteins are produced from the information sent by mRNA.,test,The answer provided is incomplete
+1329,12096,5,1,0,1) mRNA leaves the nucleus.2) mRNA travels into the cytoplasm 3) mRNA is translated into tRNA 4)tRNA makes another strand to make another cell.,test,The answer provided contains some
+1338,11850,5,0,0,"mRNA, RNA, DNA",test,The answer provided is incomplete
+1343,12093,5,0,0,"mRNA leaves the nucleus     attaches to DNA      RNA segments in the cytoplasm      they attach to the mRNA using covalent bonding     hydrogen bonds break, split and repeat",test,The answer provided is incomplete
+1346,12653,5,0,0,"After mRNA leaves the nucleus, tRNA transfers the proteins to the ER. After this rRNA takes it from the ribosome and then the protein is sent it off into the cell.",test,The answer provided is incomplete
+1348,12376,5,0,0,The four major steps are1: sending the mRNA to the cytoplasm2: the RNA getting copied to make DNA3: mRNA gets sorted to make different body parts4: the RNA does to the amino acids,test,The answer provided contains several
+1349,11579,5,0,0,1 DNA is coped to RNA2 RNA exites the cell3 RNA goes to the ribosomes4 Ribosomes produse the gene matereal,test,The answer provided contains several
+1354,11648,5,0,0,"THe protein combines with studd, the protein could die, the protein could reproduce, and the protein could mutate.",test,The answer provided is incorrect
+1356,12364,5,0,0,"The mRNA the transports information, then gains a new half to become DNA. Then it copies itself again. Afterwords it transports the information to genes.",test,The answer provided is incorrect
+1379,11491,5,1,1,The mRNA goes through the nuclear pores and delivers the message. The message is then processed and the cells completes the task.,test,The answer provided is incomplete
+1398,11532,5,0,0,1. the mRNA has to travel through the cell to get to were it can exit. 2. The mRNA has to deliever the proteins to were they need to go.,test,The answer provided is incomplete
+1403,12151,5,0,0,the mRNA leaves the nucleus then,test,The answer provided is incomplete
+1406,11219,5,0,0,The mRNA is instructed to tell the ribosome to make more proteins.The ribosome makes proteins.Proteins are delivered throughout the body. The are transported on the cell membrane.,test,The answer provided is incomplete
+1410,11666,5,1,1,The mRNA leaves the nucleus and to the ribosome.  There it gives the message to start protein synthesis.  The protein recieves the messages and the ribosome begins to synthesis it.,test,The answer provided is incomplete
+1411,12089,5,0,0,mRNA leaves the nucleus and goes to the tRNA. Then it goes into the golgi bodies and it is made into RNA again.,test,The answer provided contains several
+1416,12339,5,0,0,1. The mRNA attaches to a DNA sequence 2. That DNA sequence seperates3. Codons attach to the two new DNA strands and match them identical4. The two new strands are checked over to insure there were no wrongly placed codons,test,The answer provided is incorrect
+1417,11246,5,0,0,"We get more healthy, no deaths, more nutrients, no diseases",test,The answer provided does not
+1418,12638,5,0,0,it goes to all the other RNA.,test,The answer provided is incomplete
+1419,12614,5,0,0,mrna rna dna,test,The answer provided is incomplete
+1421,12363,5,0,0,"The four major steps are the mRNA traveling around, the other organelles will work together, they will then try to do something that helps the cell, and then the protein will synthesize.",test,The answer provided is vague
+1429,12182,5,0,0,restract substute renew,test,"The answer provided (""rest"
+1432,12456,5,0,0,It goes through the chain and then goes throuth the atp synthase then it comes out of the transport chain,test,The answer provided is incorrect
+1434,12463,5,0,0,interphasemetaphaseprophaseanaphase,test,The answer provided is incorrect
+1436,12654,5,0,0,mrna leaves the nucleus wth the instruction to bulid a protien.,test,The answer provided is incomplete
+1439,12429,5,0,0,THE FIRST STEP IS tRNATHE SECOND STEP IS rRNATHE THIRD STEP IS mRNATHE LAST STEP IS gRNA,test,The answer provided is incorrect
+1442,12273,5,0,0,prophase meteaphase anuphase teleaphase,test,The answer provided is incorrect
+1444,11529,5,2,2,The mRNA leaves the nucleus and travels to the ribosomes.  At the ribosomes tRNA attatches to the appropriate sequences on the mRNA.  On the other side of the tRNA are the amino acid that the nucleotide sequence on the other side codes for.  This happens continuously to make proteins.,test,The answer provided describes some
+1452,12489,5,0,0,it leaves the nucleus and then goes trhough the ionic channels,test,The answer provided is incomplete
+1453,11426,5,0,0,Protein synthesis cellular resperation,test,The answer provided is incorrect
+1455,12023,5,1,1,The mRNA must first go to the ribosome. then the ribosome makes what ever it was told to make. After that tRNA come and transport the protien to its destenation.,test,The answer provided is incomplete
+1457,11367,5,1,1,mRNA must travel to the ribosomes.Then it must turn information into a readable secquence so that the T cells can read it.,test,The answer provided is incomplete
+1461,12663,5,0,0,mRNA leaves the nucleus.,test,The answer provided only mentions
+1463,11364,5,0,0,One: getting energy to the nucleus to do this action.Two: getting the mRNA to the cell membrane to preform this action.Three: turn the energy into protein for the cell and bodyFour: repeat it again.,test,The answer provided is incorrect
+1469,12480,5,0,0,When mRNA leaves the nucleus it travels 1st to the mitocondria. Then it goes to the flagellums. After that it goes to be bonded with amino acids and lastly it is changed into protein.,test,The answer provided contains several
+1473,11065,5,0,0,"tRNA,rRNA,gRNA,",test,The answer provided is incomplete
+1477,11220,5,0,0,anaphaseinterphasemetaphaseprophase,test,The answer provided is completely
+1479,12355,5,0,0,os it the answer  is DNA,test,The answer provided is completely
+1480,11404,5,0,0,Step 1: They travel through the body.Step 2: They enter the spot they need to be. Step 3:They get to the spot they need to be. Step 4:They do the job.,test,The answer provided is vague
+1482,11594,5,1,1,"When mRNA leaves the nucleus it transfers to tRNA. Then it makes amino acids. Then the amino acids make a peptide bond, Then the cycle repeats.",test,The answer provided is incomplete
+1487,12121,5,0,0,"The first step is DNA spliting into two, single strand RNA.  The next step is the RNA leaving the nucleus.  Third, it must find a copy of another RNA to link it with the other.  Finally, the codons are linked and you have a protein.",test,The answer provided contains several
+1489,11782,5,0,0,"Goes through the Golgi, then through the blood stream to the endoplasmic reticulum, then passes the mitchocondria, the mitosis occurs.",test,The answer provided contains several
+1491,12223,5,1,1,mRNA leaves nucleus Leaves with information on how to make the proteins information is translated proteins are made,test,The answer provided is incomplete
+1494,12150,5,0,0,Codons come and break the RNA's code down three at a time. Mutations occure. The codon takes that code and makes proteins. Your body uses those proteins.,test,The answer provided is incomplete
+1500,10968,5,0,0,ATP is created and broken down.It is broken down when 2 phosphate groups don't connect with the third causing ADP.ADP can make ATP again by remaking itself.,test,The answer provided does not
+1502,11983,5,0,0,Prophase is where the parts of the cell move. Anaphase is where they break out of the nucleus. Metaphase is where the parts of the cell line up in the middle. Telaphase is where the cell divides.,test,The answer provided is completely
+1505,11110,5,0,0,"After leaving the neucleus, the mRNA carries the information to the amino acids for the sequence of proteins. then it goes through tRNA and then rRNA.",test,The answer provided is incomplete
+1508,11764,5,0,0,mRna gives the message to tRna wich transfers the message to the gRna wich sends it to th rRna wich then makes it into protiens.,test,The answer provided is incomplete
+1512,11838,5,1,1,1.) Transcription- where tRNA codes for a certain amino acid. 2.) The amino acid is created according to what the tRNA coded for.3.) The sequence is held together by peptide bonds.4.) The amino acid sequence is taken back by the mRNA,test,The answer contains several inaccur
+1513,11304,5,3,3,1.  The mRNA travels to the ribosomes.2.  tRNA contains an anticodon with the amino acid on it.  It goes from the cytoplasm to the ribosomes.  3.  The anticodon is bonded to the codon.4.  The amino acids are bonded together to make proteins.,test,The answer provided is partially
+1517,11830,5,3,3,"After the the mRNA leaves the cells nuclaer envolope throught the pores in the envolope the m RNA seeks out a ribosome ( an organelle that synthisize protien based on the codons it get for the messenge RNA)  to synthisize the proteins it has codons for. After the mRNA finds a ribosome to synthisize the proteins it attaches on to the ribosome for it to read the codon sequance it contians. A codone is a sequence of three molacuole of nueclear acid that when read stand for one amino acid ( Amino Acid- the building blocks for proteins) As the ribosomes read the codon sequence, the ribosome calls tRNA to retrive the amino acids it need to create a protien chain. After a protein chain has been made the mRNA has no more use and it desolves back into the cytoplasm. After the protien chain has been fully synthisied it get sent to the rought endoplasmic reticulum to have final touches added to it. After all the final touches are added to the protein chain, it is then sent to the golgi apparatus to be prepare to be shipped out to another part of the body. After the golgi apparatus has prepared the protein chain to be shipped out it is then sent to the cell membrance to exit through a protein channal. After the protein has exited the cell it is shiped off else where in the body to be used",test,The answer provided is quite
+1520,12336,5,0,0,The mRNA takes the proteins. Then goes to another cell and transfers the protein to that cell. Then it rides to the nucleus and dumps off the information it is carrying. Then it dies.,test,The answer provided is incorrect
+1523,11730,5,0,0,The four strands. The production of protein. Helping the mRNA in able for it to complete the synthesis. The proteins are assembled.,test,The answer provided is unclear
+1534,12501,5,0,0,"It starts with mRNA, then goes to tRNA, then gRNA, and finally rRNA.",test,The answer provided is incorrect
+1540,11733,5,3,3,"First, the mRNA leaves the nucleus and a ribosome attatches to it. Second, the ribosome reads every three nucleotide sequence, or codon, and calls for a tRNA molecule that has an anticodon to compliment the codon. Third, after this process is repeated, the amino acids on the tRNA molecules form peptide bonds with each other, forming a protein. Finally, after the mRNA is translated until a stop codon, the protein is released and used in the cell as needed.",test,The answer provided is quite
+1545,12267,5,0,0,"When mRNA leaves the nucleus, there are four major steps that are involved in protein synthesis. The first step is when the messenger RNA replicates. Then the cell divides into two identical daughter cells that both contain the same sequence of RNA. The cells then divide one last time and four daughter cells are created.",test,The answer provided contains several
+1548,12512,5,0,0,G1-Proteins head to where they have to go.Interphase-Proteins reach destination.G2-Proteins seek out problem.G3-Proteins work and fix the problem.,test,The answer provided is incorrect
+1549,11696,5,0,0,after it leaves the nucleus it then goes to the tRNA to give it some memory. then after that it goes to the rRNA to make more ribosomes.,test,The answer provided is incorrect
+1550,12043,5,0,0,The G1 phase starts and then it continues on to the S phase.  Next the S phase turns into the G2 phase.  Then the last step is called the G0 phase.  Then it starts all over again.,test,The answer provided is completely
+1554,12559,5,0,0,ENZYME,test,"The answer provided (""EN"
+1561,12071,5,0,0,slides over nucleus makesa new cell,test,The answer provided is incorrect
+1563,12103,5,0,0,replication,test,Score: 0
+1566,11718,5,0,0,"Prophase, Anaphase, Interphase, Metaphase. Protein synthesis is carried out through a long process.",test,The answer provided is incorrect
+1568,11530,5,0,0,decodes ittakes it to tRNAtRNA takes it to the ribosomesRibosomes make protiens,test,The answer provided is incomplete
+1570,12693,5,1,1,The mRNA travels to the mitochondria.The mRNA lines up.The mRNA is matched with the anti-codon.,test,The answer provided is incomplete
+1573,12462,5,1,1,"First, the mRNA is released into the body. Then the mRNA attaches itself to ribosomes. Thirdly, the mRNA grows to the biggest size in can go. Lastly, when the mRNA is done growing, it will be delivered to the lysosome where it will be disposed of.",test,The answer provided contains several
+1576,11650,5,0,0,1. Mitochondria makes proteins.2.mRNA passes proteins to ribosomes.3.Ribosomes take proteins to nucleus.4.Nucleus uses proteins for energy.,test,The answer provided contains several
+1578,12215,5,0,0,"Interphase, Prophase, Anaphase, and Telophase.",test,The answer provided is incorrect
+1582,12412,5,0,0,1. First it tells what is happening to the Golgi Apparatus2.It goes to mRNA to try and find the protein synthisis,test,The answer provided is incorrect
+1593,11156,5,0,0,The mRNA sends a message with the amino acid sequence to ribosomes telling it to make protein. Then the tRNA transports enzymes to be converted . rRna then makes the protein.,test,The answer provided is incomplete
+1595,11419,5,0,0,1. It leaves the nucleus then it go's to where it needs to go2. Then it seperates and makes brand new strands of what is needed3. It mutiplies really fast and then makes more and more of what is needed4. Everthing that is needed is now made,test,The answer provided is quite
+1597,12114,5,0,0,"One major step involed in protein synthesis is when the food enters the cell, the cell breaks it down and seperates the protein and the fatty foods.",test,The answer provided is incorrect
+1599,12330,5,0,0,mRNA leases the nucleus and signals certain pathways which then signal for cerain ribosomes to release and help synthesize proteins. rRNA then codes for tRNA to transfers certain ribosomes to the receptors for the creation of proteins.,test,The answer provided is somewhat
+1600,12546,5,1,1,"The mRNA is read by RNA polymerase, tRNA anticodons match up with the codons on the mRNA strand, There is a bond between the mRNA and the tRNA, and the tRNA break off to form a sequence of amino acids.",test,The answer provided is partially
+1601,12018,5,2,1,1. mRNA heads to the Ribosome2. mRNA gets decoded3. tRNA grabs an amino acid and brings it back to the decoded mRNA4. rRNA  is taken back to the nucleus,test,The answer provided has some
+1605,12564,5,0,0,mRNAtRNArRNARNA,test,The answer provided is nons
+1617,11197,5,0,0,Step one  the membrane og the synthesis past the cell up but the nucleus powers it. the microdria pushs everthing threw and for the amino acids sequence of the protein,test,The answer provided is highly
+1626,12321,5,0,0,After mRNA leaves the nucleus it tells the transport RNA to bring nucleotides to the active site for synthesis.  Proteins and amino acids are also brought to the active site.  The messenger RNA tells the existing proteins how to make the neccessary new protein and synthesis begins. ATP is synthesised and provides energy for the reaction.  The protein is then finished and the messenger RNA notifies the nucleus of the completion.,test,The answer provided is somewhat
+1627,11020,5,0,0,proteins need calciumthey need vitaman cthey need iron,test,The answer provided does not
+1629,12224,5,0,0,mRNA sends a message to protein wich makes them multiply into more protein,test,The answer provided is incomplete
+1637,11469,5,0,0,the protein drops the amino acid which conect to the other amino acids to make a chain while the RNA moves over and conects with the Other piece of RNA,test,The answer provided is incomplete
+1641,12452,5,0,0,copy and moltuply to make more Rna or Dna,test,The answer provided is incorrect
+1644,12487,5,0,0,"tRNA, rRNA",test,The answer provided is incomplete
+1649,12496,5,0,0,ribosomes link proteins together to make a protein chain,test,The answer provided is incomplete
+1662,12655,5,1,1,mRNA goes to the ribosome to get attached to an amino acid,test,The answer provided is incomplete
+1668,11921,5,0,0,membrane dissapearing,test,Score: 0
+1671,12027,5,0,0,anaphaseprophasetelephasemetaphase,test,The answer provided is incorrect
+1693,11118,5,1,1,It leaves the nucleous then it in enters a ribsome thn it is copyed then it has been made.,test,The answer provided is incomplete
+1695,12261,5,1,0,"First, it takes the instructions from the nucleus for a sequence of amino acid.Second, it brings them back to the ribosomes and starts protein synthesisThird, the ribosomes start to synthesize protein using the instructions.Fourth, they release the proteins after synthesizing them.",test,The answer provided is somewhat
+1701,11284,5,1,1,"mRNA leaves the nucleus and goes to the ribosome, which is where the proteins are made, picks them up, and brings them back to the nucleus.",test,The answer provided is incomplete
+1705,12525,5,0,0,It gives the other organelles food.It helps protect the body.It will defend anything and traps anything and turn it into food and energy.,test,The answer provided is not
+1712,12249,5,0,0,"The mRNA has to carry the message that protein synthesis should occur. Then the chemicals start going that tell the protein synthesis object to start.Once that starts, it does protein synthesis.Lastly protein synthesis has been done.",test,The answer provided is incomplete
+1718,11436,5,1,1,the mRNA goes to the ribosome and gives the potien codes to the ribosomal RNA,test,The answer provided is incomplete
+1719,11070,5,0,0,"The mRNA travels to through the cytoplasm to the midocondrion, and it copies itself to tRNA. The tRNA goes and copies itself to the rRNA and it sends the instructions to ribosomes and the midocondrion. These instructions make the protiens.",test,The answer contains several inaccur
+1720,11922,5,0,0,"The mRNA leaves the nucleus then goes to the cytoplasm where the protein is made, is met by a tRNA which takes the protein and moves it away, then the protein is released.",test,The answer provided is incomplete
+1738,12405,5,0,0,1: The mRNA send information to the rRNA to tell it to make amino acids.2: The rRNA makes the amino acids.3: The amino acids are then made into RNA by tRNA4: Then the DNA and RNA com together.,test,The answer provided contains several
+1740,11153,5,0,0,The mRNA leaves the nucleus. The RNA is then copied. The new strands are made. The new DNA is shipped out.,test,The answer provided is incorrect
+1743,12367,5,0,0,1. it leaves2. it travels3. it asks for directions4. it arrives,test,The answer provided is clearly
+1745,11924,5,0,0,"First the proteins go through a check process, then the cell membrane fixes anything that is wrong, then the nucleotides make bind to the mRNA, and finally the mRNA and the protein bind together.",test,The answer provided is incorrect
+1751,11863,5,0,0,"when the mRNA leaves the nucleous, the protiens go with it",test,The answer provided is incomplete
+1752,12467,5,3,3,"After mRNA leaves the nucleus, after going through the process of trancription where the RNA polymerase unzip the strand into two identical halves, the mRNA goes to the ribosome. Translation occurs when tRNA makes a copy of the DNA segment and complementary base pairs are linked to the half of the mRNA strand. The complementary base pairs start to link onto the mRNA strand only when the start codon is identify and complemented. Then the tRNA brings amino acids and builds the amino acids onto the molecule making a protein chain. Finally the base pairs hit the stop codon and translation has completed the new mRNA strand.",test,The answer provided contains several
+1756,12349,5,2,2,The mRNA leaves the nucleus with the instructions for the amino acid sequence of a protein. It then transfers the instructions to the tRNA to start the sequence. With the information it has it makes the sequence until it gets the codone to stop.,test,The answer provided is incomplete
+1769,11250,5,0,0,It leaves and it creates more mRNA's and that helps your body. And then it repeats the process again. And it sends messages to the nucleus.,test,The answer provided is incomplete
+1770,11895,5,0,0,the mRNA delivers the message so its like the messenager.,test,The answer provided is incomplete
+1774,11758,5,0,0,after mRNA it will go to tRNA and then i will coil so much to where it becomes DNA,test,The answer provided is incorrect
+1776,11845,5,0,0,mRNA leaves the nucleusmRNA turns to tRNAtRNA then transfers the info to another part of the cellthe info is then read and the protein is created.,test,The answer provided is incomplete
+1781,12554,5,0,0,The RNA will break off and attach a new strand onto the tRNA,test,The answer provided is incomplete
+1786,12208,5,0,0,Splitting: this is where the strand is straightened out.Peeling: this is where the nucleotides are split.Matching: this is where new nucleotides are put on.Reattachment: this is where the mRNA is put back together.,test,The answer provided does not
+1788,11864,5,0,0,THE tRNA COMING AND BRINGING THE AMINO ACIDS.mRNA TAKING THE AMINO ACIDS TO THE RIBOSOMES WHERE THEY ARE MADE,test,The answer provided is incomplete
+1793,12125,5,0,0,"The mRNA than goes over to the DNA and come together, Than tRNA begins to transfer the data onto the DNA to begin to create proteins, once the DNA gets it it begins to create protein, last when finished the rRNA breaks off and than starts all over.",test,The answer provided contains several

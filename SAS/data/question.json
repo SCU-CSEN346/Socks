@@ -1,0 +1,273 @@
+{
+    "1": {
+        "range": [0, 3],
+        "context": "A group of students wrote the following procedure for their investigation.\n\nProcedure:\n- Determine the mass of four different samples.\n- Pour vinegar in each of four separate, but identical, containers.\n- Place a sample of one material into one container and label. Repeat with remaining samples, placing a single sample into a single container.\n- After 24 hours, remove the samples from the containers and rinse each sample with distilled water.\n- Allow the samples to sit and dry for 30 minutes.\n- Determine the mass of each sample.\n\nThe students' data are recorded in the table below.\n\nSample | Starting Mass (g) | Ending Mass (g) | Difference in Mass (g)\nMarble | 9.8 | 9.4 | -0.4\nLimestone | 10.4 | 9.1 | -1.3\nWood | 11.2 | 11.2 | 0.0\nPlastic | 7.2 | 7.1 | -0.1",
+        "question": "After reading the group's procedure, describe what additional information you would need in order to replicate the experiment. Make sure to include at least three pieces of information.",
+        "rubric": {
+            "3": {
+                "text": "The response describes three additional pieces of information that would be needed to accurately replicate the experiment.",
+                "elements": [
+                    "How much vinegar was used in each container.",
+                    "What type of vinegar was used in each container.",
+                    "What materials to test.",
+                    "What size or surface area of materials should be used.",
+                    "How long each sample was rinsed in distilled water.",
+                    "What drying method to use.",
+                    "What size or type of container to use."
+                ]
+            },
+            "2": {
+                "text": "The response describes two additional pieces of information that would be needed to accurately replicate the experiment.",
+                "elements": []
+            },
+            "1": {
+                "text": "The response describes one additional piece of information that would be needed to accurately replicate the experiment.",
+                "elements": []
+            },
+            "0": {
+                "text": "The response describes little or no accurate or relevant information from the acid rain investigation.",
+                "elements": []
+            }
+        }
+    },
+    "2": {
+        "range": [0, 3],
+        "context": "A student performed the following investigation to test four different polymer plastics for stretchability.\n\nProcedure:\n1. Take a sample of one type of plastic, and measure its length.\n2. Tape the top edge of the plastic sample to a table so that it is hanging freely down the side of the table.\n3. Attach a clamp to the bottom edge of the plastic sample.\n4. Add weights to the clamp and allow them to hang for five minutes.\n5. Remove the weights and clamp, and measure the length of the plastic types.\n6. Repeat the procedure exactly for the remaining three plastic samples.\n7. Perform a second trial (T2) exactly like the first trial (T1).\n\nData Table:\nPlastic Type | Amount Stretched (mm) T1 | T2\nA | 10 | 12\nB | 22 | 23\nC | 14 | 13\nD | 20 | 20",
+        "question": "Draw a conclusion based on the student's data. Describe two ways the student could have improved the experimental design and/or validity of the results.",
+        "rubric": {
+            "3": {
+                "text": "The response draws a valid conclusion supported by the student's data and describes two ways the student could have improved the experimental design and/or the validity of the results.",
+                "elements": [
+                    "Plastic sample B has more stretchability than the other polymer plastics.",
+                    "Plastic sample A has the least amount of stretchability.",
+                    "Not all polymer plastics have the same stretchability.",
+                    "Provide before and after measurements for length.",
+                    "Ensure samples are all of the same thickness.",
+                    "Perform additional trials.",
+                    "Indicate how many weights were added to the clamps."
+                ]
+            },
+            "2": {
+                "text": "The response draws a valid conclusion supported by the student's data and describes one way the student could have improved the experimental design and/or the validity of the results. OR the response describes two ways the student could have improved the experimental design but fails to draw or incorrectly draws a conclusion.",
+                "elements": []
+            },
+            "1": {
+                "text": "The response draws a valid conclusion supported by the student's data but fails to describe or incorrectly describes how the student could have improved the experimental design. OR the response describes one way the student could have improved the experimental design but fails to draw or incorrectly draws a conclusion.",
+                "elements": []
+            },
+            "0": {
+                "text": "The response provides little or no correct information from the polymer investigation.",
+                "elements": []
+            }
+        }
+    },
+    "3": {
+        "range": [0, 2],
+        "context": "THE WASHINGTON POST, FRIDAY, APRIL 18, 2008\nOne Man's Pet, Another's Invasive Species\nBY JOEL ACHENBACH\n\nThe article discusses the exotic pet trade and invasive species in Florida, particularly Burmese pythons establishing themselves in the Everglades. The article explains the ecological concept of 'generalists' versus 'specialists': 'A specialist is China's panda, which eats almost nothing but bamboo, or Australia's koala bear, which eats eucalyptus leaves almost exclusively.' Pythons are described as generalists that can adapt to varied environments and prey, making them successful invasive species. The article contrasts the restricted diets and habitats of specialists like pandas and koalas with the adaptability of generalists like pythons, and examines the broader debate over the exotic animal trade and its ecological consequences.",
+        "question": "Explain how pandas in China are similar to koalas in Australia and how they both are different from pythons. Support your response with information from the article.",
+        "rubric": {
+            "2": {
+                "text": "The response demonstrates an exploration or development of the ideas presented in the text, a strong conceptual understanding by the inclusion of specific relevant information from the text, and an extension of ideas that may include extensive and/or insightful inferences and connections.",
+                "elements": [
+                    "Identifies that pandas and koalas are both specialists with restricted diets (bamboo and eucalyptus respectively).",
+                    "Identifies that pythons are generalists that can eat a wide variety of prey and adapt to different environments.",
+                    "Supports the comparison with specific information from the article."
+                ]
+            },
+            "1": {
+                "text": "The response demonstrates some exploration or development of ideas presented in the text, a fundamental understanding by the inclusion of some relevant information from the text, and an extension of ideas that lacks depth.",
+                "elements": [
+                    "Provides a partial or surface-level comparison.",
+                    "Includes some relevant information but may not fully develop the contrast."
+                ]
+            },
+            "0": {
+                "text": "The response demonstrates limited or no exploration or development of ideas presented in the text, limited or no understanding of the text, and may be illogical, vague, or irrelevant.",
+                "elements": []
+            }
+        }
+    },
+    "4": {
+        "range": [0, 2],
+        "context": "THE WASHINGTON POST, FRIDAY, APRIL 18, 2008\nOne Man's Pet, Another's Invasive Species\nBY JOEL ACHENBACH\n\nThe article discusses the exotic pet trade and invasive species in Florida. It explores the term 'invasive' in the context of non-native species introduced into new ecosystems, particularly Burmese pythons in the Everglades. The article examines the tension between commercial exotic animal traders and conservation biologists, discusses how non-native species can disrupt local food chains and ecosystems, and contrasts ecological specialists (pandas, koalas) with generalists (pythons). The concept of 'invasive species' is central throughout the article, shaping the debate about pets, trade, conservation, and ecosystem management.",
+        "question": "Explain the significance of the word 'invasive' to the rest of the article. Support your response with information from the article.",
+        "rubric": {
+            "2": {
+                "text": "The response demonstrates a thoughtful and thorough examination of the text, uses information to move beyond the boundaries of the text, evaluates explicit and implicit information, and makes insightful judgments about how the word 'invasive' shapes the article's argument and meaning.",
+                "elements": [
+                    "Explains that 'invasive' refers to non-native species introduced into ecosystems where they do not naturally occur.",
+                    "Connects the word to the broader debate about exotic pets and their ecological impact.",
+                    "May evaluate the author's use of the term to frame the tension between traders and conservationists.",
+                    "Supports the response with specific details from the article."
+                ]
+            },
+            "1": {
+                "text": "The response demonstrates sufficient though limited examination of the text, some attempt to use information to move beyond the text, and some ability to evaluate explicit and implicit information with plausible but not fully developed judgments.",
+                "elements": [
+                    "Provides a partial explanation of the word's significance.",
+                    "Includes some relevant detail from the article but does not fully develop the analysis."
+                ]
+            },
+            "0": {
+                "text": "The response demonstrates a cursory examination of the text, does not move beyond the boundaries of the text, and makes superficial, unsupported, illogical, vague, or irrelevant observations.",
+                "elements": []
+            }
+        }
+    },
+    "5": {
+        "range": [0, 3],
+        "context": "",
+        "question": "Starting with mRNA leaving the nucleus, list and describe four major steps involved in protein synthesis.",
+        "rubric": {
+            "3": {
+                "text": "The response correctly identifies and describes four key steps of protein synthesis.",
+                "elements": [
+                    "mRNA exits the nucleus via nuclear pore and travels through the cytoplasm to the ribosome.",
+                    "mRNA bases are read in triplets called codons by the ribosome (rRNA).",
+                    "tRNA carrying the complementary anticodon recognizes the complementary codon of the mRNA; the corresponding amino acid is delivered.",
+                    "Amino acids are linked together to make a protein, beginning with a START codon and ending at a STOP codon (initiation, elongation, and termination)."
+                ]
+            },
+            "2": {
+                "text": "The response correctly identifies and describes three key steps of protein synthesis.",
+                "elements": []
+            },
+            "1": {
+                "text": "The response correctly identifies and describes one or two key steps of protein synthesis.",
+                "elements": []
+            },
+            "0": {
+                "text": "The response does not correctly identify any key steps of protein synthesis, or the response is irrelevant or missing.",
+                "elements": []
+            }
+        }
+    },
+    "6": {
+        "range": [0, 3],
+        "context": "",
+        "question": "List and describe three processes used by cells to control the movement of substances across the cell membrane.",
+        "rubric": {
+            "3": {
+                "text": "The response correctly identifies and describes three distinct processes used by cells to control movement of substances across the cell membrane.",
+                "elements": [
+                    "Passive transport: substances move from an area of higher concentration to lower concentration without energy.",
+                    "Osmosis: diffusion of water across the cell membrane.",
+                    "Facilitated diffusion: membrane controls the pathway for a particle to enter or leave the cell via protein channels.",
+                    "Active transport: cell uses energy (ATP) to move a substance against the concentration gradient (from low to high concentration).",
+                    "Endocytosis: membrane engulfs large molecules forming a vesicle to bring substances into the cell.",
+                    "Exocytosis: vesicle fuses with cell membrane to force large molecules out of the cell."
+                ]
+            },
+            "2": {
+                "text": "The response correctly identifies and describes two distinct processes used by cells to control movement of substances across the cell membrane.",
+                "elements": []
+            },
+            "1": {
+                "text": "The response correctly identifies and describes one process used by cells to control movement of substances across the cell membrane.",
+                "elements": []
+            },
+            "0": {
+                "text": "The response does not correctly identify any process, or the response is irrelevant or missing.",
+                "elements": []
+            }
+        }
+    },
+    "7": {
+        "range": [0, 2],
+        "context": "The story 'Crossing Over' follows Rose, a grade-10 student from a Cambodian immigrant family. Rose struggles to balance family responsibilities, work at her family's restaurant, and her schoolwork including an essay competition. Key scenes include Rose falling asleep over her essay, a conversation with her younger sister Anna about missing their father who left for Los Angeles for work, a dream sequence, and a conversation with Aunt Kolab in the kitchen where Kolab offers to help the family financially. Rose ultimately realizes that Cambodian tradition and family values can survive an ocean crossing, which becomes the theme of her essay.",
+        "question": "Identify ONE trait that can describe Rose based on her conversations with Anna or Aunt Kolab. Include ONE detail from the story that supports your answer.",
+        "rubric": {
+            "2": {
+                "text": "The response identifies a character trait of Rose drawn from her conversations with Anna or Aunt Kolab AND includes a specific supporting detail from the story.",
+                "elements": [
+                    "Identifies a creditable character trait (e.g., responsible, caring, hardworking, worried, determined).",
+                    "Supports the trait with a specific detail from Rose's conversation with Anna or Aunt Kolab."
+                ]
+            },
+            "1": {
+                "text": "The response identifies a character trait of Rose drawn from her conversations with Anna or Aunt Kolab but does not include a supporting detail, or the supporting detail is insufficient.",
+                "elements": [
+                    "Identifies a creditable character trait without adequate story support."
+                ]
+            },
+            "0": {
+                "text": "The response does not identify a character trait, or the identified trait is not creditable based on the story.",
+                "elements": []
+            }
+        }
+    },
+    "8": {
+        "range": [0, 2],
+        "context": "The story 'Gifts' follows Paul, a student in a remedial reading program who meets Mr. Leonard, a hall monitor who teaches him to hurdle on the school track. Paul improves significantly and is invited to join the high school track team. The coach gives Paul a printout revealing that Mr. Leonard (Leonard Grabowski) was a college freshman who won the 400-meter hurdles at nationals and broke records, but lost his scholarship because he could not read despite having tutors, and ultimately flunked out of college. Mr. Leonard gave Paul his time to help him excel. At the end, Paul decides to help Mr. Leonard in return by teaching him to read.",
+        "question": "During the story, the reader gets background information about Mr. Leonard. Explain the effect that background information has on Paul. Support your response with details from the story.",
+        "rubric": {
+            "2": {
+                "text": "The response fulfills all the requirements of the task. The information given is text-based and relevant. The response explains the background information about Mr. Leonard and its effect on Paul with supporting details from the story.",
+                "elements": [
+                    "Identifies the background information (Mr. Leonard's athletic achievement and academic failure).",
+                    "Explains the effect on Paul (e.g., Paul feels motivated, grateful, decides to help Mr. Leonard learn to read).",
+                    "Supports the response with specific details from the story."
+                ]
+            },
+            "1": {
+                "text": "The response fulfills some of the requirements of the task, but some of the information may be too general, too simplistic, or not supported by the text.",
+                "elements": [
+                    "Partially explains the background information or its effect on Paul without full text support."
+                ]
+            },
+            "0": {
+                "text": "The response does not fulfill the requirements of the task because it contains information that is inaccurate, incomplete, and/or missing altogether.",
+                "elements": []
+            }
+        }
+    },
+    "9": {
+        "range": [0, 2],
+        "context": "The article 'Orbiting Junk' discusses the problem of space debris. It is organized into sections: an introduction with an attention-grabbing hook about a tool bag in orbit; 'What Is Space Junk?' explaining how decades of space exploration have left debris circling Earth; 'Crash Course' describing how dead satellites collide and create more debris; 'Little Bits, But a Big Deal' explaining the dangers of high-speed micro-debris and current mitigation efforts; and a conclusion about the growing problem as commercial spaceflight increases. The article uses subheadings, moves from definition to cause to consequence to solution, and ends by projecting the problem into the future.",
+        "question": "How does the author organize the article? Support your response with details from the article.",
+        "rubric": {
+            "2": {
+                "text": "The response fulfills all the requirements of the task. The information given is text-based and relevant. The response clearly explains the organizational structure of the article and supports the explanation with specific details from the text.",
+                "elements": [
+                    "Identifies a clear organizational pattern (e.g., use of subheadings, problem-cause-effect-solution, chronological development of the space junk issue).",
+                    "Supports the identified structure with specific details or examples from the article."
+                ]
+            },
+            "1": {
+                "text": "The response fulfills some of the requirements of the task, but some of the information may be too general, too simplistic, or not supported by the text.",
+                "elements": [
+                    "Identifies an organizational pattern in general terms without sufficient text support, or provides details without clearly identifying the structure."
+                ]
+            },
+            "0": {
+                "text": "The response does not fulfill the requirements of the task because it contains information that is inaccurate, incomplete, and/or missing altogether.",
+                "elements": []
+            }
+        }
+    },
+    "10": {
+        "range": [0, 2],
+        "context": "Brandi and Jerry conducted a controlled experiment to find out how the color of an object affects its temperature. They tested four colored lids (black, dark gray, light gray, and white) on glass jars placed 5 cm from a lamp for 10 minutes across three trials, measuring the air temperature inside each jar. Their hypothesis was that darker colors absorb more energy and produce higher temperatures. The experiment was designed to determine the best paint color for a doghouse.",
+        "question": "Use the results from the experiment to describe the best paint color for the doghouse. In your description, be sure to choose a paint color, describe how that color might affect the inside of the doghouse, and use results from the experiment to support your description.",
+        "rubric": {
+            "2": {
+                "text": "The response chooses a paint color AND describes how that color might affect the inside of the doghouse AND uses results from the experiment to support the description.",
+                "elements": [
+                    "Chooses one of the four colors (black, dark gray, light gray, or white).",
+                    "Describes the temperature effect inside the doghouse based on color (darker = warmer, lighter = cooler).",
+                    "References specific experimental data to support the choice (e.g., black lid produced the highest temperature; white lid produced the lowest)."
+                ]
+            },
+            "1": {
+                "text": "The response chooses a color and describes its effect on the doghouse BUT does not use experimental results. OR the response chooses a color and uses experimental results BUT does not describe the effect on the inside of the doghouse.",
+                "elements": [
+                    "Partially meets the task requirements — one of the two required supporting components is missing."
+                ]
+            },
+            "0": {
+                "text": "The response demonstrates little or no understanding of the task. The response does not choose a color, or the information provided is inaccurate, incomplete, or missing.",
+                "elements": []
+            }
+        }
+    }
+}

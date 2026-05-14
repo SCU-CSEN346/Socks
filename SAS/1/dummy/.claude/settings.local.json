@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python run2.py)",
+      "Bash(python3 *)"
+    ]
+  }
+}

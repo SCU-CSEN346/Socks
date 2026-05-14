@@ -1,0 +1,36 @@
+bsq,cluster,is_centroid
+Does the answer identify the organizational structure of the article?,2,False
+Does the answer provide specific details from the article?,10,False
+Does the answer explain how the structure supports the article's purpose?,2,False
+Does the answer demonstrate understanding of the author's intent?,3,True
+Does the answer use clear and coherent language?,5,True
+Does the answer fulfill all the requirements of the task?,9,True
+Does the answer provide text-based and relevant information?,10,False
+Does the answer clearly explain the organizational structure of the article?,2,False
+Does the answer support the explanation with specific details from the text?,4,True
+Does the answer avoid irrelevant or off-topic information?,1,False
+Does the answer use subheadings?,6,True
+Does the answer present a problem-cause-effect-solution structure?,8,True
+Does the answer follow a chronological order?,11,True
+"Does the answer have a clear beginning, middle, and end?",5,False
+Does the answer group related ideas together?,0,True
+Does the answer identify a structure?,2,True
+Does the answer provide specific details?,10,True
+Does the answer use examples from the article?,6,False
+Does the answer support the identified structure?,2,False
+Does the answer relate details/examples to the structure?,0,False
+Does the answer fulfill some requirements of the task?,9,False
+Does the answer provide specific information?,10,False
+Does the answer avoid oversimplification?,1,False
+Does the answer support its claims with evidence?,4,False
+Does the answer demonstrate a basic understanding of the topic?,3,False
+Does the answer identify an organizational pattern?,2,False
+Does the answer provide sufficient text support?,10,False
+Does the answer provide details?,10,False
+Does the answer clearly identify the structure?,2,False
+"Does the answer focus on either pattern or details, but not both?",7,True
+Does the answer contain inaccurate information?,1,True
+Does the answer lack necessary information?,1,False
+Does the answer omit required information?,1,False
+Does the answer address the task's requirements?,9,False
+Does the answer provide a complete response?,10,False
