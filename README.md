@@ -126,6 +126,27 @@ regression. The canonical runner reuses the preserved teammate AES helper logic
 from `src/matrix.py` and `src/signal_pred.py` for similarity construction and
 weak-signal propagation. It does not implement NLLF, BSQ, or LLM weak labels.
 
+### Optional Targeted AES GBDT Candidate
+
+The default AES baseline remains unchanged. An optional targeted AES GBDT
+runner can be used for candidate analysis:
+
+```bash
+python3 -m src.run_aes_gbdt_targeted
+```
+
+The targeted AES GBDT runner evaluates a prompt-specific nonlinear candidate
+while keeping the default AES baseline unchanged. The best candidate uses GBDT
+for validation-supported essay sets 1, 6, and 7, applies shrinked train-weak
+quantile calibration only to essay set 6, and excludes essay set 8 due to an MAE
+tradeoff. Compact outputs are saved under
+`results/clean_results/aes_gbdt_targeted/`.
+
+On the current split, the targeted candidate improves AES test QWK from 0.5689
+to 0.5813, test MAE from 1.6248 to 1.6199, and test Pearson from 0.7079 to
+0.7142. This is reported as an optional candidate using interpretable features
+with a tree-based model, not as a replacement for the canonical baseline.
+
 ## ASAP-AES Low-Level Preprocessing
 
 Run the preprocessing CLI from the repository root. To prepare one essay set
