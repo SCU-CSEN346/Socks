@@ -6,8 +6,6 @@ This project follows **Option 2**: selecting a recent ACL Anthology paper with a
 
 ## paper_pipeline
 
-Shravan Dhanasekaran's full reproduction of the paper pipeline across both AES (8 essay sets) and SAS (10 question sets), implementing the complete three-phase approach from the original paper: weak label generation, NLLF feature extraction, and positive linear regression with genetic feature selection.
-
 ```text
 paper_pipeline/
 ├── AES/        # Automated Essay Scoring pipeline (ASAP-AES, essay sets 1–8)
@@ -15,8 +13,6 @@ paper_pipeline/
 ```
 
 Place the extracted ASAP-AES files under `paper_pipeline/AES/data/` and the extracted ASAP-SAS files under `paper_pipeline/SAS/data/` before running any scripts. See `paper_pipeline/AES/read_data.ipynb` and `paper_pipeline/SAS/read_data.ipynb` to preprocess the raw dataset files.
-
-**Contributions — Shravan Dhanasekaran:** Replicated the full AES and SAS pipelines from the original paper across all essay and question sets, including signal clustering, ULRA, LLM weak label generation (vanilla, chain-of-thought, weak signal), NLLF feature extraction via BSQs, similarity-based scoring, BERT classification, and positive linear regression training and evaluation. Switched the final regression model from positive LinearRegression to Ridge(alpha=10) for improved regularization.
 
 ---
 
@@ -205,6 +201,8 @@ for placeholder files currently.
 Helen Wang - Wrote the related works section of the report, added modified scripts for signal clustering (signal_pred and matrix) as well as dividing dataset data into subsections to follow project structure, added the contributions section to README, added read data script to divide SAS dataset into subsections, wrote dataset section of report, updated weak signal code to improve scores, updated README to include dataset section and links.
 
 Harshvardhan Garude - Set up baseline project structure, added scripts for loading ASAP-AES dataset splits (data_loading) and preprocessing data (preprocess_asap) with essay-set filtering and text cleaning, and updated README and data documentation for reproducibility.
+
+Shravan Dhanasekaran - Full reproduction of the paper pipeline across both AES (8 essay sets) and SAS (10 question sets), implementing the complete three-phase approach from the original paper: weak label generation, NLLF feature extraction, and positive linear regression with genetic feature selection. Replicated signal clustering, ULRA, LLM weak label generation (vanilla, chain-of-thought, weak signal), NLLF feature extraction via BSQs, similarity-based scoring, BERT classification, and positive linear regression training and evaluation. Switched the final regression model from positive LinearRegression to Ridge(alpha=10) for improved regularization.
 
 ## ASAP-SAS ASAG Baseline
 
