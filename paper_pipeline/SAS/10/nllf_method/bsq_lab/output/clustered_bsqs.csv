@@ -1,0 +1,40 @@
+bsq,cluster,is_centroid
+Does the answer choose a specific paint color?,0,False
+Does the answer describe how the chosen color might affect the inside of the doghouse?,3,False
+Does the answer use results from the experiment to support the description?,2,False
+Does the answer provide a clear and logical connection between the experiment results and the chosen color?,5,True
+"Does the answer address all parts of the question (color choice, effect description, and experiment support)?",6,True
+Does the answer choose a paint color?,0,False
+Does the answer describe how the color might affect the inside of the doghouse?,3,False
+Does the answer use results from the experiment?,2,True
+Does the answer support the description with experimental results?,2,False
+"Does the answer address all three criteria (color choice, effect description, and experimental support)?",6,False
+Does the answer mention a color?,0,False
+Does the answer specify one color?,0,False
+Does the answer choose from the given options?,0,False
+"Does the answer include black, dark gray, light gray, or white?",11,True
+Does the answer exclude any other colors?,0,False
+Does the answer mention the effect of color on temperature?,3,False
+Does the answer state that darker colors are warmer?,0,False
+Does the answer state that lighter colors are cooler?,0,False
+Does the answer describe the temperature effect inside the doghouse?,3,False
+Does the answer provide a clear comparison between darker and lighter colors?,5,False
+Does the answer mention specific experimental data?,4,True
+Does the answer provide a clear choice or decision?,1,False
+Does the answer link the data to the choice?,4,False
+Does the answer specify which choice had the highest result?,10,True
+Does the answer specify which choice had the lowest result?,10,False
+Does the answer choose a color?,0,True
+Does the answer describe the effect on the doghouse?,3,False
+Does the answer use experimental results?,2,False
+Does the answer describe the effect on the inside of the doghouse?,3,True
+Does the answer address the task requirements?,7,False
+Does the answer include both required supporting components?,7,False
+Does the answer provide a clear and relevant response?,1,False
+Does the answer demonstrate understanding of the topic?,8,True
+Does the answer contain any irrelevant or incorrect information?,9,True
+Does the answer choose a color?,0,False
+Does the answer provide accurate information?,1,True
+Does the answer provide complete information?,1,False
+Does the answer include all required information?,7,True
+Does the answer demonstrate understanding of the task?,8,False

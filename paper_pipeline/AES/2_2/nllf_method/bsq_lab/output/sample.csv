@@ -1,0 +1,30 @@
+source,llm
+question,1. Does the essay have a clear introduction that presents the topic and the writer's position? 2. Does the essay provide at least three supporting arguments or examples? 3. Does the essay use proper grammar and punctuation throughout? 4. Does the essay have a clear conclusion that summarizes the main points and restates the position? 5. Does the essay use formal and appropriate language for a newspaper audience?
+rubric_4_text,1. Does the essay use correct grammar? 2. Does the essay use correct punctuation? 3. Does the essay use correct spelling? 4. Does the essay use varied sentence structure? 5. Does the essay use appropriate vocabulary?
+rubric_4_elements_0,Does the essay use capitalization correctly?
+rubric_4_elements_1,Does the essay use punctuation correctly?
+rubric_4_elements_2,Does the essay have any spelling errors?
+rubric_4_elements_3,Does the essay have no grammar errors?
+rubric_4_elements_4,Does the essay use paragraphs effectively?
+rubric_4_elements_5,Does the essay avoid run-on sentences?
+rubric_3_text,1. Does the essay: Use correct spelling throughout? 2. Does the essay: Demonstrate proper punctuation usage? 3. Does the essay: Show correct grammar in sentences? 4. Does the essay: Maintain consistent verb tense? 5. Does the essay: Use appropriate word choice and vocabulary?
+rubric_3_elements_0,Does the essay use capital letters correctly?
+rubric_3_elements_1,Does the essay use punctuation correctly?
+rubric_3_elements_2,Does the essay have any spelling errors?
+rubric_3_elements_3,Does the essay have any grammatical errors?
+rubric_3_elements_4,Does the essay have clear and distinct paragraphs?
+rubric_3_elements_5,Does the essay have run-on sentences or fragments?
+rubric_2_text,1. Does the essay have minimal spelling errors? 2. Does the essay use correct grammar? 3. Does the essay have proper punctuation? 4. Does the essay use appropriate vocabulary? 5. Does the essay have clear and varied sentence structure?
+rubric_2_elements_0,Does the essay use capital letters correctly?
+rubric_2_elements_1,Does the essay use punctuation correctly?
+rubric_2_elements_2,Does the essay have any spelling errors?
+rubric_2_elements_3,Does the essay have correct grammar and Standard English usage?
+rubric_2_elements_4,Does the essay have clear paragraph breaks?
+rubric_2_elements_5,Does the essay contain run-on sentences or sentence fragments?
+rubric_1_text,1. Does the essay have frequent spelling errors? 2. Does the essay have frequent grammar errors? 3. Does the essay have frequent punctuation errors? 4. Does the essay have frequent capitalization errors? 5. Does the essay have frequent sentence structure errors?
+rubric_1_elements_0,Does the essay use capital letters correctly at the beginning of sentences?
+rubric_1_elements_1,Does the essay have correct punctuation?
+rubric_1_elements_2,Does the essay contain no more than 2 spelling errors?
+rubric_1_elements_3,Does the essay contain frequent grammatical errors?
+rubric_1_elements_4,Does the essay have clear paragraph breaks?
+rubric_1_elements_5,Does the essay contain many run-on sentences or fragments?

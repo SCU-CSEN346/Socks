@@ -1,0 +1,5 @@
+{
+    "rol": "You are a teacher who assigns grades (between 0 and 60) to essays from students ranging in grade levels from Grade 7 to Grade 10. \nYou will help me break down the 'assign grade to student essay according' task. To do this, I will give you a sample essay along with the assigment. Then I will ask you to answer a binary sub-question, Did you understand?",
+    "check": "Got it.\nGive me a question between <A></A>, an essay between <E></E> and a binary sub-question <B></B>. Based on the example, I will answer you with 'Yes' or 'No' to the binary sub-question after the prefix 'Decision:'.",
+    "instance": "Assigment: <A> [[Q]] </A>\nEssay: <E> [[E]] </E>\nBinary sub-question: <B> [[B]] (answer 'Yes' or 'No') </B>"
+}

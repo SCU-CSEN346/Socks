@@ -1,0 +1,23 @@
+{
+    "ESSAY_SET": 1,
+    "SEED": 2024,
+    "NLLFG_NAME": "bert_mixtral_nllfg_sas_1",
+    "BATCH_SIZE": 64,
+    "MAXLEN_A": 480,
+    "MAXLEN_B": 20,
+    "FRAC": 0.1,
+    "NUM_CLUSTERS": 12,
+    "MAX_LEN": 20,
+    "MIN_CLUSTER_SIZE": 0,
+    "FRAC_TRAIN": 0.9,
+    "LLM": "mistralai/Mixtral-8x7B-Instruct-v0.1",
+    "LM": "bert-base-cased",
+    "LR": 2e-5,
+    "EPOCHS": 5,
+    "HF_TOKEN": "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",
+    "USERNAME": "shravanSCU",
+    "PRED_BATCH_SIZE": 256,
+    "S_MAX": 3,
+    "S_MIN": 0,
+    "MISTRAL_API_KEY": "6rtMWIAZu6NIDUMhTK6xKtK3j7B6bBvX"
+}

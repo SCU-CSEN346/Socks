@@ -1,0 +1,16 @@
+{
+    "S_MAX": 60,
+    "S_MIN": 0,
+    "ESSAY_SET": 8,
+    "MODEL_PATH": "lr_Z_C/pred/llm/w_r_sf/nllf_ef",
+    "WEAK_SIGNAL_NAME": "llm",
+    "FEATURE_SET": "nllf_ef",
+    "SCALER_NAME": "Z",
+    "FS_STRATEGY": "C",
+    "NON_NEGATIVE": true,
+    "NUM_EXAMPLES": 8,
+    "QWK": 0.3008,
+    "SHOW_TABLE": "\\begin{tabular}{lllll}\n\\toprule\n & coef (std) & CI (95%) & t-test & p-value \\\\\n\\midrule\nconst & 30.49 (11.23) & 25.65, 34.94 & 2.71 &  \\\\\nPolysyllabic Grade Level (SMOG) & 12.63 (11.23) & 7.22, 16.97 & 1.1 &  \\\\\nNumber of words & 1.47 (11.23) & 0.00, 6.93 & 0.16 &  \\\\\nThe essay clearly and effectively communicates the main ideas & 0.22 (11.23) & 0.00, 5.49 & 0.09 &  \\\\\nThe essay uses a varied and well-chosen vocabulary to effectively convey its message & 0.00 (11.23) & 0.00, 1.59 & 0.01 &  \\\\\nThe essay includes laughter as an element or part of the story & 0.00 (11.23) & 0.00, 0.00 & 0.0 &  \\\\\n\\bottomrule\n\\end{tabular}\n",
+    "BEST_FEATURES": "\\begin{tabular}{lrlrrlrrr}\n\\toprule\n & coef & coef (std) & [0.025 & 0.975] & CI (95%) & |t| & is_ef & is_nllf \\\\\n\\midrule\nPolysyllabic Grade Level (SMOG) & 12.632903 & 12.63 (11.23) & 7.215884 & 16.966545 & 7.22, 16.97 & 1.104211 & True & False \\\\\nNumber of words & 1.468794 & 1.47 (11.23) & 0.000000 & 6.932288 & 0.00, 6.93 & 0.158915 & True & False \\\\\nThe essay clearly and effectively communicates the main ideas & 0.224831 & 0.22 (11.23) & 0.000000 & 5.486834 & 0.00, 5.49 & 0.090652 & False & True \\\\\nThe essay uses a varied and well-chosen vocabulary to effectively convey its message & 0.000000 & 0.00 (11.23) & 0.000000 & 1.585409 & 0.00, 1.59 & 0.009518 & False & True \\\\\nThe essay includes laughter as an element or part of the story & 0.000000 & 0.00 (11.23) & 0.000000 & 0.000000 & 0.00, 0.00 & 0.002167 & False & True \\\\\n\\bottomrule\n\\end{tabular}\n",
+    "EXAMPLE_IDS": "[21603, 21203, 21185, 21284, 21055, 21529, 21459, 21428]"
+}

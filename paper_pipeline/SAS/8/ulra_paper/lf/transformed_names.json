@@ -1,0 +1,21 @@
+{
+    "ulra_RIX": "Long-Word Ratio (RIX)",
+    "ulra_SMOG": "Polysyllabic Grade Level (SMOG)",
+    "ulra_GF": "Complex Word Grade Level (GF)",
+    "ulra_DC": "Familiar Word Difficulty (DC)",
+    "ulra_S": "Number of sentences",
+    "ulra_JJ": "Number of adjective words",
+    "ulra_UW": "Number of unique words",
+    "ulra_IN": "Number of preposition / subordinating - conjunction words",
+    "ulra_LW": "Number of long words",
+    "ulra_DT": "Number of determiner words",
+    "ulra_DW": "Number of difficult words",
+    "ulra_CW": "Number of complex words",
+    "ulra_NN": "Number of noun words",
+    "ulra_CO": "Number of commas",
+    "ulra_WT": "Number of wordtype",
+    "ulra_NBW": "Number of non-basic words",
+    "ulra_W": "Number of words",
+    "ulra_CH": "Number of characters",
+    "ulra_RB": "Number of adverb words"
+}

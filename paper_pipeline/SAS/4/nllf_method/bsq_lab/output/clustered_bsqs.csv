@@ -1,0 +1,51 @@
+bsq,cluster,is_centroid
+Does the answer define the term 'invasive'?,2,False
+Does the answer connect 'invasive' to the rest of the article?,2,False
+Does the answer provide specific examples from the article?,10,True
+Does the answer demonstrate understanding of the article's context?,5,False
+Does the answer provide a clear and logical explanation?,4,False
+Does the answer demonstrate a thoughtful and thorough examination of the text?,5,False
+Does the answer use information to move beyond the boundaries of the text?,1,False
+Does the answer evaluate explicit information?,1,True
+Does the answer evaluate implicit information?,1,False
+Does the answer make insightful judgments about how the word 'invasive' shapes the article's argument and meaning?,7,True
+Does the answer mention the term 'invasive'?,2,True
+Does the answer refer to non-native species?,6,True
+Does the answer mention introduction into ecosystems?,0,False
+Does the answer specify ecosystems where species do not naturally occur?,11,True
+Does the answer explain the concept of 'invasive'?,2,False
+Does the answer mention exotic pets?,0,False
+Does the answer discuss ecological impact?,0,False
+Does the answer connect the word to a broader debate?,0,False
+Does the answer provide relevant examples or evidence?,4,False
+Does the answer demonstrate understanding of the topic?,5,False
+Does the answer mention the author's use of the term?,2,False
+Does the answer identify the tension between traders and conservationists?,9,True
+Does the answer frame the tension in the context of the term?,2,False
+Does the answer evaluate the author's use of the term?,2,False
+Does the answer provide a clear and concise analysis?,4,False
+Does the answer mention specific details from the article?,10,False
+Does the answer provide evidence from the article?,10,False
+Does the answer include direct quotes from the article?,10,False
+Does the answer reference specific examples from the article?,10,False
+Does the answer use information unique to the article?,1,False
+Does the answer demonstrate sufficient examination of the text?,5,False
+Does the answer attempt to use information to move beyond the text?,1,False
+Does the answer evaluate explicit information?,1,False
+Does the answer evaluate implicit information?,1,False
+Does the answer present plausible but not fully developed judgments?,8,True
+Does the answer mention the word?,0,True
+Does the answer provide an explanation?,4,False
+Does the answer explain the word's significance?,0,False
+Does the answer provide a partial explanation?,4,False
+Does the answer avoid irrelevant details?,3,True
+Does the answer include any relevant detail from the article?,10,False
+Does the answer provide a clear analysis?,4,True
+Does the answer develop the analysis fully?,8,False
+Does the answer demonstrate understanding of the article?,5,True
+Does the answer provide sufficient evidence to support the analysis?,4,False
+Does the answer demonstrate a cursory examination of the text?,5,False
+Does the answer stay within the boundaries of the text?,5,False
+Does the answer make superficial observations?,0,False
+Does the answer lack support or evidence?,4,False
+"Does the answer contain illogical, vague, or irrelevant points?",3,False

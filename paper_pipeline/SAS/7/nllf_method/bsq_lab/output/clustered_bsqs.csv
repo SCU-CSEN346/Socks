@@ -1,0 +1,31 @@
+bsq,cluster,is_centroid
+Does the answer identify a trait of Rose?,2,False
+Does the answer provide a detail from the story?,0,False
+Does the answer support the identified trait with the provided detail?,1,True
+Does the answer include only one trait?,7,True
+Does the answer include only one detail?,7,False
+Does the answer identify a character trait of Rose?,2,False
+Does the answer draw the trait from Rose's conversations with Anna or Aunt Kolab?,3,True
+Does the answer include a specific supporting detail from the story?,0,True
+Does the answer clearly connect the trait to the supporting detail?,1,False
+Does the answer provide a clear and concise explanation?,6,True
+Does the answer mention a character trait?,2,False
+Does the answer specify a positive or negative trait?,8,True
+Does the answer use a clear and recognizable trait?,10,True
+Does the answer apply the trait to a character?,2,False
+Does the answer demonstrate understanding of the trait?,9,True
+Does the answer mention a specific detail from Rose's conversation with Anna?,3,False
+Does the answer mention a specific detail from Rose's conversation with Aunt Kolab?,3,False
+Does the answer support the trait being discussed?,11,True
+Does the answer directly reference a conversation?,5,True
+Does the answer provide a clear and relevant detail?,6,False
+Does the answer identify a character trait of Rose?,2,False
+Does the answer draw the trait from Rose's conversations with Anna or Aunt Kolab?,3,False
+Does the answer include a supporting detail?,0,False
+Does the answer identify a character trait?,2,True
+Does the answer provide a credible character trait?,2,False
+Does the answer include a story reference?,0,False
+Does the answer provide adequate story support?,0,False
+Does the answer meet the grading criteria?,4,True
+Does the answer mention a character?,2,False
+Does the answer specify a trait?,8,False

@@ -1,0 +1,17 @@
+{
+    "S_MAX": 3,
+    "S_MIN": 0,
+    "ESSAY_SET": 4,
+    "MODEL_PATH": "lr_Z_C/pred/llm/w_r_sf/nllf_ef",
+    "WEAK_SIGNAL_NAME": "llm",
+    "FEATURE_SET": "nllf_ef",
+    "SCALER_NAME": "Z",
+    "FS_STRATEGY": "C",
+    "NON_NEGATIVE": true,
+    "NUM_EXAMPLES": 8,
+    "bias": 1.3531634885955284,
+    "QWK": 0.7564,
+    "SHOW_TABLE": "\\begin{tabular}{lllll}\n\\toprule\n & coef (std) & CI (95%) & t-test & p-value \\\\\n\\midrule\nconst & 1.35 (0.33) & 1.33, 1.38 & 4.14 & ** \\\\\nThe essay avoids restating the conclusion without providing additional insights or analysis & 0.35 (0.33) & 0.25, 0.44 & 1.05 &  \\\\\nThe essay demonstrates a clear understanding of the text & 0.17 (0.33) & 0.07, 0.23 & 0.49 &  \\\\\nNumber of difficult words & 0.11 (0.33) & 0.04, 0.18 & 0.33 &  \\\\\nNumber of complex words & 0.07 (0.33) & 0.01, 0.14 & 0.23 &  \\\\\nNumber of adjective words & 0.07 (0.33) & 0.02, 0.10 & 0.19 &  \\\\\nNumber of commas & 0.06 (0.33) & 0.02, 0.10 & 0.19 &  \\\\\nNumber of sentences & 0.00 (0.33) & 0.00, 0.05 & 0.03 &  \\\\\nThe essay uses this information accurately and relevantly & 0.00 (0.33) & 0.00, 0.09 & 0.03 &  \\\\\nThe essay connects ideas in a meaningful way & 0.00 (0.33) & 0.00, 0.00 & 0.0 &  \\\\\nThe essay clarifies concepts beyond the literal meaning & 0.00 (0.33) & 0.00, 0.06 & 0.01 &  \\\\\nThe essay goes beyond the surface level of the subject matter & 0.00 (0.33) & 0.00, 0.00 & 0.0 &  \\\\\nNumber of characters & 0.00 (0.33) & 0.00, 0.05 & 0.01 &  \\\\\nNumber of non-basic words & 0.00 (0.33) & 0.00, 0.00 & 0.0 &  \\\\\nNumber of adverb words & 0.00 (0.33) & 0.00, 0.00 & 0.0 &  \\\\\nNumber of words & 0.00 (0.33) & 0.00, 0.01 & 0.0 &  \\\\\n\\bottomrule\n\\end{tabular}\n",
+    "BEST_FEATURES": "\\begin{tabular}{lrlrrlrrr}\n\\toprule\n & coef & coef (std) & [0.025 & 0.975] & CI (95%) & |t| & is_ef & is_nllf \\\\\n\\midrule\nNumber of difficult words & 0.114377 & 0.11 (0.33) & 0.037093 & 0.180328 & 0.04, 0.18 & 0.333959 & True & False \\\\\nNumber of complex words & 0.073960 & 0.07 (0.33) & 0.008700 & 0.138063 & 0.01, 0.14 & 0.228849 & True & False \\\\\nNumber of adjective words & 0.065545 & 0.07 (0.33) & 0.019392 & 0.104950 & 0.02, 0.10 & 0.189955 & True & False \\\\\nNumber of commas & 0.061436 & 0.06 (0.33) & 0.023087 & 0.100540 & 0.02, 0.10 & 0.190402 & True & False \\\\\nNumber of sentences & 0.001879 & 0.00 (0.33) & 0.000000 & 0.049005 & 0.00, 0.05 & 0.030699 & True & False \\\\\nThe essay avoids restating the conclusion without providing additional insights or analysis & 0.351854 & 0.35 (0.33) & 0.246151 & 0.438721 & 0.25, 0.44 & 1.051266 & False & True \\\\\nThe essay demonstrates a clear understanding of the text & 0.171510 & 0.17 (0.33) & 0.070971 & 0.229828 & 0.07, 0.23 & 0.490736 & False & True \\\\\nThe essay uses this information accurately and relevantly & 0.000000 & 0.00 (0.33) & 0.000000 & 0.091359 & 0.00, 0.09 & 0.028251 & False & True \\\\\nThe essay connects ideas in a meaningful way & 0.000000 & 0.00 (0.33) & 0.000000 & 0.000000 & 0.00, 0.00 & 0.000013 & False & True \\\\\nThe essay clarifies concepts beyond the literal meaning & 0.000000 & 0.00 (0.33) & 0.000000 & 0.064985 & 0.00, 0.06 & 0.011674 & False & True \\\\\n\\bottomrule\n\\end{tabular}\n",
+    "EXAMPLE_IDS": "[10560, 9374, 9996, 9706, 9088, 10446, 10024, 9628]"
+}

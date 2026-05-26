@@ -1,0 +1,459 @@
+{
+    "1": {
+        "range": [1,6],
+        "resolved": [2, 12],
+        "context": "More and more people use computers, but not everyone agrees that this benefits society. Those who support advances in technology believe that computers have a positive effect on people. They teach hand-eye coordination, give people the ability to learn about faraway places and people, and even allow people to talk online with other people. Others have different ideas. Some experts are concerned that people are spending too much time on their computers and less time exercising, enjoying nature, and interacting with family and friends.",
+        "question": "Write a letter to your local newspaper in which you state your opinion on the effects computers have on people. Persuade the readers to agree with you.",
+        "rubric": {
+            "1": {
+                "text": "An undeveloped response that may take a position but offers no more than very minimal support.",
+                "elements": [
+                    "Contains few or vague details.",
+                    "Is awkward and fragmented.",
+                    "May be difficult to read and understand.",
+                    "May show no awareness of audience."
+                ]
+            },
+            "2": {
+                "text": "An under-developed response that may or may not take a position.",
+                "elements": [
+                    "Contains only general reasons with unelaborated and/or list-like details.",
+                    "Shows little or no evidence of organization.",
+                    "May be awkward and confused or simplistic.",
+                    "May show little awareness of audience."
+                ]
+            },
+            "3": {
+                "text": "A minimally-developed response that may take a position, but with inadequate support and details.",
+                "elements": [
+                    "Has reasons with minimal elaboration and more general than specific details.",
+                    "Shows some organization.",
+                    "May be awkward in parts with few transitions.",
+                    "Shows some awareness of audience."
+                ]
+            },
+            "4": {
+                "text": "A somewhat-developed response that takes a position and provides adequate support.",
+                "elements": [
+                    "Has adequately elaborated reasons with a mix of general and specific details.",
+                    "Shows satisfactory organization.",
+                    "May be somewhat fluent with some transitional language.",
+                    "Shows adequate awareness of audience."
+                ]
+            },
+            "5": {
+                "text": "A developed response that takes a clear position and provides reasonably persuasive support.",
+                "elements": [
+                    "Has moderately well elaborated reasons with mostly specific details.",
+                    "Exhibits generally strong organization.",
+                    "May be moderately fluent with transitional language throughout.",
+                    "May show a consistent awareness of audience."
+                ]
+            },
+            "6": {
+                "text": "A well-developed response that takes a clear and thoughtful position and provides persuasive support.",
+                "elements": [
+                    "Has fully elaborated reasons with specific details.",
+                    "Exhibits strong organization.",
+                    "Is fluent and uses sophisticated transitional language.",
+                    "May show a heightened awareness of audience."
+                ]
+            }
+        }        
+    },
+    "2": {
+        "range": {
+            "Writing Applications": [1, 6],
+            "Language Conventions": [1, 4]            
+        },
+        "domain": {
+            "1": "Writing Applications",
+            "2": "Language Conventions"
+        },
+        "context": "Censorship in the Libraries - All of us can think of a book that we hope none of our children or any other children have taken off the shelf. But if I have the right to remove that book from the shelf -- that work I abhor -- then you also have exactly the same right and so does everyone else. And then we have no books left on the shelf for any of us. --Katherine Paterson, Author",
+        "question": "Write a persuasive essay to a newspaper reflecting your vies on censorship in libraries. Do you believe that certain materials, such as books, music, movies, magazines, etc., should be removed from the shelves if they are found offensive? Support your position with convincing arguments from your own experience, observations, and/or reading.",
+        "rubric": {
+            "1": {"6": {
+                    "text": "It fully accomplishes the task in a thorough and insightful manner and has a distinctive quality that sets it apart as an outstanding performance.",
+                    "elements": [
+                        "Does the writing sample fully accomplish the task (e.g., support an opinion, summarize, tell a story, or write an article)?",
+                        "Does the writing sample include many relevant ideas?",
+                        "Are the ideas in the writing sample organized logically?",
+                        "Does the writing sample exhibit exceptional word usage?",
+                        "Does the writing sample demonstrate exceptional writing technique?",
+                        "Does the writing sample demonstrate effective adjustment of language and tone to task and reader?"
+                    ]
+                },
+                "5": {
+                    "text": "It fully accomplishes the task, but lacks the overall level of sophistication and consistency of a Score Point 6 paper.",
+                    "elements": [
+                        "Does the writing sample fully accomplish the task (e.g., support an opinion, summarize, tell a story, or write an article)?",
+                        "Does the writing sample include many relevant ideas?",
+                        "Are the ideas in the writing sample organized logically?",
+                        "Does the writing sample exhibit very good word usage?",
+                        "Does the writing sample demonstrate very good writing technique?",
+                        "Does the writing sample demonstrate effective adjustment of language and tone to task and reader?"
+                    ]
+                },
+                "4": {
+                    "text": "It accomplishes the task, but generally needs to exhibit more development, better organization, or a more sophisticated writing style to receive a higher score.",
+                    "elements": [
+                        "Does the writing sample accomplish the task (e.g., support an opinion, summarize, tell a story, or write an article)?",
+                        "Does the writing sample include relevant ideas?",
+                        "Are the ideas in the writing sample organized logically?",
+                        "Does the writing sample exhibit good word usage?",
+                        "Does the writing sample demonstrate good writing technique?",
+                        "Does the writing sample demonstrate an attempt to adjust language and tone to task and reader?"
+                    ]
+                },
+                "3": {
+                    "text": "Some elements of development, organization, and writing style are weak.",
+                    "elements": [
+                        "Does the writing sample minimally accomplish the task (e.g., support an opinion, summarize, tell a story, or write an article)?",
+                        "Does the writing sample include some relevant ideas?",
+                        "Is there an attempt to logically organize ideas in the writing sample?",
+                        "Does the writing sample exhibit ordinary word usage?",
+                        "Does the writing sample demonstrate average writing technique?",
+                        "Does the writing sample demonstrate an attempt to adjust language and tone to task and reader?"
+                    ]
+                },
+                "2": {
+                    "text": "Others may be too brief to provide sufficient development of the topic or evidence of adequate organizational or writing style.",
+                    "elements": [
+                        "Does the writing sample only partially accomplish the task (e.g., support an opinion, summarize, tell a story, or write an article)?",
+                        "Does the writing sample include few relevant ideas?",
+                        "Is there a minimal attempt to logically organize ideas in the writing sample?",
+                        "Does the writing sample exhibit minimal word usage?",
+                        "Does the writing sample demonstrate minimal writing technique?",
+                        "Does the writing sample demonstrate language and tone that may be inappropriate to task and reader?"
+                    ]
+                },
+                "1": {
+                    "text": "The writing is generally either very brief or rambling and repetitive, sometimes resulting in a response that may be difficult to read or comprehend.",
+                    "elements": [
+                        "Does the writing sample fail to accomplish the task (e.g., support an opinion, summarize, tell a story, or write an article)?",
+                        "Does the writing sample include very few relevant ideas?",
+                        "Are the ideas in the writing sample organized illogically?",
+                        "Does the writing sample exhibit less than minimal word usage?",
+                        "Does the writing sample demonstrate less than minimal writing technique?",
+                        "Does the writing sample demonstrate language and tone that may be inappropriate to task and reader?"
+                    ]
+                }
+            },
+            "2": {
+                "4": {
+                    "text": "Does the writing sample exhibit a superior command of language skills?",
+                    "elements": [
+                        "Does the writing sample demonstrate a superior command of capitalization conventions?",
+                        "Does the writing sample demonstrate a superior command of the mechanics of punctuation?",
+                        "Does the writing sample demonstrate a superior command of grade-level-appropriate spelling?",
+                        "Does the writing sample demonstrate a superior command of grammar and Standard English usage?",
+                        "Does the writing sample demonstrate a superior command of paragraphing?",
+                        "Does the writing sample demonstrate a superior command of sentence structure by not using run-on sentences or sentence fragments?"
+                    ]
+                },
+                "3": {
+                    "text": "Does the writing sample exhibit a good control of language skills?",
+                    "elements": [
+                        "Does the writing sample demonstrate a good control of capitalization conventions?",
+                        "Does the writing sample demonstrate a good control of the mechanics of punctuation?",
+                        "Does the writing sample demonstrate a good control of grade-level-appropriate spelling?",
+                        "Does the writing sample demonstrate a good control of grammar and Standard English usage?",
+                        "Does the writing sample demonstrate a good control of paragraphing?",
+                        "Does the writing sample demonstrate a good control of sentence structure by only occasionally using run-on sentences or sentence fragments?"
+                    ]
+                },
+                "2": {
+                    "text": "Does the writing sample exhibit a fair control of language skills?",
+                    "elements": [
+                        "Does the writing sample demonstrate a fair control of capitalization conventions?",
+                        "Does the writing sample demonstrate a fair control of the mechanics of punctuation?",
+                        "Does the writing sample demonstrate a fair control of grade-level-appropriate spelling?",
+                        "Does the writing sample demonstrate a fair control of grammar and Standard English usage?",
+                        "Does the writing sample demonstrate a fair control of paragraphing?",
+                        "Does the writing sample demonstrate a fair control of sentence structure by frequently using run-on sentences or sentence fragments?"
+                    ]
+                },
+                "1": {
+                    "text": "Does the writing sample exhibit a minimal or less than minimal control of language skills?",
+                    "elements": [
+                        "Does the writing sample demonstrate a minimal control of capitalization conventions?",
+                        "Does the writing sample demonstrate a minimal control of the mechanics of punctuation?",
+                        "Does the writing sample demonstrate a minimal control of grade-level-appropriate spelling?",
+                        "Does the writing sample demonstrate a minimal control of grammar and Standard English usage?",
+                        "Does the writing sample demonstrate a minimal control of paragraphing?",
+                        "Does the writing sample demonstrate a minimal control of sentence structure by using many run-on sentences or sentence fragments?"
+                    ]
+                }
+            }
+        }
+    },
+    "3": {
+        "range": [0,3],
+        "resolved": [0,3],
+        "context": "",
+        "question": "Write a response that explains how the features of the setting affect the cyclist. In your response, include examples from the essay that support your conclusion.",
+        "rubric": {
+            "3": {
+                "text": "The response demonstrates an understanding of the complexities of the text.",
+                "elements": [
+                    "Addresses the demands of the question.",
+                    "Uses expressed and implied information from the text.",
+                    "Clarifies and extends understanding beyond the literal."
+                ]
+            },
+            "2": {
+                "text": "The response demonstrates a partial or literal understanding of the text.",
+                "elements": [
+                    "Addresses the demands of the question, although may not develop all parts equally.",
+                    "Uses some expressed or implied information from the text to demonstrate understanding.",
+                    "May not fully connect the support to a conclusion or assertion made about the text(s)."
+                ]
+            },
+            "1": {
+                "text": "The response shows evidence of a minimal understanding of the text.",
+                "elements": [
+                    "May show evidence that some meaning has been derived from the text.",
+                    "May indicate a misreading of the text or the question.",
+                    "May lack information or explanation to support an understanding of the text in relation to the question."
+                ]
+            },
+            "0": {
+                "text": "The response is completely irrelevant or incorrect, or there is no response.",
+                "elements": []
+            }
+        }
+    },
+    "4": {
+        "range": [0,3],
+        "resolved": [0,3],
+        "context": "Read the last paragraph of the story. 'When they come back, Saeng vowed silently to herself, in the spring, when the snows melt and the geese return and this hibiscus is budding, then I will take that test again.'", 
+        "question": "Write a response that explains why the author concludes the story with this paragraph. In your response, include details and examples from the story that support your ideas.",
+        "rubric": {
+            "3": {
+                "text": "The response demonstrates an understanding of the complexities of the text.",
+                "elements": [
+                    "Addresses the demands of the question",
+                    "Uses expressed and implied information from the text",
+                    "Clarifies and extends understanding beyond the literal"
+                ]
+            },
+            "2": {
+                "text": "The response demonstrates a partial or literal understanding of the text.",
+                "elements": [
+                    "Addresses the demands of the question, although may not develop all parts equally",
+                    "Uses some expressed or implied information from the text to demonstrate understanding",
+                    "May not fully connect the support to a conclusion or assertion made about the text(s)"
+                ]
+            },
+            "1": {
+                "text": "The response shows evidence of a minimal understanding of the text.",
+                "elements": [
+                    "May show evidence that some meaning has been derived from the text",
+                    "May indicate a misreading of the text or the question",
+                    "May lack information or explanation to support an understanding of the text in relation to the question"
+                ]
+            },
+            "0": {
+                "text": "The response is completely irrelevant or incorrect, or there is no response.",
+                "elements": []
+            }
+        }
+    },  
+    "5": {
+        "range": [0,4],
+        "resolved": [0,4],
+        "context": "",
+        "question": "Describe the mood created by the author in the memoir. Support your answer with relevant and specific information from the memoir.",
+        "rubric": {
+            "4": {
+                "text": "The response is a clear, complete, and accurate description of the mood created by the author.",
+                "elements": [
+                    "The response includes relevant and specific information from the memoir."
+                ]
+            },
+            "3": {
+                "text": "The response is a mostly clear, complete, and accurate description of the mood created by the author.",
+                "elements": [
+                    "The response includes relevant but often general information from the memoir."
+                ]
+            },
+            "2": {
+                "text": "The response is a partial description of the mood created by the author.",
+                "elements": [
+                    "The response includes limited information from the memoir and may include misinterpretations."
+                ]
+            },
+            "1": {
+                "text": "The response is a minimal description of the mood created by the author.",
+                "elements": [
+                    "The response includes little or no information from the memoir and may include misinterpretations.",
+                    "OR The response relates minimally to the task."
+                ]
+            },
+            "0": {
+                "text": "The response is incorrect or irrelevant or contains insufficient information to demonstrate comprehension.",
+                "elements": []
+            }
+        }
+    },
+    "6": {
+        "range": [0,4],
+        "resolved": [0,4],
+        "context": "",
+        "question": "Based on the excerpt, describe the obstacles the builders of the Empire State Building faced in attempting to allow dirigibles to dock there. Support your answer with relevant and specific information from the excerpt.",
+        "rubric": {
+            "4": {
+                "text": "The response is a clear, complete, and accurate description of the obstacles the builders of the Empire State Building faced in attempting to allow dirigibles to dock there.",
+                "elements": [
+                    "The response includes relevant and specific information from the excerpt."
+                ]
+            },
+            "3": {
+                "text": "The response is a mostly clear, complete, and accurate description of the obstacles the builders of the Empire State Building faced in attempting to allow dirigibles to dock there.",
+                "elements": [
+                    "The response includes relevant but often general information from the excerpt."
+                ]
+            },
+            "2": {
+                "text": "The response is a partial description of the obstacles the builders of the Empire State Building faced in attempting to allow dirigibles to dock there.",
+                "elements": [
+                    "The response includes limited information from the excerpt and may include misinterpretations."
+                ]
+            },
+            "1": {
+                "text": "The response is a minimal description of the obstacles the builders of the Empire State Building faced in attempting to allow dirigibles to dock there.",
+                "elements": [
+                    "The response includes little or no information from the excerpt and may include misinterpretations.",
+                    "OR The response relates minimally to the task."
+                ]
+            },
+            "0": {
+                "text": "The response is totally incorrect or irrelevant, or contains insufficient evidence to demonstrate comprehension.",
+                "elements": []
+            }
+        }
+    },
+    "7": {
+        "range": [0,15],
+        "resolved": [0,30],
+        "context": "",
+        "question": "Write about patience. Being patient means that you are understanding and tolerant. A patient person experience difficulties without complaining. Do only one of the following: write a story about a time when you were patient OR write a story about a time when someone you know was patient OR write a story in your own way about patience.",
+        "dimensions": {
+            "1": "Ideas (points doubled)",
+            "2": "Organization",
+            "3": "Style",
+            "4": "Conventions"
+        },
+        "rubric": {
+            "1": {
+                "elements": [
+                    "Tells a story with ideas that are clearly focused on the topic and are thoroughly developed with specific, relevant details.",
+                    "Tells a story with ideas that are somewhat focused on the topic and are developed with a mix of specific and/or general details.",
+                    "Tells a story with ideas that are minimally focused on the topic and developed with limited and/or general details.",
+                    "Ideas are not focused on the task and/or are undeveloped."
+                ]
+            },
+            "2": {
+                "elements": [
+                    "Organization and connections between ideas and/or events are clear and logically sequenced.",
+                    "Organization and connections between ideas and/or events are logically sequenced.",
+                    "Organization and connections between ideas and/or events are weak.",
+                    "No organization evident."
+                ]
+            },
+            "3": {
+                "elements": [
+                    "Command of language, including effective and compelling word choice and varied sentence structure, clearly supports the writer's purpose and audience.",
+                    "Adequate command of language, including effective word choice and clear sentences, supports the writer's purpose and audience.",
+                    "Limited use of language, including lack of variety in word choice and sentences, may hinder support for the writer's purpose and audience.",
+                    "Ineffective use of language for the writer's purpose and audience."
+                ]
+            },
+            "4": {
+                "elements": [
+                    "Consistent, appropriate use of conventions of Standard English for grammar, usage, spelling, capitalization, and punctuation for the grade level.",
+                    "Adequate use of conventions of Standard English for grammar, usage, spelling, capitalization, and punctuation for the grade level.",
+                    "Limited use of conventions of Standard English for grammar, usage, spelling, capitalization, and punctuation for the grade level.",
+                    "Ineffective use of conventions of Standard English for grammar, usage, spelling, capitalization, and punctuation."
+                ]
+            }
+        }
+    },
+    "8": {
+        "resolved": [0,60],
+        "range": [0,60],
+        "context": "We all understand the benefits of laughter. For example, someone once said, “Laughter is the shortest distance between two people.” Many other people believe that laughter is an important part of any relationship.",
+        "question": "Tell a true story in which laughter was one element or part.",
+        "dimensions": {
+            "1": "Ideas and Content",
+            "2": "Organization",
+            "3": "Voice",
+            "4": "Word Choice",
+            "5": "Sentence Fluency",
+            "6": "Conventions"
+        },
+        "rubric": {
+            "1": {
+                "elements": [
+                    "The writing is exceptionally clear, focused, and interesting. It holds the reader’s attention throughout. Main ideas stand out and are developed by strong support and rich details suitable to audience and purpose.",
+                    "The writing is clear, focused, and interesting. It holds the reader’s attention. Main ideas stand out and are developed by supporting details suitable to audience and purpose.",
+                    "The writing is clear and focused. The reader can easily understand the main ideas. Support is present, although it may be limited or rather general.",
+                    "The reader can understand the main ideas, although they may be overly broad or simplistic, and the results may not be effective. Supporting detail is often limited, insubstantial, overly general, or occasionally slightly off-topic.",
+                    "Main ideas and purpose are somewhat unclear or development is attempted but minimal.",
+                    "The writing lacks a central idea or purpose."
+                ]
+            },
+            "2": {
+                "elements": [
+                    "The organization enhances the central idea(s) and its development. The order and structure are compelling and move the reader through the text easily.",
+                    "The organization enhances the central idea(s) and its development. The order and structure are strong and move the reader through the text.",
+                    "Organization is clear and coherent. Order and structure are present, but may seem formulaic.",
+                    "An attempt has been made to organize the writing; however, the overall structure is inconsistent or skeletal.",
+                    "The writing lacks a clear organizational structure. An occasional organizational device is discernible; however, the writing is either difficult to follow and the reader has to reread substantial portions, or the piece is simply too short to demonstrate organizational skills.",
+                    "The writing lacks coherence; organization seems haphazard and disjointed. Even after rereading, the reader remains confused."
+                ]
+            },
+            "3": {
+                "elements": [
+                    "The writer has chosen a voice appropriate for the topic, purpose, and audience. The writer demonstrates deep commitment to the topic, and there is an exceptional sense of 'writing to be read.' The writing is expressive, engaging, or sincere.",
+                    "The writer has chosen a voice appropriate for the topic, purpose, and audience. The writer demonstrates commitment to the topic, and there is a sense of 'writing to be read.' The writing is expressive, engaging, or sincere. The writing is characterized by an appropriate level of closeness to or distance from the audience.",
+                    "A voice is present. The writer seems committed to the topic, and there may be a sense of 'writing to be read.' In places, the writing is expressive, engaging, or sincere.",
+                    "The writer’s commitment to the topic seems inconsistent. A sense of the writer may emerge at times; however, the voice is either inappropriately personal or inappropriately impersonal.",
+                    "The writing provides little sense of involvement or commitment. There is no evidence that the writer has chosen a suitable voice.",
+                    "The writing seems to lack a sense of involvement or commitment."
+                ]
+            },
+            "4": {
+                "elements": [
+                    "Words convey the intended message in an exceptionally interesting, precise, and natural way appropriate to audience and purpose. The writer employs a rich, broad range of words which have been carefully chosen and thoughtfully placed for impact.",
+                    "Words convey the intended message in an interesting, precise, and natural way appropriate to audience and purpose. The writer employs a broad range of words which have been carefully chosen and thoughtfully placed for impact.",
+                    "Words effectively convey the intended message. The writer employs a variety of words that are functional and appropriate to audience and purpose.",
+                    "Language lacks precision and variety, or may be inappropriate to audience and purpose in places. The writer does not employ a variety of words, producing a sort of 'generic' paper filled with familiar words and phrases.",
+                    "Language is monotonous and/or misused, detracting from the meaning and impact.",
+                    "The writing shows an extremely limited vocabulary or is so filled with misuses of words that the meaning is obscured. Only the most general kind of message is communicated because of vague or imprecise language."
+                ]
+            },
+            "5": {
+                "elements": [
+                    "The writing has an effective flow and rhythm. Sentences show a high degree of craftsmanship, with consistently strong and varied structure that makes expressive oral reading easy and enjoyable.",
+                    "The writing has an easy flow and rhythm. Sentences are carefully crafted, with strong and varied structure that makes expressive oral reading easy and enjoyable.",
+                    "The writing flows; however, connections between phrases or sentences may be less than fluid. Sentence patterns are somewhat varied, contributing to ease in oral reading.",
+                    "The writing tends to be mechanical rather than fluid. Occasional awkward constructions may force the reader to slow down or reread.",
+                    "The writing tends to be either choppy or rambling. Awkward constructions often force the reader to slow down or reread.",
+                    "The writing is difficult to follow or to read aloud. Sentences tend to be incomplete, rambling, or very awkward."
+                ]
+            },
+            "6": {
+                "elements": [
+                    "The writing demonstrates exceptionally strong control of standard writing conventions (e.g., punctuation, spelling, capitalization, grammar and usage) and uses them effectively to enhance communication. Errors are so few and so minor that the reader can easily skim right over them unless specifically searching for them.",
+                    "The writing demonstrates strong control of standard writing conventions (e.g., punctuation, spelling, capitalization, grammar and usage) and uses them effectively to enhance communication. Errors are few and minor. Conventions support readability.",
+                    "The writing demonstrates control of standard writing conventions (e.g., punctuation, spelling, capitalization, grammar and usage). Significant errors do not occur frequently. Minor errors, while perhaps noticeable, do not impede readability.",
+                    "The writing demonstrates limited control of standard writing conventions (e.g., punctuation, spelling, capitalization, grammar and usage). Errors begin to impede readability.",
+                    "The writing demonstrates little control of standard writing conventions. Frequent, significant errors impede readability.",
+                    "Numerous errors in usage, spelling, capitalization, and punctuation repeatedly distract the reader and make the text difficult to read. In fact, the severity and frequency of errors are so overwhelming that the reader finds it difficult to focus on the message and must reread for meaning."
+                ]
+            }
+        }
+    }
+}

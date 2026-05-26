@@ -1,0 +1,61 @@
+bsq,cluster,is_centroid
+Does the answer identify at least three specific pieces of missing information?,5,False
+Does the answer relate to the replication of the experiment?,8,True
+Does the answer provide clear and concise information?,3,False
+Does the answer demonstrate understanding of the original procedure?,6,False
+Does the answer include relevant details for replication?,7,True
+Does the answer mention a first additional piece of information needed?,5,False
+Does the answer mention a second additional piece of information needed?,5,False
+Does the answer mention a third additional piece of information needed?,5,False
+Does the answer provide specific details for each additional piece of information?,5,False
+Does the answer clearly explain why each additional piece of information is needed?,5,False
+Does the answer mention the amount of vinegar used?,5,False
+Does the answer specify the unit of measurement for the vinegar?,6,False
+Does the answer provide the amount of vinegar for each container separately?,4,False
+Does the answer clearly state the quantity of vinegar?,6,False
+Does the answer address the question directly?,10,True
+Does the answer mention the type of vinegar?,5,False
+Does the answer specify the container?,6,False
+Does the answer provide a clear distinction between containers?,3,False
+Does the answer use correct terminology for vinegar types?,0,True
+Does the answer address each container separately?,4,True
+Does the answer mention specific materials?,5,False
+Does the answer provide a clear list of materials?,3,False
+Does the answer include all necessary materials?,2,False
+Does the answer avoid irrelevant materials?,2,False
+Does the answer explain why the materials are chosen?,2,True
+Does the answer mention size?,5,False
+Does the answer mention surface area?,5,False
+Does the answer provide a specific measurement or unit?,3,False
+Does the answer address the question directly?,10,False
+Does the answer make sense in context?,9,True
+Does the answer mention the duration of rinsing?,5,False
+Does the answer specify the use of distilled water?,6,False
+Does the answer provide a clear time measurement?,3,False
+Does the answer address the rinsing process?,10,False
+Does the answer give a numerical value for the duration?,0,False
+Does the answer mention a specific drying method?,5,False
+Does the answer explain the chosen drying method?,2,False
+Does the answer consider the context or material?,2,False
+Does the answer provide a clear recommendation?,3,True
+Does the answer address potential drawbacks or alternatives?,10,False
+Does the answer mention a specific size of container?,5,False
+Does the answer mention a specific type of container?,5,False
+Does the answer provide a reason for the chosen container size or type?,4,False
+Does the answer address the context or situation for the container choice?,4,False
+Does the answer demonstrate understanding of container options?,6,True
+Does the answer mention a specific piece of information needed?,5,False
+Does the answer mention another distinct piece of information needed?,5,False
+Does the answer provide a clear description of the first piece of information?,3,False
+Does the answer provide a clear description of the second piece of information?,3,False
+Does the answer relate both pieces of information to the experiment?,8,False
+Does the answer mention a specific piece of information?,5,True
+Does the answer suggest that the information is additional?,11,True
+Does the answer imply that the information is necessary for replication?,11,False
+Does the answer describe the information in a clear way?,3,False
+Does the answer focus on the experiment's replication?,8,False
+Does the answer mention any specific details from the acid rain investigation?,1,False
+Does the answer provide accurate information related to acid rain?,1,False
+Does the answer include relevant facts or data from the investigation?,7,False
+Does the answer demonstrate a clear understanding of the topic?,6,False
+Does the answer contain any information that is incorrect or unrelated to acid rain?,1,True

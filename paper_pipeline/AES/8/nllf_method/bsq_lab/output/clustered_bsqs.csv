@@ -1,0 +1,42 @@
+bsq,cluster,is_centroid
+Does the essay tell a true story?,9,True
+Does the essay include laughter as an element?,7,True
+"Does the essay have a clear beginning, middle, and end?",11,False
+Does the essay use descriptive language?,10,True
+Does the essay have proper grammar and spelling?,8,False
+Does the essay hold the reader's attention throughout?,1,False
+Does the essay maintain a clear focus throughout?,1,False
+Does the essay present clear and understandable main ideas?,5,False
+Does the essay present overly broad or simplistic main ideas?,5,False
+Does the essay clearly present main ideas and purpose?,5,True
+Does the essay lack a central idea or purpose?,5,False
+Does the essay have a clear and logical structure?,11,True
+Does the essay have a clear and logical structure?,11,False
+Does the essay have a clear and coherent organization?,11,False
+Does the essay have a consistent and well-developed structure?,11,False
+Does the essay have a clear organizational structure?,11,False
+Does the essay have a clear and logical structure?,11,False
+"Does the essay use a voice suitable for the topic, purpose, and audience?",3,True
+"Does the essay use a voice suitable for the topic, purpose, and audience?",3,False
+Does the essay show a clear and consistent voice throughout?,1,True
+Does the essay maintain a consistent and appropriate voice throughout?,1,False
+Does the essay show involvement or commitment?,4,True
+Does the essay show a lack of engagement?,4,False
+Does the essay use a rich and varied vocabulary?,3,False
+Does the essay use a wide range of words effectively?,2,False
+Does the essay use a variety of appropriate words?,2,False
+Does the essay use a limited range of words?,2,True
+Does the essay use language in a monotonous or incorrect way?,10,False
+Does the essay use a very limited vocabulary or have many word misuse?,2,False
+Does the essay have a consistent and varied sentence structure?,11,False
+Does the essay have a smooth flow and varied sentence structure?,11,False
+Does the essay have fluid connections between phrases or sentences?,6,True
+Does the essay have awkward constructions that disrupt the flow?,0,True
+Does the essay have awkward constructions that disrupt reading flow?,0,False
+"Does the essay have sentences that are incomplete, rambling, or awkward?",0,False
+"Does the essay have fewer than 3 errors in punctuation, spelling, capitalization, grammar, and usage?",8,True
+"Does the essay have few and minor errors in punctuation, spelling, capitalization, grammar, and usage?",8,False
+Does the essay have significant errors that occur frequently?,0,False
+Does the essay have errors that make it hard to read?,0,False
+"Does the essay have frequent, significant errors that impede readability?",0,False
+Does the essay have numerous errors that distract the reader?,0,False

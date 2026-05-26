@@ -2,6 +2,24 @@
 
 This project follows **Option 2**: selecting a recent ACL Anthology paper with available code, reproducing the baseline, and improving the approach.
 
+---
+
+## paper_pipeline
+
+Shravan Dhanasekaran's full reproduction of the paper pipeline across both AES (8 essay sets) and SAS (10 question sets), implementing the complete three-phase approach from the original paper: weak label generation, NLLF feature extraction, and positive linear regression with genetic feature selection.
+
+```text
+paper_pipeline/
+├── AES/        # Automated Essay Scoring pipeline (ASAP-AES, essay sets 1–8)
+└── SAS/        # Short Answer Scoring pipeline (ASAP-SAS, question sets 1–10)
+```
+
+Place the extracted ASAP-AES files under `paper_pipeline/AES/data/` and the extracted ASAP-SAS files under `paper_pipeline/SAS/data/` before running any scripts. See `paper_pipeline/AES/read_data.ipynb` and `paper_pipeline/SAS/read_data.ipynb` to preprocess the raw dataset files.
+
+**Contributions — Shravan Dhanasekaran:** Replicated the full AES and SAS pipelines from the original paper across all essay and question sets, including signal clustering, ULRA, LLM weak label generation (vanilla, chain-of-thought, weak signal), NLLF feature extraction via BSQs, similarity-based scoring, BERT classification, and positive linear regression training and evaluation. Switched the final regression model from positive LinearRegression to Ridge(alpha=10) for improved regularization.
+
+---
+
 # Socks
 
 

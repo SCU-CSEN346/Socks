@@ -1,0 +1,7 @@
+{
+    "ESSAY_SET": 1,
+    "LLM": "mistralai/Mixtral-8x7B-Instruct-v0.1",
+    "S_MAX": 12,
+    "S_MIN": 2,
+    "INDEX": 1
+}

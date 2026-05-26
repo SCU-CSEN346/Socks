@@ -1,0 +1,61 @@
+bsq,cluster,is_centroid
+Does the answer draw a clear conclusion based on the student's data?,4,False
+Does the answer describe two specific ways to improve the experimental design?,5,False
+Does the answer describe two specific ways to improve the validity of the results?,5,False
+Does the answer provide explanations for the suggested improvements?,0,False
+Does the answer address the original question in a coherent and logical manner?,9,True
+Does the answer draw a valid conclusion?,4,True
+Does the answer support the conclusion with data?,4,False
+Does the answer describe two improvements for the experimental design?,5,False
+Does the answer describe two improvements for the validity of the results?,5,False
+Does the answer meet all the above criteria?,8,True
+"Does the answer mention ""Plastic sample B""?",2,False
+Does the answer compare stretchability?,2,False
+"Does the answer use the word ""more""?",3,True
+"Does the answer mention ""polymer plastics""?",2,False
+Does the answer make a clear comparison?,0,False
+"Does the answer mention ""Plastic sample A""?",2,False
+"Does the answer discuss ""stretchability""?",2,False
+"Does the answer state that ""Plastic sample A"" has the least amount of stretchability?",1,True
+Does the answer provide a clear comparison with other samples?,0,False
+Does the answer avoid introducing irrelevant information?,11,True
+Does the answer address the topic of polymer plastics?,7,False
+Does the answer mention stretchability?,2,False
+Does the answer indicate a comparison or difference?,0,False
+Does the answer provide a clear and relevant example?,0,False
+Does the answer demonstrate understanding of the concept?,7,False
+Does the answer mention a measurement before the action?,2,False
+Does the answer mention a measurement after the action?,2,False
+Does the answer provide a numerical value for the before measurement?,0,False
+Does the answer provide a numerical value for the after measurement?,0,False
+Does the answer use consistent units for both measurements?,3,False
+"Does the answer mention ""samples""?",2,True
+"Does the answer mention ""thickness""?",2,False
+Does the answer indicate that the samples should be of the same thickness?,1,False
+Does the answer provide a clear instruction or requirement?,0,False
+Does the answer avoid introducing irrelevant information?,11,False
+Does the answer mention performing additional trials?,6,True
+Does the answer provide a reason for performing additional trials?,6,False
+Does the answer suggest a method for performing additional trials?,6,False
+Does the answer acknowledge the importance of additional trials?,6,False
+Does the answer discuss the potential outcomes of additional trials?,6,False
+Does the answer mention the number of weights?,2,False
+Does the answer specify the addition of weights to the clamps?,2,False
+Does the answer provide a clear numerical value?,0,True
+Does the answer address the question directly?,9,False
+Does the answer avoid irrelevant information?,11,False
+Does the answer draw a valid conclusion?,4,False
+Does the answer support the conclusion with data?,4,False
+Does the answer describe one way to improve the experimental design or validity?,5,False
+Does the answer describe two ways to improve the experimental design?,5,True
+Does the answer fail to draw a conclusion or draw an incorrect conclusion?,4,False
+Does the answer draw a valid conclusion?,4,False
+Does the answer support the conclusion with data?,4,False
+Does the answer describe how to improve the experimental design?,5,False
+Does the answer correctly describe the improvement?,5,False
+Does the answer incorrectly draw a conclusion?,4,False
+Does the answer contain any correct information from the polymer investigation?,10,True
+Does the answer address the main topic of the polymer investigation?,7,False
+Does the answer provide any specific details from the polymer investigation?,10,False
+Does the answer demonstrate understanding of the polymer investigation?,7,True
+Does the answer contain any relevant examples from the polymer investigation?,10,False

@@ -1,0 +1,16 @@
+{
+    "S_MAX": 30,
+    "S_MIN": 0,
+    "ESSAY_SET": 7,
+    "MODEL_PATH": "lr_Z_C/pred/llm/w_r_sf/nllf_ef",
+    "WEAK_SIGNAL_NAME": "llm",
+    "FEATURE_SET": "nllf_ef",
+    "SCALER_NAME": "Z",
+    "FS_STRATEGY": "C",
+    "NON_NEGATIVE": true,
+    "NUM_EXAMPLES": 8,
+    "QWK": 0.6377,
+    "SHOW_TABLE": "\\begin{tabular}{lllll}\n\\toprule\n & coef (std) & CI (95%) & t-test & p-value \\\\\n\\midrule\nconst & 16.42 (4.44) & 16.11, 16.75 & 3.7 & * \\\\\nThe essay has clear and logical connections between ideas and/or events & 3.13 (4.44) & 1.08, 4.94 & 0.69 &  \\\\\nThe essay has a logical order to the ideas and/or events presented & 2.37 (4.44) & 0.67, 4.07 & 0.53 &  \\\\\nNumber of complex words & 1.01 (4.44) & 0.45, 1.52 & 0.22 &  \\\\\nNumber of determiner words & 0.87 (4.44) & 0.39, 1.37 & 0.2 &  \\\\\nNumber of commas & 0.43 (4.44) & 0.00, 0.89 & 0.1 &  \\\\\nPolysyllabic Grade Level (SMOG) & 0.30 (4.44) & 0.00, 0.83 & 0.07 &  \\\\\nThe essay has a clear focus on the topic throughout & 0.00 (4.44) & 0.00, 0.88 & 0.01 &  \\\\\nThe essay describes the experience of the author or someone else & 0.00 (4.44) & 0.00, 0.00 & 0.0 &  \\\\\nThe essay shows that the person in the story did not complain during the difficult situation & 0.00 (4.44) & 0.00, 0.00 & 0.0 &  \\\\\nFamiliar Word Difficulty (DC) & 0.00 (4.44) & 0.00, 0.00 & 0.0 &  \\\\\nLong-Word Ratio (RIX) & 0.00 (4.44) & 0.00, 0.16 & 0.0 &  \\\\\n\\bottomrule\n\\end{tabular}\n",
+    "BEST_FEATURES": "\\begin{tabular}{lrlrrlrrr}\n\\toprule\n & coef & coef (std) & [0.025 & 0.975] & CI (95%) & |t| & is_ef & is_nllf \\\\\n\\midrule\nNumber of complex words & 1.008304 & 1.01 (4.44) & 0.451926 & 1.524496 & 0.45, 1.52 & 0.223794 & True & False \\\\\nNumber of determiner words & 0.868675 & 0.87 (4.44) & 0.393829 & 1.371677 & 0.39, 1.37 & 0.197500 & True & False \\\\\nNumber of commas & 0.427508 & 0.43 (4.44) & 0.000000 & 0.889653 & 0.00, 0.89 & 0.098867 & True & False \\\\\nPolysyllabic Grade Level (SMOG) & 0.304623 & 0.30 (4.44) & 0.000000 & 0.828045 & 0.00, 0.83 & 0.073619 & True & False \\\\\nFamiliar Word Difficulty (DC) & 0.000000 & 0.00 (4.44) & 0.000000 & 0.000000 & 0.00, 0.00 & 0.000011 & True & False \\\\\nThe essay has clear and logical connections between ideas and/or events & 3.131396 & 3.13 (4.44) & 1.078536 & 4.939581 & 1.08, 4.94 & 0.689277 & False & True \\\\\nThe essay has a logical order to the ideas and/or events presented & 2.367762 & 2.37 (4.44) & 0.666448 & 4.065026 & 0.67, 4.07 & 0.533040 & False & True \\\\\nThe essay has a clear focus on the topic throughout & 0.000000 & 0.00 (4.44) & 0.000000 & 0.884355 & 0.00, 0.88 & 0.012810 & False & True \\\\\nThe essay describes the experience of the author or someone else & 0.000000 & 0.00 (4.44) & 0.000000 & 0.000000 & 0.00, 0.00 & 0.000000 & False & True \\\\\nThe essay shows that the person in the story did not complain during the difficult situation & 0.000000 & 0.00 (4.44) & 0.000000 & 0.000000 & 0.00, 0.00 & 0.000151 & False & True \\\\\n\\bottomrule\n\\end{tabular}\n",
+    "EXAMPLE_IDS": "[18664, 19419, 17969, 18723, 18058, 19368, 18146, 18829]"
+}

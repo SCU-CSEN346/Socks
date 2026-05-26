@@ -1,0 +1,54 @@
+bsq,cluster,is_centroid
+Does the answer list three processes?,0,False
+Does the answer describe each process?,0,False
+Does the answer mention the cell membrane?,4,True
+Does the answer provide accurate information?,5,True
+Does the answer demonstrate understanding of the topic?,1,False
+Does the answer identify three distinct processes?,0,False
+Does the answer describe each identified process?,0,False
+Does the answer relate each process to the cell membrane?,0,False
+Does the answer focus on the control of substance movement?,1,False
+Does the answer provide accurate information about the processes?,5,False
+"Does the answer mention ""passive transport""?",4,False
+Does the answer state that substances move from higher to lower concentration?,11,True
+Does the answer specify that no energy is required?,6,True
+"Does the answer avoid mentioning specific types of passive transport (e.g., diffusion, osmosis)?",9,True
+Does the answer avoid mentioning active transport or other unrelated concepts?,2,True
+Does the answer mention diffusion?,4,False
+Does the answer mention water?,4,False
+Does the answer mention the cell membrane?,4,False
+Does the answer correctly describe the process?,0,False
+Does the answer avoid any incorrect information?,5,False
+Does the answer mention facilitated diffusion?,4,False
+Does the answer mention membrane involvement?,4,False
+Does the answer mention control of the pathway?,4,False
+Does the answer mention particles entering or leaving the cell?,4,False
+Does the answer mention protein channels?,4,False
+Does the answer mention the use of energy (ATP)?,4,False
+Does the answer describe movement against a concentration gradient?,7,True
+Does the answer specify the direction of movement (from low to high concentration)?,8,True
+"Does the answer use the term ""active transport""?",3,False
+Does the answer correctly define active transport?,2,False
+Does the answer mention the process of endocytosis?,4,False
+Does the answer describe the membrane engulfing something?,0,False
+Does the answer mention the formation of a vesicle?,4,False
+Does the answer state the purpose of bringing substances into the cell?,1,False
+"Does the answer use the term ""large molecules"" or similar?",3,False
+Does the answer mention the vesicle fusing with the cell membrane?,4,False
+Does the answer describe the process of forcing molecules out of the cell?,10,True
+Does the answer specify that large molecules are involved?,6,False
+"Does the answer use the term ""exocytosis""?",3,True
+Does the answer correctly describe the direction of molecule movement (out of the cell)?,10,False
+Does the answer mention two distinct processes?,4,False
+Does the answer correctly identify the first process?,0,False
+Does the answer correctly describe the first process?,0,False
+Does the answer correctly identify the second process?,0,False
+Does the answer correctly describe the second process?,0,False
+Does the answer identify a specific process?,0,False
+Does the answer describe the identified process?,0,True
+Does the answer relate to the cell membrane?,0,False
+Does the answer discuss the movement of substances?,1,True
+Does the answer demonstrate understanding of cellular control?,1,False
+Does the answer identify any process?,0,False
+Does the answer correctly identify the process?,0,False
+Does the answer provide any meaningful content?,5,False

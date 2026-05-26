@@ -1,0 +1,41 @@
+bsq,cluster,is_centroid
+Does the answer mention the background information about Mr. Leonard?,1,False
+Does the answer explain the effect of this background information on Paul?,6,False
+Does the answer provide specific details from the story?,9,True
+Does the answer directly address the question asked?,0,False
+Does the answer demonstrate a clear understanding of the story?,5,True
+Does the answer fulfill all the requirements of the task?,0,False
+Does the answer provide text-based information?,1,False
+Does the answer provide relevant information?,1,False
+Does the answer explain the background information about Mr. Leonard?,1,False
+Does the answer provide supporting details from the story?,9,False
+Does the answer mention Mr. Leonard's athletic achievement?,3,False
+Does the answer mention Mr. Leonard's academic failure?,3,False
+Does the answer provide both pieces of background information?,1,False
+Does the answer accurately describe the background information?,1,False
+Does the answer clearly distinguish between the two pieces of background information?,1,False
+Does the answer mention Paul?,3,True
+Does the answer describe an effect on Paul?,6,False
+Does the answer specify a clear emotion or action for Paul?,7,True
+Does the answer connect the effect to Mr. Leonard's actions?,2,True
+Does the answer provide a specific example of the effect?,10,True
+Does the answer mention specific details from the story?,9,False
+Does the answer provide relevant examples from the text?,4,False
+Does the answer include direct references to the story?,8,True
+Does the answer use specific quotes from the story?,9,False
+Does the answer connect details to the main idea?,2,False
+Does the answer address the task requirements?,0,True
+Does the answer provide specific information?,1,False
+Does the answer demonstrate understanding of the text?,5,False
+Does the answer avoid oversimplification?,11,True
+Does the answer support claims with evidence from the text?,4,False
+Does the answer mention background information?,1,True
+Does the answer explain the background information?,1,False
+Does the answer mention Paul?,3,False
+Does the answer explain the effect on Paul?,6,True
+Does the answer provide full text support?,4,True
+Does the answer contain inaccurate information?,1,False
+Does the answer lack necessary information?,1,False
+Does the answer omit required information?,1,False
+Does the answer address the task requirements?,0,False
+Does the answer provide complete information?,1,False
