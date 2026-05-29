@@ -1,144 +1,187 @@
+# Improving Weakly Supervised and Interpretable Models for Automatic Short Answer Grading and Essay Scoring
+
 ## Project Option
 
-This project follows **Option 2**: selecting a recent ACL Anthology paper with available code, reproducing the baseline, and improving the approach.
+This project follows **Option 2**: selecting a recent ACL Anthology paper with
+available code, reproducing the baseline, and improving the approach.
 
----
+This repository contains our master's-level NLP final project on weakly
+supervised, interpretable grading for two educational NLP tasks:
 
-## paper_pipeline
+- Automatic Essay Scoring (AES) with ASAP-AES
+- Automatic Short Answer Grading (ASAG) with ASAP-SAS
 
-```text
-paper_pipeline/
-├── AES/        # Automated Essay Scoring pipeline (ASAP-AES, essay sets 1–8)
-└── SAS/        # Short Answer Scoring pipeline (ASAP-SAS, question sets 1–10)
-```
+## Overview
 
-Place the extracted ASAP-AES files under `paper_pipeline/AES/data/` and the extracted ASAP-SAS files under `paper_pipeline/SAS/data/` before running any scripts. See `paper_pipeline/AES/read_data.ipynb` and `paper_pipeline/SAS/read_data.ipynb` to preprocess the raw dataset files.
+Automatically scoring open-ended student responses is useful in educational
+settings, but many high-performing systems rely on large labeled datasets and
+opaque models. We focus on a lightweight alternative that keeps the scoring
+pipeline readable and reproducible.
 
----
+The project implements:
 
-# Socks
+- train-only weak-label generation from unsupervised response signals
+- prompt/question-specific preprocessing and modeling
+- lightweight, human-readable text features
+- prompt/question-specific non-negative linear regression models
+- evaluation with Quadratic Weighted Kappa (QWK), Mean Absolute Error (MAE),
+  and Pearson correlation
 
+AES and ASAG differ in response length and prompt dependence, so we handle them
+as separate tasks with task-specific preprocessing and evaluation. This project
+is inspired by Urrutia et al. (2025), but it is an adapted public-benchmark
+implementation rather than a dataset-matched reproduction for ASAG: ASAP-SAS is
+used as a public replacement for the original Spanish ASAG dataset from the
+paper.
 
-
-Baseline setup for a course project on weakly supervised and interpretable
-automated essay scoring.
-
-This repository is being organized around a small, reviewable baseline. The
-raw ASAP-AES dataset is expected to live locally under `data/asap-aes/`, while
-raw ASAP-SAS dataset is expected to live locally under `data/asap-sas/`.
-Source code, notebooks, and generated results are kept separate.
-
-## Project Layout
+## Repository Structure
 
 ```text
 .
-├── data/          # Local dataset files and dataset notes
-├── notebooks/     # Exploratory notebooks
-├── results/       # Generated outputs, metrics, and reports
-├── src/           # Project source package and preprocessing code
+├── data/                                # Local dataset files and dataset notes
+├── notebooks/                           # Exploratory notebooks and preserved helpers
+├── results/
+│   ├── final_report/                    # Submission-ready report bundle
+│   │   ├── configs/                     # Manifest-adjacent config summaries
+│   │   ├── figures/                     # Paper figures
+│   │   ├── logs/                        # Audit notes and smoke-test logs
+│   │   ├── predictions/                 # Prediction copies used in the report bundle
+│   │   └── tables/                      # CSV/LaTeX result tables
+│   ├── metrics/                         # Canonical baseline metrics
+│   ├── predictions/                     # Canonical baseline predictions
+│   ├── processed/                       # Canonical processed splits
+│   └── weak_labels/                     # Canonical weak-label outputs
+├── paper_pipeline/                      # Preserved earlier AES/SAS pipeline artifacts
+├── src/
+│   ├── build_final_report_bundle.py     # Final report bundle generator
+│   ├── run_aes_baseline.py              # ASAP-AES baseline runner
+│   ├── run_asag_baseline.py             # ASAP-SAS baseline runner
+│   ├── asag_baseline.py                 # ASAP-SAS training/evaluation pipeline
+│   └── ...
 └── requirements.txt
 ```
 
-## Datasets
+Important final-report artifacts:
 
-The ASAP-AES dataset we used was the same dataset used in the original paper for the AES tasks while the ASAP-SAS dataset we used was to substitute the original dataset used for the SAS tasks. 
+- `src/build_final_report_bundle.py`
+- `results/final_report/experiment_manifest.json`
+- `results/final_report/final_report_experiment_summary.md`
+- `results/final_report/report_revision_patch.md`
+- `results/final_report/tables/`
+- `results/final_report/figures/`
+- `results/final_report/configs/`
+- `results/final_report/logs/`
 
-The ASAP-AES dataset we used can be downloaded from: https://www.kaggle.com/competitions/asap-aes/overview
+Legacy `paper_pipeline/` note:
 
-The ASAP-SAS dataset we used can be downloaded from: https://www.kaggle.com/competitions/asap-sas/overview 
+- `paper_pipeline/AES/` and `paper_pipeline/SAS/` preserve earlier task-specific
+  notebooks and scripts. If you use those older paths, place raw ASAP-AES files
+  under `paper_pipeline/AES/data/` and raw ASAP-SAS files under
+  `paper_pipeline/SAS/data/`.
 
-## Setup
+Paper source note:
 
-Install the baseline dependency:
+- No editable ACL/Overleaf paper source is currently tracked in this repository.
+  See `results/final_report/logs/report_source_audit.md`.
 
-```bash
-python3 -m pip install -r requirements.txt
-```
+## Data
 
-The raw datasets should remain extracted at:
+We use two public benchmark datasets:
+
+- ASAP-AES for essay scoring
+- ASAP-SAS for short answer grading
+
+Raw datasets are expected locally under:
 
 ```text
 data/asap-aes/
 data/asap-sas/
 ```
 
-Those directories are ignored by git.
+Dataset sources:
 
-## Loading Data
+- ASAP-AES: <https://www.kaggle.com/competitions/asap-aes/overview>
+- ASAP-SAS: <https://www.kaggle.com/competitions/asap-sas/overview>
 
-Use `src.data_loading` when scripts or notebooks need the raw TSV files:
+Notes:
 
-```python
-from src.data_loading import load_asap_split
+- ASAP-AES is used for the essay-scoring experiments.
+- ASAP-SAS is used as the public ASAG replacement dataset.
+- ASAP-SAS public-test labels are available and used for evaluation.
+- The ASAP-SAS private test split is prediction-only because labels are not
+  available, so no private-split evaluation scores are reported.
+- This repository is organized around code and derived artifacts; it does not
+  make new claims about redistributing raw dataset content.
 
-train_set_1 = load_asap_split("train", essay_set=1)
-valid_set_1 = load_asap_split("valid", essay_set=1)
-test_set_1 = load_asap_split("test", essay_set=1)
-```
+## Installation
 
-Valid split names are `train`, `valid`, and `test`.
-
-## ASAP-AES Canonical Baseline
-
-ASAP-AES is the canonical AES dataset for the paper-style weakly supervised,
-white-box baseline in this repository.
-
-The canonical AES baseline command is:
+Python 3.8+ is expected. The final report bundle was generated with Python
+3.8.10.
 
 ```bash
-python3 -m src.run_aes_baseline
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
 ```
 
-This executes:
+Current Python dependencies:
+
+- `numpy`
+- `pandas`
+- `scikit-learn`
+- `scipy`
+- `matplotlib`
+
+## Reproducing the Final Report Bundle
+
+From the repository root, run:
+
+```bash
+python3 -m src.build_final_report_bundle
+```
+
+This command creates or updates `results/final_report/` with:
+
+- tables in CSV and LaTeX format
+- figures for the paper
+- logs and audit notes
+- config summaries
+- prediction copies used in the bundle
+- the experiment manifest
+
+## Expected Output
+
+Key artifacts produced by the final bundle include:
 
 ```text
-raw ASAP-AES training_set_rel3.tsv
--> preprocessing and reproducible internal train/val/test split per essay_set
--> train-only signal-clustering weak labels
--> lightweight interpretable expert features
--> one positive linear regression model per essay_set
--> evaluation on internal val and test with QWK / MAE / Pearson
+results/final_report/tables/main_results_macro.csv
+results/final_report/tables/per_prompt_results.csv
+results/final_report/tables/weak_label_quality.csv
+results/final_report/tables/ablation_results.csv
+results/final_report/figures/system_pipeline.pdf
+results/final_report/figures/per_prompt_qwk_delta.pdf
+results/final_report/experiment_manifest.json
+results/final_report/final_report_experiment_summary.md
+results/final_report/report_revision_patch.md
 ```
 
-Expected AES outputs:
+## Main Results Summary
 
-```text
-results/processed/asap-aes/train.csv
-results/processed/asap-aes/val.csv
-results/processed/asap-aes/test.csv
-results/processed/asap-aes/split_summary.csv
-results/weak_labels/asap-aes/train_weak_labels.csv
-results/weak_labels/asap-aes/train_weak_label_diagnostics.csv
-results/features/asap-aes/train_features.csv
-results/features/asap-aes/val_features.csv
-results/features/asap-aes/test_features.csv
-results/predictions/asap-aes/val_predictions.csv
-results/predictions/asap-aes/test_predictions.csv
-results/predictions/asap-aes/val_test_predictions.csv
-results/metrics/asap-aes/metrics.csv
-results/metrics/asap-aes/metrics.json
-results/metrics/asap-aes/summary_table.txt
-results/models/asap-aes/positive_linear_coefficients.csv
-```
+The summary below reflects file-backed local results from
+`results/final_report/tables/main_results_macro.csv`.
 
-Current AES feature set:
+- AES weak-label baseline: internal test QWK `0.5689`, MAE `1.6248`,
+  Pearson `0.7079`
+- AES set 6/8 feature-selection candidate: internal test QWK `0.5726`,
+  MAE `1.6249`, Pearson `0.7202`
+- ASAG improved weak-label baseline: public-test QWK `0.3234`,
+  MAE `0.7488`, Pearson `0.4572`
+- ASAG SBERT-hybrid weak-label exploratory variant: public-test QWK `0.3410`,
+  MAE `0.7547`, Pearson `0.4498`
 
-- `word_count`
-- `character_count`
-- `sentence_count`
-- `average_word_length`
-- `unique_word_count`
-- `type_token_ratio`
-- `long_word_count`
-- `punctuation_count`
-- `digit_count`
-- `paragraph_count`
-
-This baseline intentionally focuses on the simplest paper-aligned path:
-signal-clustering weak labels plus interpretable features plus positive linear
-regression. The canonical runner reuses the preserved teammate AES helper logic
-from `src/matrix.py` and `src/signal_pred.py` for similarity construction and
-weak-signal propagation. It does not implement NLLF, BSQ, or LLM weak labels.
+The SBERT-hybrid ASAG result is included as an exploratory file-backed variant,
+not as the default final system. This README summarizes only local results that
+are backed by files in the final report bundle.
 
 ### Optional Targeted AES GBDT Candidate
 
@@ -152,49 +195,63 @@ python3 -m src.run_aes_gbdt_targeted
 The targeted AES GBDT runner evaluates a prompt-specific nonlinear candidate
 while keeping the default AES baseline unchanged. The best candidate uses GBDT
 for validation-supported essay sets 1, 6, and 7, applies shrinked train-weak
-quantile calibration only to essay set 6, and excludes essay set 8 due to an MAE
-tradeoff. Compact outputs are saved under
+quantile calibration only to essay set 6, and excludes essay set 8 due to an
+MAE tradeoff. Compact outputs are saved under
 `results/clean_results/aes_gbdt_targeted/`.
 
-On the current split, the targeted candidate improves AES test QWK from 0.5689
-to 0.5813, test MAE from 1.6248 to 1.6199, and test Pearson from 0.7079 to
-0.7142. This is reported as an optional candidate using interpretable features
-with a tree-based model, not as a replacement for the canonical baseline.
+## Metrics
+
+Primary metric:
+
+- Quadratic Weighted Kappa (QWK)
+
+Secondary metrics:
+
+- Mean Absolute Error (MAE)
+- Pearson correlation
+
+Evaluation convention used in the final bundle:
+
+- predictions are clipped to the valid prompt/question score range
+- rounded predictions are used for QWK
+- continuous clipped predictions are used for MAE and Pearson
+
+These conventions are recorded in
+`results/final_report/experiment_manifest.json` and
+`results/final_report/configs/metric_audit.json`.
+
+## ASAP-AES Canonical Baseline
+
+The canonical AES runner is:
+
+```bash
+python3 -m src.run_aes_baseline
+```
+
+Pipeline:
+
+```text
+raw ASAP-AES training_set_rel3.tsv
+-> reproducible internal train/val/test split per essay_set
+-> train-only weak labels
+-> lightweight interpretable features
+-> one non-negative linear model per essay_set
+-> internal validation/test evaluation
+```
 
 ## ASAP-AES Low-Level Preprocessing
 
-Run the preprocessing CLI from the repository root. To prepare one essay set
-from the training split:
+To preprocess one essay set from the raw training split:
 
 ```bash
 python3 -m src.preprocess_asap --split train --essay-set 1
 ```
 
-This writes:
-
-```text
-results/processed/asap_train_set_1.csv
-```
-
-To preprocess the full training split:
+To preprocess the full raw training split:
 
 ```bash
 python3 -m src.preprocess_asap --split train
 ```
-
-Validation and test splits can be prepared the same way:
-
-```bash
-python3 -m src.preprocess_asap --split valid --essay-set 1
-python3 -m src.preprocess_asap --split test --essay-set 1
-```
-
-The preprocessing step normalizes essay whitespace, removes empty essay rows,
-drops rater-level columns, and creates a standardized `score` column only when
-`domain1_score` is present. Splits without labels remain unlabeled.
-
-Processed outputs are written under `results/`, which is ignored by git except
-for placeholder files currently.
 
 ## Contributions
 
@@ -206,86 +263,68 @@ Shravan Dhanasekaran - Full reproduction of the paper pipeline across both AES (
 
 ## ASAP-SAS ASAG Baseline
 
-ASAP-SAS is the project's replacement dataset for the ASAG portion of the
-original paper.
-
-The canonical ASAG baseline command is:
+The canonical ASAG runner is:
 
 ```bash
 python3 -m src.run_asag_baseline
 ```
 
-This executes:
+Pipeline:
 
 ```text
 raw ASAP-SAS files
--> canonical preprocessing under results/processed/asap-sas/
--> train-only signal-clustering weak labels
--> lightweight interpretable text features
--> one positive linear regression model per question_id
--> evaluation on val and public_test
+-> canonical preprocessing
+-> train-only weak labels
+-> lightweight interpretable features
+-> one non-negative linear model per question_id
+-> validation/public-test evaluation
 ```
 
-The canonical ASAP-SAS preprocessing command is:
+Additional ASAP-SAS entry points:
 
 ```bash
 python3 -m src.preprocess_asap_sas
-```
-
-The canonical train-only weak-label command is:
-
-```bash
 python3 -m src.asag_weak_labels
 ```
 
-Expected ASAG outputs:
+## Reproducibility Notes
 
-```text
-results/processed/asap-sas/train.csv
-results/processed/asap-sas/val.csv
-results/processed/asap-sas/public_test.csv
-results/processed/asap-sas/private_test.csv
-results/processed/asap-sas/score_ranges.csv
-results/weak_labels/asap-sas/train_signal_clustering.csv
-results/weak_labels/asap-sas/train_signal_clustering_diagnostics.csv
-results/features/asap-sas/train_features.csv
-results/features/asap-sas/val_features.csv
-results/features/asap-sas/public_test_features.csv
-results/features/asap-sas/private_test_features.csv
-results/predictions/asap-sas/val_predictions.csv
-results/predictions/asap-sas/public_test_predictions.csv
-results/predictions/asap-sas/private_test_predictions.csv
-results/metrics/asap-sas/metrics.csv
-results/metrics/asap-sas/metrics.json
-results/metrics/asap-sas/summary_table.txt
-results/models/asap-sas/positive_linear_coefficients.csv
-```
+- `results/final_report/experiment_manifest.json` records the git commit hash,
+  package versions, seeds, dataset paths, commands, and output files used in
+  the final bundle.
+- Gold labels are not used to generate weak labels or train weak-label models.
+- Gold labels are used only for validation, held-out evaluation, and
+  diagnostics.
+- The ASAP-SAS private split remains prediction-only because public labels are
+  unavailable.
+- The final report bundle summarizes only locally supported results.
 
-Current feature set:
+## Limitations
 
-- `character_count`
-- `word_count`
-- `sentence_count`
-- `average_word_length`
-- `average_sentence_length`
-- `unique_word_count`
-- `type_token_ratio`
-- `long_word_count`
-- `digit_count`
-- `punctuation_count`
-- `uppercase_count`
-- `stopword_ratio`
-- `short_answer_bin`
-- `medium_answer_bin`
-- `long_answer_bin`
+- Weak labels rely on response length, lexical breadth, and similarity signals.
+- The system can over-reward verbose or keyword-rich incorrect answers.
+- Concise correct answers can be underpredicted.
+- ASAP-SAS is a public replacement for the original ASAG dataset, not a
+  dataset-matched reproduction.
+
+## Report Links
+
+- Final report bundle summary:
+  `results/final_report/final_report_experiment_summary.md`
+- Report revision notes:
+  `results/final_report/report_revision_patch.md`
+- Manifest:
+  `results/final_report/experiment_manifest.json`
 
 ## Helper / Legacy Scripts
 
-The canonical runnable baselines live under `src.run_aes_baseline` and
-`src.run_asag_baseline`.
+The main runnable entry points for this repository are:
 
-The following files are preserved as teammate helper or exploratory scripts and
-are not the main end-to-end entry points:
+- `python3 -m src.run_aes_baseline`
+- `python3 -m src.run_asag_baseline`
+- `python3 -m src.build_final_report_bundle`
+
+Preserved helper or exploratory files include:
 
 - `src/matrix.py`
 - `src/signal_pred.py`
