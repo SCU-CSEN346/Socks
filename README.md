@@ -255,7 +255,7 @@ python3 -m src.preprocess_asap --split train
 
 ## Contributions
 
-Helen Wang - Wrote the related works section of the report, added modified scripts for signal clustering (signal_pred and matrix) as well as dividing dataset data into subsections to follow project structure, added the contributions section to README, added read data script to divide SAS dataset into subsections, wrote dataset section of report, updated weak signal code to improve scores, updated README to include dataset section and links.
+Helen Wang - Wrote the related works section of the report, added modified scripts for signal clustering (signal_pred and matrix) as well as dividing dataset data into subsections to follow project structure, added the contributions section to README, added read data script to divide SAS dataset into subsections, wrote dataset section of report, updated weak signal code to improve SAS scores, updated README to include dataset section and links, modified code for weak signal to improve AES scores, updated weak signal section of report to reflect changes in code.
 
 Harshvardhan Garude - Set up baseline project structure, added scripts for loading ASAP-AES dataset splits (data_loading) and preprocessing data (preprocess_asap) with essay-set filtering and text cleaning, and updated README and data documentation for reproducibility. Experimented with different methods to improve the AES pipeline, including Gradient Boosted Decision Trees (GBDT), to improve scoring performance.
 
