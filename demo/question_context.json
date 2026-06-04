@@ -1,0 +1,222 @@
+{
+  "ASAG": {
+    "1": {
+      "task": "ASAG",
+      "unit_id": 1,
+      "display_name": "ASAP-SAS Question 1",
+      "context_status": "missing_context",
+      "background_context": "",
+      "question_text": "After reading the group's procedure, describe what additional information you would need in order to replicate the experiment. Make sure to include at least three pieces of information.",
+      "response_should_do": "Name at least three missing procedural details needed to replicate the experiment.",
+      "score_range_note": "This question uses a 0 to 3 score range.",
+      "demo_recommendation": "avoid_for_live_demo",
+      "context_warning": "This question is available for model scoring, but the local demo does not yet include the full source context. Use a recommended question for live demonstration."
+    },
+    "2": {
+      "task": "ASAG",
+      "unit_id": 2,
+      "display_name": "ASAP-SAS Question 2",
+      "context_status": "missing_context",
+      "background_context": "",
+      "question_text": "Describe two ways the student could have improved the experimental design and/or validity of the results.",
+      "response_should_do": "Describe two concrete improvements to the experiment or to the validity of its results.",
+      "score_range_note": "This question uses a 0 to 3 score range.",
+      "demo_recommendation": "avoid_for_live_demo",
+      "context_warning": "This question is available for model scoring, but the local demo does not yet include the full source context. Use a recommended question for live demonstration."
+    },
+    "3": {
+      "task": "ASAG",
+      "unit_id": 3,
+      "display_name": "ASAP-SAS Question 3",
+      "context_status": "source_supported",
+      "background_context": "",
+      "question_text": "Explain how pandas in China are similar to koalas in Australia and how they both are different from pythons. Support your response with information from the article.",
+      "response_should_do": "Compare pandas and koalas, then explain how both differ from pythons using details from the article.",
+      "score_range_note": "This question uses a 0 to 2 score range.",
+      "demo_recommendation": "recommended",
+      "context_warning": ""
+    },
+    "4": {
+      "task": "ASAG",
+      "unit_id": 4,
+      "display_name": "ASAP-SAS Question 4",
+      "context_status": "source_supported",
+      "background_context": "",
+      "question_text": "Explain the significance of the word \"invasive\" to the rest of the article. Support your response with information from the article.",
+      "response_should_do": "Explain why the article's use of the word \"invasive\" matters and support the explanation with article evidence.",
+      "score_range_note": "This question uses a 0 to 2 score range.",
+      "demo_recommendation": "okay",
+      "context_warning": ""
+    },
+    "5": {
+      "task": "ASAG",
+      "unit_id": 5,
+      "display_name": "ASAP-SAS Question 5",
+      "context_status": "concept_helper",
+      "background_context": "",
+      "question_text": "Starting with mRNA leaving the nucleus, list and describe four major steps involved in protein synthesis.",
+      "response_should_do": "List four major protein-synthesis steps beginning after mRNA leaves the nucleus and briefly describe each step.",
+      "score_range_note": "This question uses a 0 to 3 score range.",
+      "demo_recommendation": "okay",
+      "context_warning": "Concept helper unavailable in local docs. The live demo uses the visible question text only."
+    },
+    "6": {
+      "task": "ASAG",
+      "unit_id": 6,
+      "display_name": "ASAP-SAS Question 6",
+      "context_status": "concept_helper",
+      "background_context": "",
+      "question_text": "List and describe three processes used by cells to control the movement of substances across the cell membrane.",
+      "response_should_do": "Name three cell-membrane transport processes and briefly describe how each works.",
+      "score_range_note": "This question uses a 0 to 3 score range.",
+      "demo_recommendation": "okay",
+      "context_warning": "Concept helper unavailable in local docs. The live demo uses the visible question text only."
+    },
+    "7": {
+      "task": "ASAG",
+      "unit_id": 7,
+      "display_name": "ASAP-SAS Question 7",
+      "context_status": "source_supported",
+      "background_context": "",
+      "question_text": "Identify ONE trait that can describe Rose based on her conversations with Anna or Aunt Kolab. Include ONE detail from the story that supports your answer.",
+      "response_should_do": "Choose one trait for Rose and support it with one story detail.",
+      "score_range_note": "This question uses a 0 to 2 score range.",
+      "demo_recommendation": "recommended",
+      "context_warning": ""
+    },
+    "8": {
+      "task": "ASAG",
+      "unit_id": 8,
+      "display_name": "ASAP-SAS Question 8",
+      "context_status": "missing_context",
+      "background_context": "",
+      "question_text": "During the story, the reader gets background information about Mr. Leonard. Explain the effect that background information has on Paul. Support your response with details from the story.",
+      "response_should_do": "Explain how the background information about Mr. Leonard affects Paul and support the explanation with story evidence.",
+      "score_range_note": "This question uses a 0 to 2 score range.",
+      "demo_recommendation": "avoid_for_live_demo",
+      "context_warning": "This question is available for model scoring, but the local demo does not yet include the full source context. Use a recommended question for live demonstration."
+    },
+    "9": {
+      "task": "ASAG",
+      "unit_id": 9,
+      "display_name": "ASAP-SAS Question 9",
+      "context_status": "source_supported",
+      "background_context": "",
+      "question_text": "How does the author organize the article? Support your response with details from the article.",
+      "response_should_do": "Describe how the article is organized and support that claim with details from the article.",
+      "score_range_note": "This question uses a 0 to 2 score range.",
+      "demo_recommendation": "okay",
+      "context_warning": ""
+    },
+    "10": {
+      "task": "ASAG",
+      "unit_id": 10,
+      "display_name": "ASAP-SAS Question 10",
+      "context_status": "self_contained",
+      "background_context": "",
+      "question_text": "Question: What is the effect of different lid colors on the air temperature inside a glass jar exposed to a lamp? Brandi and Jerry were designing a doghouse. Use the results from the experiment to describe the best paint color for the doghouse. In your description, be sure to: Choose a paint color. Describe how that color might affect the inside of the doghouse.",
+      "response_should_do": "Use the experiment results to recommend a doghouse paint color and explain why it is the best choice.",
+      "score_range_note": "This question uses a 0 to 2 score range.",
+      "demo_recommendation": "recommended",
+      "context_warning": ""
+    }
+  },
+  "AES": {
+    "1": {
+      "task": "AES",
+      "unit_id": 1,
+      "display_name": "ASAP-AES Essay Set 1",
+      "context_status": "self_contained",
+      "background_context": "",
+      "question_text": "",
+      "response_should_do": "Take a position on whether computers benefit society and support that position with reasons or examples.",
+      "score_range_note": "This essay set uses a 2 to 12 score range.",
+      "demo_recommendation": "recommended",
+      "context_warning": ""
+    },
+    "2": {
+      "task": "AES",
+      "unit_id": 2,
+      "display_name": "ASAP-AES Essay Set 2",
+      "context_status": "self_contained",
+      "background_context": "",
+      "question_text": "",
+      "response_should_do": "Take a position on censorship in libraries and support the position using reasons drawn from the prompt.",
+      "score_range_note": "This essay set uses a 1 to 6 score range.",
+      "demo_recommendation": "okay",
+      "context_warning": ""
+    },
+    "3": {
+      "task": "AES",
+      "unit_id": 3,
+      "display_name": "ASAP-AES Essay Set 3",
+      "context_status": "source_supported",
+      "background_context": "",
+      "question_text": "",
+      "response_should_do": "Explain how the setting affects the cyclist and support the explanation with examples from the source essay.",
+      "score_range_note": "This essay set uses a 0 to 3 score range.",
+      "demo_recommendation": "recommended",
+      "context_warning": ""
+    },
+    "4": {
+      "task": "AES",
+      "unit_id": 4,
+      "display_name": "ASAP-AES Essay Set 4",
+      "context_status": "source_supported",
+      "background_context": "",
+      "question_text": "",
+      "response_should_do": "Write about Saeng's decision in the last paragraph and support the response with story evidence from the excerpt.",
+      "score_range_note": "This essay set uses a 0 to 3 score range.",
+      "demo_recommendation": "okay",
+      "context_warning": ""
+    },
+    "5": {
+      "task": "AES",
+      "unit_id": 5,
+      "display_name": "ASAP-AES Essay Set 5",
+      "context_status": "source_supported",
+      "background_context": "",
+      "question_text": "",
+      "response_should_do": "Describe the mood created in the memoir and support the answer with relevant details from the source text.",
+      "score_range_note": "This essay set uses a 0 to 4 score range.",
+      "demo_recommendation": "okay",
+      "context_warning": ""
+    },
+    "6": {
+      "task": "AES",
+      "unit_id": 6,
+      "display_name": "ASAP-AES Essay Set 6",
+      "context_status": "source_supported",
+      "background_context": "",
+      "question_text": "",
+      "response_should_do": "Describe the obstacles to docking dirigibles at the Empire State Building and support the answer with excerpt details.",
+      "score_range_note": "This essay set uses a 0 to 4 score range.",
+      "demo_recommendation": "recommended",
+      "context_warning": ""
+    },
+    "7": {
+      "task": "AES",
+      "unit_id": 7,
+      "display_name": "ASAP-AES Essay Set 7",
+      "context_status": "self_contained",
+      "background_context": "",
+      "question_text": "",
+      "response_should_do": "Write a narrative or explanatory response about patience, following one of the prompt's allowed options.",
+      "score_range_note": "This essay set uses a 2 to 24 score range.",
+      "demo_recommendation": "okay",
+      "context_warning": ""
+    },
+    "8": {
+      "task": "AES",
+      "unit_id": 8,
+      "display_name": "ASAP-AES Essay Set 8",
+      "context_status": "self_contained",
+      "background_context": "",
+      "question_text": "",
+      "response_should_do": "Tell a true story about how laughter improved a situation or relationship.",
+      "score_range_note": "This essay set uses a 10 to 60 score range.",
+      "demo_recommendation": "recommended",
+      "context_warning": ""
+    }
+  }
+}

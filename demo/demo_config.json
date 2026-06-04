@@ -1,0 +1,12 @@
+{
+  "app_title": "Weakly Supervised Interpretable Grading Demo",
+  "subtitle": "Decision-support estimate, not a final grade",
+  "default_questions": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+  "links": {
+    "github": "https://github.com/SCU-CSEN346/Socks",
+    "data_artifacts": "demo_artifacts/manifest.json",
+    "report_bundle": "results/final_report/final_report_experiment_summary.md",
+    "paper": "PAPER_LINK_TODO",
+    "demo_video": "DEMO_VIDEO_TODO"
+  }
+}

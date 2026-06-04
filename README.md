@@ -39,6 +39,8 @@ paper.
 ```text
 .
 ├── data/                                # Local dataset files and dataset notes
+├── demo/                                # Streamlit demo source, demo config, synthetic examples
+├── demo_artifacts/                      # Generated local demo artifacts (created locally, git-ignored)
 ├── notebooks/                           # Exploratory notebooks and preserved helpers
 ├── results/
 │   ├── final_report/                    # Submission-ready report bundle
@@ -54,10 +56,12 @@ paper.
 ├── paper_pipeline/                      # Preserved earlier AES/SAS pipeline artifacts
 ├── src/
 │   ├── build_final_report_bundle.py     # Final report bundle generator
+│   ├── prepare_demo_artifacts.py        # Demo-artifact builder for ASAP-SAS and ASAP-AES
 │   ├── run_aes_baseline.py              # ASAP-AES baseline runner
 │   ├── run_asag_baseline.py             # ASAP-SAS baseline runner
 │   ├── asag_baseline.py                 # ASAP-SAS training/evaluation pipeline
 │   └── ...
+├── tests/                               # Lightweight smoke tests
 └── requirements.txt
 ```
 
@@ -131,6 +135,59 @@ Current Python dependencies:
 - `scikit-learn`
 - `scipy`
 - `matplotlib`
+- `streamlit`
+
+## Local Demo
+
+The repository also includes a local Streamlit demo for both tasks:
+
+- ASAP-SAS short answer grading
+- ASAP-AES essay scoring
+
+Demo-specific source files are kept under `demo/`, and generated local demo
+artifacts are written under `demo_artifacts/` so the presentation files stay
+separate from the training and report pipelines.
+
+To build the local demo artifacts from existing processed/model outputs:
+
+```bash
+python3 -m src.prepare_demo_artifacts
+```
+
+To launch the demo locally:
+
+```bash
+streamlit run demo/app.py
+```
+
+Main demo files:
+
+- `demo/app.py`
+- `demo/question_context.json`
+- `demo/sample_inputs.json`
+- `demo/README_DEMO.md`
+- `src/prepare_demo_artifacts.py`
+
+Main generated demo outputs:
+
+- `demo_artifacts/manifest.json`
+- `demo_artifacts/asag_question_<id>.json`
+- `demo_artifacts/aes_set_<id>.json`
+- `demo_artifacts/sample_replay_examples.csv`
+- `demo_artifacts/aes_sample_replay_examples.csv`
+
+Recommended live demo units:
+
+- ASAP-SAS: questions `3`, `7`, `10`
+- ASAP-AES: essay sets `1`, `3`, `6`, `8`
+
+Known ASAP-SAS context gaps in the current local demo:
+
+- questions `1`, `2`, and `8` are scoreable, but the full source context is
+  not yet surfaced cleanly in the demo UI
+
+The demo output is intended for decision support and analysis, not final
+grading.
 
 ## Reproducing the Final Report Bundle
 

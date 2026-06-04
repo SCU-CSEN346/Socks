@@ -23,6 +23,7 @@ env/
 # Generated results
 results/*
 !results/.gitkeep
+demo_artifacts/
 
 # Raw local datasets and archives
 data/asap-aes/

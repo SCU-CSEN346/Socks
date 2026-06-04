@@ -1,0 +1,126 @@
+{
+  "ASAG": {
+    "3": [
+      {
+        "label": "Short / likely low",
+        "kind": "synthetic",
+        "text": "Pandas and koalas are both animals, but pythons are snakes.",
+        "demo_note": "Shows how a very short comparison response can look underdeveloped to the feature-based model."
+      },
+      {
+        "label": "Moderate",
+        "kind": "synthetic",
+        "text": "Pandas and koalas are similar because both are connected to one main place and both depend on a limited food source. They are different from pythons because pythons are reptiles that can live in many places and eat many different animals.",
+        "demo_note": "Shows a more complete comparison with a clearer contrast."
+      },
+      {
+        "label": "Verbose but not necessarily correct",
+        "kind": "synthetic",
+        "text": "Pandas and koalas are very important and special animals because people care about them and because they have environments that affect their lives. Pythons are also important animals, but they are more dangerous and move differently, so this makes the comparison seem bigger and more serious overall.",
+        "demo_note": "Useful for explaining that longer answers can earn a higher estimate even when the content support is not especially precise."
+      }
+    ],
+    "7": [
+      {
+        "label": "Short / likely low",
+        "kind": "synthetic",
+        "text": "Rose seems worried.",
+        "demo_note": "Shows how a very short trait claim can lack enough support."
+      },
+      {
+        "label": "Moderate",
+        "kind": "synthetic",
+        "text": "Rose seems determined because she keeps thinking about the essay competition and does not want to give up after the hard conversation.",
+        "demo_note": "Shows a focused trait claim with one supporting detail."
+      },
+      {
+        "label": "Verbose but not necessarily correct",
+        "kind": "synthetic",
+        "text": "Rose seems emotional, thoughtful, determined, and complicated because she reacts strongly to what people say and keeps thinking about what is happening around her in a deep way that shows a lot of feeling.",
+        "demo_note": "Useful for explaining that a longer trait description can sound stronger even if the evidence is less specific."
+      }
+    ],
+    "10": [
+      {
+        "label": "Short / likely low",
+        "kind": "synthetic",
+        "text": "They should use the lighter color because it stayed cooler.",
+        "demo_note": "Shows a short answer that points to the main result but does not explain much."
+      },
+      {
+        "label": "Moderate",
+        "kind": "synthetic",
+        "text": "They should choose the lightest paint color because the experiment showed that lighter lids stayed cooler under the lamp, which would help keep the doghouse from heating up as much.",
+        "demo_note": "Shows a direct answer with experiment-based reasoning."
+      },
+      {
+        "label": "Verbose but not necessarily correct",
+        "kind": "synthetic",
+        "text": "They should pick a paint color that helps with heat, comfort, and safety because the experiment suggests that color affects temperature and because a doghouse should be designed carefully for weather and for the dog's overall well-being.",
+        "demo_note": "Useful for showing that a longer answer can sound more developed even when it is less tied to the exact experiment result."
+      }
+    ]
+  },
+  "AES": {
+    "1": [
+      {
+        "label": "Short / likely low",
+        "kind": "synthetic",
+        "text": "Computers can help people, but they also waste time.",
+        "demo_note": "Shows a short response with a position but limited development."
+      },
+      {
+        "label": "Moderate",
+        "kind": "synthetic",
+        "text": "Computers help people learn, communicate, and complete important tasks more quickly. They can become a problem when people overuse them, but that does not erase the benefits they bring to school and daily life.",
+        "demo_note": "Shows a balanced but developed position statement."
+      },
+      {
+        "label": "Verbose but not necessarily correct",
+        "kind": "synthetic",
+        "text": "Computers have changed everything in modern society because they are powerful, efficient, interesting, creative, and always expanding. They help with communication, with ideas, with information, and with the future, so their positive effect seems extremely large and important in many different ways.",
+        "demo_note": "Useful for discussing how more developed-sounding essays can receive stronger estimates even when the reasoning stays broad."
+      }
+    ],
+    "3": [
+      {
+        "label": "Short / likely low",
+        "kind": "synthetic",
+        "text": "The setting makes the cyclist tired because it is hot and lonely.",
+        "demo_note": "Shows a short source-based response with limited support."
+      },
+      {
+        "label": "Moderate",
+        "kind": "synthetic",
+        "text": "The setting makes the cyclist struggle because the desert road is hot, dry, and isolated. Those features increase his thirst and make the trip feel more dangerous and exhausting.",
+        "demo_note": "Shows a direct explanation tied to visible setting details."
+      },
+      {
+        "label": "Verbose but not necessarily correct",
+        "kind": "synthetic",
+        "text": "The setting affects the cyclist by surrounding him with a harsh and overwhelming landscape that feels empty, dramatic, and intense. The setting becomes almost like another character because it keeps creating pressure and difficulty during the ride.",
+        "demo_note": "Useful for showing that a polished answer can sound strong even if it uses fewer specific textual details."
+      }
+    ],
+    "8": [
+      {
+        "label": "Short / likely low",
+        "kind": "synthetic",
+        "text": "Laughter helped when my family was upset because it changed the mood.",
+        "demo_note": "Shows a short narrative with the central idea but limited detail."
+      },
+      {
+        "label": "Moderate",
+        "kind": "synthetic",
+        "text": "During a stressful family trip, one small mistake turned into a joke and everyone started laughing. That laughter broke the tension and made the rest of the trip feel warmer and more connected.",
+        "demo_note": "Shows a complete personal story with a clear effect."
+      },
+      {
+        "label": "Verbose but not necessarily correct",
+        "kind": "synthetic",
+        "text": "Laughter can improve a situation because it changes the emotional atmosphere, helps people reconnect, and turns a difficult moment into something memorable. In my story, everyone felt better after laughing together, and the whole day became more meaningful after that shift.",
+        "demo_note": "Useful for explaining that a more expansive narrative style can lift the estimate even when the story stays somewhat generic."
+      }
+    ]
+  }
+}
